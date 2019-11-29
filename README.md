@@ -8,20 +8,20 @@ Application de la méthode **agile - scrum** dans des brief projects évaluatifs
 
 ## Cahiers de charge
 
+**Team Kanban**
+
+* Déclinaison du brief sur la plate-forme Trello en product-backlog
+* Appliquer les jalons, plus les dead-lines après validation avec le SM et en être le gardien du temps
+* Validation des commandes une fois le cochage fait par la Team Rapport
+* Remonter les anomalies constatées sur le tableau Trello au SM
+* Remonter tout blocus au SM
+
 **Team Git**
 
 * Lecture du product-backlog sur le tableau Trello
 * Application des commandes demandées par le product-backlog
 * Rapporter les actions faites ainsi que les screenshot sur le canal  ‘Rapport – Discord’
 * Tenir ajour le ‘Doing’ et le cochage des Card de plate-forme Trello
-* Remonter tout blocus au SM
-
-**Team Kanban**
-
-* Déclinaison du brief sur la plate-forme Trello, les scenarios en Track-Card et le Track-Card en Step-cards à mettre sur la collone To-Do
-* Appliquer les jalons, plus les dead-lines après validation avec le SM et en être le gardien du temps
-* Validation des commandes une fois le cochage fait par la Team Rapport
-* Remonter les anomalies constatées sur le tableau Trello au SM
 * Remonter tout blocus au SM
 
 **Team Rapport**
