@@ -4,7 +4,7 @@ Youcode - Youssoufia, 1ère année - classe #1
 
 ## Objectif
 
-Dépôt du travail concernant les briefs
+Dépôt des briefs
 
 ## Kanban
 
