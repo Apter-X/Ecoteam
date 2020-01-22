@@ -1,0 +1,100 @@
+/*==================Default values===========================
+  font-family : Roboto Condensed 
+
+  Code couleurs : 
+  #34C6D3 : boutons , icons ,links,lines & background
+  #41464B : Heading <h1> jusqu'a <h6>
+  #64707B : paragraphes
+  #FFF : texte avec un background noir 
+  #000 : il est toujours présent 
+  ===============================================================*/
+  body,html{
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif ;
+    height: 100%;
+    
+  }
+#cover
+{
+  height: 100%;
+}
+
+
+#content
+{
+  height: 100%;
+  /*widows: 100%;
+  display:table;*/
+  
+}
+
+/*#content-inner{
+  height: 100%;
+  display:table-cell;
+  vertical-align: middle;
+  
+}*/
+img{
+  width: 100px;
+}
+#home{
+  height: 100%;
+}
+#cover{
+  background-image:url(../img/1.jpg);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  position: relative;
+
+ 
+ 
+}
+
+.scroll{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+#heading{
+
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);/*This div element is moved -50 % to the right,
+  and -50% down from its current position.*/
+  color: white;
+ 
+}
+.btn-general{
+  background-color:black;
+  opacity: 0.5;
+  padding: 16px 32px 16px 32px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 400px;
+}
+.btn-white{
+  border-color: #fff;
+  color: #fff;
+}
+
+.text{
+  
+  margin: 32px 0px 3px 0px;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.btn-white:hover{
+  background-color: #34c4d3;
+  color: #000;
+}
+
+h3{
+  text-align: center;
+}
+
