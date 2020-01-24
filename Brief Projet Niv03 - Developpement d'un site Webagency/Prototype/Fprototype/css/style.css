@@ -1,4 +1,4 @@
-/*==================Default values===========================
+ /*==================Default values===========================
   font-family : Roboto Condensed 
 
   Code couleurs : 
@@ -8,17 +8,18 @@
   #FFF : texte avec un background noir 
   #000 : il est toujours présent 
   ===============================================================*/
-  body,html{
-    box-sizing: border-box;
-    font-family: 'Roboto Condensed', sans-serif ;
+  html {
     height: 100%;
-    
+    box-sizing: border-box;
+   
   }
-#cover
-{
-  height: 100%;
-}
-
+  
+  #body{
+    font-family: 'Roboto Slab', serif;
+    height: 100%;
+    padding: 0px 0px 0px 0px ;
+    margin: 0px 0px 0px 0px;
+  }
 
 #content
 {
@@ -43,12 +44,8 @@ img{
 #cover{
   background-image:url(../img/1.jpg);
   height: 100%;
-  width: 100%;
   background-position: center;
   position: relative;
-
- 
- 
 }
 
 .scroll{
@@ -93,8 +90,11 @@ img{
   background-color: #34c4d3;
   color: #000;
 }
-
-h3{
+#row1{
+  margin: auto;
+}
+#service{
+  margin:50px auto;
   text-align: center;
 }
 
