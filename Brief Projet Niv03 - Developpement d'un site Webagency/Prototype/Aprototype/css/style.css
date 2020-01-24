@@ -1,0 +1,19 @@
+
+body {
+
+    font-family: 'Roboto Condensed', sans-serif ;
+    font-size : un multiple de 8 (8 px, 16 px etc…) ;
+    
+  }
+body 
+<nav class="navbar navbar-dark bg-dark">
+  <!-- Navbar content -->
+</nav>
+
+<nav class="navbar navbar-dark bg-primary">
+  <!-- Navbar content -->
+</nav>
+
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+  <!-- Navbar content -->
+</nav> 
