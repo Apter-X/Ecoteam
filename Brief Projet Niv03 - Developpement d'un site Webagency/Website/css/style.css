@@ -2,3 +2,14 @@
 [class*="col-"]{
     padding: 1rem;
 }
+body{
+    font-family: 'Roboto Slab', serif;
+}
+hr{
+    size: 90px;
+    width: 20px;
+    background-color:red;
+}
+#btn1{
+    background-color: royalblue;
+}
