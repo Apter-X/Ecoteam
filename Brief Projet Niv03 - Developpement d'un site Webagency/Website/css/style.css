@@ -1,3 +1,36 @@
+@import url('https://fonts.google.com/?query=roboto&selection.family=Roboto+Condensed');
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #0d7ae7;
+    
+}
+
+.navbar{
+    padding: .8rem;
+}
+
+.navbar-nav li{
+    padding-right: 2px;
+}
+
+/* .nav-link{
+    font-size: 1.1em !important;
+} */
+
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50);
+}
+
 /* Bootstrap Padding Fix */
 [class*="col-"]{
     padding: 1rem;
