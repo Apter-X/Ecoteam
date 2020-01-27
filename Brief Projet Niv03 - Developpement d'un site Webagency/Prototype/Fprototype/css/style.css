@@ -98,3 +98,15 @@ img{
   text-align: center;
 }
 
+#test{
+  background-color: aqua;
+  height: 1000px;
+}
+#test1{
+  background-color:red;
+  height: 1000px;
+}
+#test2{
+  background-color:blue;
+  height: 1000px;
+}
