@@ -15,6 +15,7 @@
    <link rel="stylesheet" href="css/fontawesome.min.css">
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/animate/animate.css">
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    <!--google fonts-->
    <link href="https://fonts.googleapis.com/css?family=Alata|Gelasio|Libre+Caslon+Text|Merriweather|Montserrat|PT+Sans|Playfair+Display|Poppins|Roboto|Roboto+Slab&display=swap" rel="stylesheet">
@@ -25,7 +26,7 @@
 
 <body id="body">
    <!--home section-->
-   <section class="wow  zoomIn" id="home">
+   <section id="home" data-aos="zoom-in">
       <div id="cover" class="scroll">
          <div id="content">
             <div id="content-inner">
@@ -68,11 +69,11 @@
             </div>
 
             <div id="heading">
-               <div class="text animated zoomIn delay-2s">
+               <div  data-aos="zoom-in">
                   <h2>L'expérience est le meilleur guide.</h2>
                   <p>Il est maintenant temps d'apporter votre projet au niveau supérieur.</p>
                </div>
-               <div class="animated zoomIn delay-2s">
+               <div data-aos="animated zoomIn delay-2s">
                   <button class="btn-general btn-white" href="newletter.html">Souscrire</button>
                </div>
             </div>
@@ -80,7 +81,9 @@
       </div>
    </section>
 
-   <section id="service"class="wow  bounceInRight"> 
+   <section id="service" data-aos="fade-down"
+   data-aos-easing="linear"
+   data-aos-duration="1500"> 
 
       <div class="box-content">
         <div class="title-content">    </div>
@@ -100,25 +103,26 @@
        </div>
     
     </section>
-  <section id="test" class="wow  bounceInRight">
+  <section id="test" data-aos="fade-up">
 
   </section>
-  <section id="test1" class="wow  bounceOutLeft">
+  <section id="test1" data-aos="fade-down-left">
 
 </section>
 
-<section id="test2" class="wow  flipInY">
+<section id="test2" data-aos="flip-left">
 
 </section>
    <!--script js et jquery-->
-   <script src="js/wow.min.js"></script>
-   <script>
-   new WOW().init();
-   </script>
+   
    <script src="js/jquery-3.4.1.js"></script>
    <script src="js/script.js"></script>
    <script src="js/bootstrap.min.js"></script>
    <script src="js/popper.js"></script>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init();
+    </script>
 </body>
 
 
