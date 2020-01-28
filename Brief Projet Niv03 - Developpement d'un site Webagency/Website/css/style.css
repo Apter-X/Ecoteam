@@ -11,6 +11,16 @@ body {
   padding: 1rem;
 }
 
+/* Home Slider */
+.carousel-inner img {
+    width: 100%;
+    height: 10%;
+  }
+  
+  .carousel-caption {
+    top: 40%;
+  }
+
 .btn-primary {
   background-color: #34c6d3 !important;
   border: 1px solid #64707b !important;
@@ -59,15 +69,7 @@ hr{
         
   
       }
-/* Home Slider */
-.carousel-inner img {
-  width: 100%;
-  height: 10%;
-}
-
-.carousel-caption {
-  top: 40%;
-}
+    }
 
 hr {
   width: 50%;
