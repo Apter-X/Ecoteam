@@ -13,13 +13,13 @@ body {
 
 /* Home Slider */
 .carousel-inner img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .carousel-caption {
-    top: 40%;
-  }
+  width: 100%;
+  height: auto;
+}
+
+.carousel-caption {
+  top: 40%;
+}
 
 .btn-primary {
   background-color: #34c6d3 !important;
@@ -35,111 +35,132 @@ body {
 }
 
 /* Bootstrap Padding Fix */
-[class*="col-"]{
-    padding: 1rem;
+[class*="col-"] {
+  padding: 1rem;
 }
+
 /*about section */
-hr{
-    
-    width: 50%;
-    margin-right:40%;
-    background-color:#34c6d3;
+hr {
+
+  width: 50%;
+  margin-right: 40%;
+  background-color: #34c6d3;
 }
-#btn{
-    background-color: #34c6d3;
-    border: none;
-    margin-top: 10%;
+
+#btn {
+  background-color: #34c6d3;
+  border: none;
+  margin-top: 10%;
 }
-#btn:hover{
-  background-color:#41464b;
+
+#btn:hover {
+  background-color: #41464b;
 }
-.slider{
-    background-image: url(../img/1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 60vh;
-    animation: slide 40S infinite linear;
-    box-shadow: 1px 2px 10px 5px #64707b;
+
+.slider {
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  animation: slide 20S infinite linear;
+  box-shadow: 1px 2px 10px 5px #64707b;
+}
+
+@keyframes slide {
+  0% {
+    background: url(../img/7.jpg);
+
   }
 
-  @keyframes slide{
-    0%{
-        background: url(../img/7.jpg);
-        
-  
-      }
-    }
+  25% {
+    background: url(../img/2.jpg);
 
+  }
+
+  50% {
+    background: url(../img/4.jpg);
+  }
+
+  75% {
+    background: url(../img/5.jpg);
+
+  }
+
+  100% {
+    background: url(../img/6.jpg);
+  }
+}
+
+/**/
 hr {
   width: 50%;
   margin-right: 40%;
   background-color: #34c6d3;
 }
 
-    }
-    100%{
-      background: url(../img/5.jpg);
-      
-    }
-    <!-- Learning Section -->
-  }
-  .counter {
-    background-color:#f5f5f5;
-    padding: 20px 0;
-    border-radius: 5px;
+.counter {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  border-radius: 5px;
 }
 
 .count-title {
-    font-size: 40px;
-    font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: 0;
-    text-align: center;
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .count-text {
-  
-    font-size: 13px;
-    font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: 0;
-    text-align: center;
+
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
 }
 
 .fa-2x {
-    margin: 0 auto;
-    float: none;
-    display: table;
-    color: #4ad1e5;
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: #4ad1e5;
 }
-  }
-  /* pricing*/
-  #btn1{
-    background-color: #34c6d3;
-    color: white;
-    border: none;
-    margin-top: 10%;
+
+/* pricing*/
+#btn1 {
+  background-color: #34c6d3;
+  color: white;
+  border: none;
+  margin-top: 10%;
 }
-#btn1:hover{
-  background-color:#41464b;
+
+#btn1:hover {
+  background-color: #41464b;
 }
-#btn2{
+
+#btn2 {
   background-color: #34c6d3;
   border: none;
   margin-top: 10%;
 }
-#btn2:hover{
-background-color:#41464b;
+
+#btn2:hover {
+  background-color: #41464b;
 }
-#btn3{
+
+#btn3 {
   background-color: #34c6d3;
   border: none;
   margin-top: 10%;
 }
-#btn3:hover{
-background-color:#41464b;
+
+#btn3:hover {
+  background-color: #41464b;
 }
+
 #btn1 {
   background-color: #34c6d3;
 }
