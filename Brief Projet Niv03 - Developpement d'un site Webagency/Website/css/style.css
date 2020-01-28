@@ -63,7 +63,7 @@ hr {
   background-repeat: no-repeat;
   background-position: center;
   height: 60vh;
-  animation: slide 20S infinite linear;
+  animation: slide 30S infinite linear;
   box-shadow: 1px 2px 10px 5px #64707b;
 }
 
@@ -167,6 +167,3 @@ hr {
   background-color: #41464b;
 }
 
-#btn1 {
-  background-color: #34c6d3;
-}
