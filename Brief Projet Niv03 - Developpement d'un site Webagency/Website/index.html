@@ -9,15 +9,15 @@
   <!-- Links -->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
   <link rel="stylesheet" href="css/animation/animate.css" type="text/css" />
-  <link href="css/vendors/bootstrap.min.css" rel="stylesheet" type="text/css" />
-  <link href="css/vendors/font-awesome_5.12.0.min.css" rel="stylesheet" type="text/css" />
+  <link href="css/vendors/bootstrap.css" rel="stylesheet" type="text/css" />
+  <link href="css/vendors/font-awesome.min.css" rel="stylesheet" type="text/css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <title>Ecoweb</title>
 </head>
 
 <body>
-  <!-- Section Home -->
+  <!--------------------- Section Home --------------------->
   <section id="home">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -99,12 +99,12 @@
   </section>
 
 
-  <!-- Services Section -->
+  <!--------------------- Services Section --------------------->
   <section id="services">
 
   </section>
 
-  <!-- About Us Section -->
+  <!--------------------- About Us Section --------------------->
   <section id="about">
     <div class="container">
       <div class="row">
@@ -126,29 +126,68 @@
     </div>
   </section>
 
-  <!-- Releases Section -->
+  <!--------------------- Releases Section --------------------->
   <section id="releases">
-
+    <div class="jumbotron text-center">
+      <h1>Portfolio</h1>
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center mb-5">
+          <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
+          <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Mountains</button>
+          <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Sea</button>
+        </div>
+      </div>
+  
+      <div class="gallery" id="gallery">
+        <div class="mb-3 pics animation all 2">
+          <a href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" data-size="1600x1067">
+            <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
+              alt="Card image cap">
+          </a>
+        </div>
+  
+        <div class="mb-3 pics animation all 1">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg" alt="Card image cap">
+        </div>
+  
+        <div class="mb-3 pics animation all 1">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg" alt="Card image cap">
+        </div>
+  
+        <div class="mb-3 pics animation all 2">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+            alt="Card image cap">
+        </div>
+  
+        <div class="mb-3 pics animation all 2">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+            alt="Card image cap">
+        </div>
+  
+        <div class="mb-3 pics animation all 1">
+          <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Vertical/mountain3.jpg" alt="Card image cap">
+        </div>
+      </div>
+    </div>
   </section>
 
-  <!-- Team Section -->
+  <!--------------------- Team Section --------------------->
   <section id="team">
 
   </section>
 
-  <!-- Clients Section -->
+  <!--------------------- Clients Section --------------------->
   <section id="clients">
 
   </section>
 
-  <!-- Testimonials Section -->
+  <!--------------------- Testimonials Section --------------------->
   <section id="testimonials">
 
   </section>
 
-  <!-- Pricing Section -->
+  <!--------------------- Pricing Section --------------------->
   <section id="pricing">
-    <!---pricing--->
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4 center">Pricing</h1>
       <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique maxime possimus in dolorum
@@ -202,7 +241,7 @@
       </div>
   </section>
 
-  <!-- Learning Section -->
+  <!--------------------- Learning Section --------------------->
   <section id="learning">
     </div>
     <div class="row text-center">
@@ -271,6 +310,39 @@
 
       <!-- Contact Footer Section -->
       <section id="contact">
+		<div class="row text-center">
+	        <div class="col">
+	        <div class="counter">
+            <i class="fa fa-arrow-circle-down" style="font-size:36px"></i>    
+            <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
+       <p class="count-text ">Downloads</p>
+    </div>
+	        </div>
+              <div class="col">
+               <div class="counter">
+                <i class="fa fa-diamond" style="font-size:36px"></i>
+      <h2 class="timer count-title count-number" data-to="1700" data-speed="1500"></h2>
+      <p class="count-text ">Awards</p>
+    </div>
+              </div>
+              <div class="col">
+                  <div class="counter">
+                    <i class="fa fa-thumbs-up" style="font-size:36px"></i>
+      <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+      <p class="count-text "> Likes</p>
+    </div></div>
+              <div class="col">
+              <div class="counter">
+                <i class="fa fa-handshake-o" style="font-size:36px"></i>
+                <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+      <p class="count-text "> Recommended</p>
+    </div>
+              </div>
+         </div>
+  </section>
+
+  <!--------------------- Contact Footer Section --------------------->
+  <section id="contact">
 
       </section>
 
@@ -282,6 +354,13 @@
       <script>
         AOS.init();
       </script>
+  <!-- Scripts -->
+  <script src="js/vendors/popper.js"></script>
+  <script src="js/vendors/jquery_3.4.1.js"></script>
+  <script src="js/vendors/bootstrap_4.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 
 </html>
