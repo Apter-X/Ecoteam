@@ -31,7 +31,7 @@ body {
 }
 
 .navbar-nav li {
-  /* padding-right: 2rem; */
+  padding-right: 1rem;
 }
 
 /* Bootstrap Padding Fix */
