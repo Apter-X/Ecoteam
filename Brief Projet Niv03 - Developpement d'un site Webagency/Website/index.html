@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/animation/animate.css" type="text/css" />
     <link href="css/vendors/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="css/vendors/font-awesome_5.12.0.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Ecoweb</title>
   </head>
@@ -109,15 +110,14 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4" >
-           <h2>Qui somme nous</h2>
+           <h2 data-aos="fade-down">Qui somme nous</h2>
            <hr>
            <p>Ecoweb est une agence web de services professionnels, fournissant des solutions de marketing.
             Nous sommes fiers de veiller à ce que nos projets soient produits selon les normes les plus élevées. Nous offrons une gamme complète de services et d’expertise dans les domaines de la stratégie, du digital, de la technologie, de la création et de la communication d’entreprise.</p> 
-            <button type="button"  id="btn1" class="btn btn-success">Nos Réalisations</button>
+            <button type="button"  id="btn1" class="btn btn-success" data-aos="zoom-in-right">Nos Réalisations</button>
           </div>
-          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-               <div class="slider"></div>
-          </div>
+          <div class=" slider col-xs-12 col-sm-12 col-md-8 col-lg-8 ">
+            
         </div>
 
       </div>
@@ -214,5 +214,9 @@
     <script src="js/vendors/jquery-3.2.1.slim.min.js"></script>
     <script src="js/vendors/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+       AOS.init();
+     </script>
   </body>
 </html>
