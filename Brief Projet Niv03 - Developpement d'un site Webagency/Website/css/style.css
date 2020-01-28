@@ -6,12 +6,14 @@ body {
   font-family: "Roboto Condensed", sans-serif;
 }
 
-/* Bootstrap Padding Fix */
+/****************Bootstrap Padding Fix*************/
+
 [class*="col-"] {
   padding: 1rem;
 }
 
-/* Home Slider */
+/****************Home Slider*************/
+
 .carousel-inner img {
   width: 100%;
   height: auto;
@@ -21,10 +23,7 @@ body {
   top: 40%;
 }
 
-.btn-primary {
-  background-color: #34c6d3 !important;
-  border: 1px solid #64707b !important;
-}
+
 
 .navbar {
   padding: 0.8rem;
@@ -34,12 +33,10 @@ body {
   padding-right: 1rem;
 }
 
-/* Bootstrap Padding Fix */
-[class*="col-"] {
-  padding: 1rem;
-}
+/****************Services section*************/
 
-/*about section */
+
+/****************About Us Section*************/
 hr {
 
   width: 50%;
@@ -92,50 +89,54 @@ hr {
   }
 }
 
-/**/
-hr {
-  width: 50%;
-  margin-right: 40%;
-  background-color: #34c6d3;
+/****************Releases Section*************/
+/* Release Gallery */
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
 }
 
-.counter {
-  background-color: #f5f5f5;
-  padding: 20px 0;
-  border-radius: 5px;
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
 }
 
-.count-title {
-  font-size: 40px;
-  font-weight: normal;
-  margin-top: 10px;
-  margin-bottom: 0;
-  text-align: center;
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
-.count-text {
-
-  font-size: 13px;
-  font-weight: normal;
-  margin-top: 10px;
-  margin-bottom: 0;
-  text-align: center;
-  
-    font-size: 20px;
-    font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: 0;
-    text-align: center;
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
 }
 
-.fa-2x {
-  margin: 0 auto;
-  float: none;
-  display: table;
-  color: #4ad1e5;
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
 }
 
-/* pricing*/
+/****************Team Section****************/
+
+
+/****************Clients Section*************/
+
+/****************Testimonials Section*********/
+
+/****************Pricing Section*************/
 #btn1 {
   background-color: #34c6d3;
   color: white;
@@ -171,36 +172,43 @@ hr {
   background-color: #34c6d3;
 }
 
-/* Release Gallery */
-.gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%; }
-  .gallery .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease; }
-  .gallery .animation {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
-  
-  @media (max-width: 450px) {
-  .gallery {
-  -webkit-column-count: 1;
-  -moz-column-count: 1;
-  column-count: 1;
-  -webkit-column-width: 100%;
-  -moz-column-width: 100%;
-  column-width: 100%;
-  }
-  }
-  
-  @media (max-width: 400px) {
-  .btn.filter {
-  padding-left: 1.1rem;
-  padding-right: 1.1rem;
-  }
-  }
+/****************Learning Section*************/
+.counter {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  border-radius: 5px;
+}
+
+.count-title {
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.count-text {
+
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.fa-2x {
+  margin: 0 auto;
+  float: none;
+  display: table;
+  color: #4ad1e5;
+}
+
+/****************Contact Footer Section*************/
+
+
