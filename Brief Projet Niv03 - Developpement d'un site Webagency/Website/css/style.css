@@ -4,8 +4,16 @@ body{
     height: 100%;
     width: 100%;
     font-family: 'Roboto Condensed', sans-serif;
-    color: #0d7ae7;
-    
+}
+
+/* Bootstrap Padding Fix */
+[class*="col-"]{
+    padding: 1rem;
+}
+
+.btn-primary{
+    background-color: #34c6d3 !important;
+    border: 1px solid #64707b !important;
 }
 
 .navbar{
@@ -16,33 +24,22 @@ body{
     padding-right: 2px;
 }
 
-/* .nav-link{
-    font-size: 1.1em !important;
-} */
-
+/* Home Slider */
 .carousel-inner img{
     width: 100%;
-    height: auto;
+    height: 10%;
 }
 
 .carousel-caption{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50);
+    top: 40%;
 }
 
-/* Bootstrap Padding Fix */
-[class*="col-"]{
-    padding: 1rem;
-}
-body{
-    font-family: 'Roboto Slab', serif;
-}
 hr{
     size: 90px;
     width: 20px;
     background-color:red;
 }
+
 #btn1{
-    background-color: royalblue;
+    background-color: #34c6d3;
 }
