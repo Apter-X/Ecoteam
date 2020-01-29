@@ -37,7 +37,7 @@ body {
 
 
 /****************About Us Section*************/
-hr {
+.hr1 {
 
   width: 50%;
   margin-right: 40%;
@@ -210,5 +210,26 @@ hr {
 }
 
 /****************Contact Footer Section*************/
+#contact1{
+  background-color: #64707b;
+}
+#envoyer{
+  background-color: #34c6d3;
+  border: none;
+}
 
+#envoyer:hover {
+  background-color: #41464b;
+}
+.fab:hover{
+  animation: zoomIn 1s ;
 
+}
+.navbar1-nav {
+  display: flex;
+}
+.navbar1-nav li
+{
+   list-style: none;
+   display: inline;
+}
