@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
+   <!-- Swiper -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <!-- Links -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -13,6 +16,7 @@
   <link rel="stylesheet" href="css/animation/animate.css" type="text/css" />
   <link href="css/vendors/bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="css/vendors/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Swiper -->
@@ -481,8 +485,8 @@
   <section id="learning">
     <div class="Never Stop Learning-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h1 class="display-4 center">Never Stop Learning</h1>
-      <div class="row text-center">
-          <div class="col">
+      <div class="row text-center" id="cl">
+          <div class="col" >
             <div class="counter">
               <i class="fa fa-arrow-circle-down" style="font-size:36px"></i>
               <h2 class="timer count-title count-number" data-to="100" data-speed="1500"></h2>
@@ -651,7 +655,7 @@
         coverflowEffect: {
         rotate: 60,
         stretch: 0,
-        depth: 200,
+        depth: 100,
         modifier: 5,
         slideShadows : true,
         },
