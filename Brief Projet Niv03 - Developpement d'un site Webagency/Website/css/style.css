@@ -166,7 +166,7 @@ p2{
   color: #41464B;
 
 }
-
+/* Swiper */
   .swiper-container {
     width: 100%;
     padding-top: 200px;
@@ -175,7 +175,7 @@ p2{
   .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 300px;
+    width: 200px;
     height: 380px;
     background:lightgray;
 
