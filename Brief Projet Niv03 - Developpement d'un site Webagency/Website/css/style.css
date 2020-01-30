@@ -5,7 +5,13 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
+  margin: 0;
+  padding: 0;
 }
+
+/* .btn-primary{
+  background-color: aquamarine !important;
+} */
 
 /****************Bootstrap Padding Fix*************/
 
@@ -269,8 +275,11 @@ color: blue;
   background-color: #f5f5f5;
   padding: 20px 0;
   border-radius: 5px;
+  
 }
-
+#cl{
+  margin: 3%;
+}
 .count-title {
   font-size: 40px;
   font-weight: normal;
@@ -278,7 +287,6 @@ color: blue;
   margin-bottom: 0;
   text-align: center;
 }
-
 .count-text {
 
   font-size: 13px;
@@ -292,13 +300,6 @@ color: blue;
   margin-top: 10px;
   margin-bottom: 0;
   text-align: center;
-}
-
-.fa-2x {
-  margin: 0 auto;
-  float: none;
-  display: table;
-  color: #4ad1e5;
 }
 
 /****************Contact Footer Section*************/
@@ -319,6 +320,6 @@ color: blue;
 }
 #nvf{
   position: absolute;
-  left: 60px;
+  left: 2%;
   top: 13px;
 }
