@@ -3,7 +3,13 @@ body {
   width: 100%;
   font-family: "Roboto Condensed", sans-serif;
   background: #fff;
+  margin: 0;
+  padding: 0;
 }
+
+/* .btn-primary{
+  background-color: aquamarine !important;
+} */
 
 /****************Bootstrap Padding Fix*************/
 
