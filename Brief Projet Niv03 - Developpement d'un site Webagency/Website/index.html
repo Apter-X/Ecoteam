@@ -3,9 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
+   <!-- Swiper -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <!-- Links -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -13,11 +16,14 @@
   <link rel="stylesheet" href="css/animation/animate.css" type="text/css" />
   <link href="css/vendors/bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="css/vendors/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Swiper -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+  <!-- Testimonials -->
+  <link rel="stylesheet" href="css/testimonial-style.css">
   <!--font awesome-->
   <script src="https://kit.fontawesome.com/21508b4b05.js" crossorigin="anonymous"></script>
 
@@ -388,8 +394,56 @@
       <h1 data-aos="fade-down">Testimonials</h1>
       <div class="underline">
       <hr size="9" noshade>
-      </div>
-  </section>
+    </div>
+
+    <!-- partial:index.partial.html -->
+    <section id="testim" class="testim">
+	  <!--   <div class="testim-cover"> -->
+      <div class="wrap">
+        <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+        <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+        <ul id="testim-dots" class="dots">
+          <li class="dot active"></li><!--
+          --><li class="dot"></li><!--
+          --><li class="dot"></li><!--
+          --><li class="dot"></li><!--
+          --><li class="dot"></li>
+        </ul>
+      <div id="testim-content" class="cont">
+        <div class="active">
+          <div class="img"><img src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg" alt=""></div>
+            <h2>Lorem P. Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+          </div>
+
+          <div>
+            <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt=""></div>
+              <h2>Mr. Lorem Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+            </div>
+
+            <div>
+              <div class="img"><img src="https://image.ibb.co/iN3qES/pexels_photo_324658.jpg" alt=""></div>
+                <h2>Lorem Ipsum</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+              </div>
+
+              <div>
+                <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt=""></div>
+                  <h2>Lorem De Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                </div>
+
+              <div>
+                <div class="img"><img src="https://image.ibb.co/gUPag7/image.jpg" alt=""></div>
+                  <h2>Ms. Lorem R. Ipsum</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+              </div>
+            </div>
+          </div>
+  <!--   </div> -->
+        </section>
+      </section>
 
   <!--------------------- Pricing Section --------------------->
   <section id="pricing">
@@ -612,12 +666,15 @@
 
   </section>
 
+  <div title="Scripts">
       <!-- Scripts -->
       <script src="js/vendors/popper.js"></script>
       <script src="js/vendors/jquery_3.4.1.js"></script>
       <script src="js/vendors/bootstrap_4.4.1.js"></script>
       <script src="js/scripts.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Testimonials -->
+      <script src="js/testimonial-script.js"></script>
       <!-- Swiper JS -->
       <script src="https://unpkg.com/swiper/js/swiper.js"></script>
       <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
@@ -632,7 +689,7 @@
         coverflowEffect: {
         rotate: 60,
         stretch: 0,
-        depth: 200,
+        depth: 100,
         modifier: 5,
         slideShadows : true,
         },
@@ -641,6 +698,7 @@
         },
       });
       </script>
+  </div>
 </body>
 
 </html>
