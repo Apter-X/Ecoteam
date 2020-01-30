@@ -114,4 +114,6 @@ $(function() {
     var img = document.getElementsByClassName("click");
        img.addEventListener(click , function(){
             img.style.transform = "scale(2)";
-       });
+	   });
+	   
+	   

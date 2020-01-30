@@ -1,9 +1,8 @@
-@import url("https://fonts.google.com/?query=roboto&selection.family=Roboto+Condensed");
-
 body {
   height: 100%;
   width: 100%;
   font-family: "Roboto Condensed", sans-serif;
+  background: #fff;
 }
 
 /****************Bootstrap Padding Fix*************/
@@ -130,7 +129,91 @@ body {
 }
 
 /****************Team Section****************/
+.intro
+{
+  margin: 30px;
+  text-align: center;
+  color: #fff;
+}
+.intro h1{
+  font-size: 40px;
+  color: #41464B;
+  text-transform: uppercase;
+}
+.intro .underline
+{
+   
+  float: center;
+}
+.intro hr{
+  padding: 0 2 0px 9px;
+margin: 9_px;
+width: 100px;
+}
 
+
+
+p2{
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+}
+
+.intro h5{
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
+  color: #41464B;
+
+}
+
+  .swiper-container {
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 380px;
+    background:lightgray;
+
+  }
+  .swiper-slide .img
+  {
+width: 100%;
+height: 300px;
+overflow: hidden;
+
+}
+
+.swiper-slide .img img
+{
+    width: 100%;
+
+}
+
+  .swiper-slide .details
+  {
+box-sizing: border-box;
+padding: 20px;
+
+  }
+  .swiper-slide .details h3
+  {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      text-align: center;
+      line-height: 20px;
+
+  }
+  .swiper-slide .details h3 span
+  {
+font-size:16px ;
+color: blue;
+  }
 
 /****************Clients Section*************/
 
