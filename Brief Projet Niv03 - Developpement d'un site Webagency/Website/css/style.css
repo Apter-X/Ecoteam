@@ -211,7 +211,7 @@ body {
 
 /****************Contact Footer Section*************/
 #contact1{
-  background-color: #64707b;
+  background-color: #b7bec4;
 }
 #envoyer{
   background-color: #34c6d3;
@@ -225,11 +225,8 @@ body {
   animation: zoomIn 1s ;
 
 }
-.navbar1-nav {
-  display: flex;
-}
-.navbar1-nav li
-{
-   list-style: none;
-   display: inline;
+#nvf{
+  position: absolute;
+  left: 60px;
+  top: 13px;
 }
