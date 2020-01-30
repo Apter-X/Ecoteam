@@ -7,10 +7,6 @@ body {
   padding: 0;
 }
 
-/* .btn-primary{
-  background-color: aquamarine !important;
-} */
-
 /****************Bootstrap Padding Fix*************/
 
 [class*="col-"] {
@@ -224,6 +220,7 @@ color: blue;
 /****************Clients Section*************/
 
 /****************Testimonials Section*********/
+/* Disponible dans css/testimonial-style.css */
 
 /****************Pricing Section*************/
 #btn1 {
