@@ -260,6 +260,10 @@ color: blue;
   background-color: #f5f5f5;
   padding: 20px 0;
   border-radius: 5px;
+  
+}
+#cl{
+  margin: 3%;
 }
 .count-title {
   font-size: 40px;
