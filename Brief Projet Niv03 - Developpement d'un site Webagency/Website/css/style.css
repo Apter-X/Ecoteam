@@ -37,11 +37,16 @@ body {
 }
 
 /****************Services section*************/
+<<<<<<< HEAD
+#services 
+
+=======
 #font-service{
   margin-left: 30%;
   margin-bottom: 10%;
   width: 5em;
 }
+>>>>>>> 2ec56b5405b1f8041a63c53b251f2c8c78392786
 
 /****************About Us Section*************/
 #about{
