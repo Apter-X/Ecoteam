@@ -46,7 +46,8 @@ body {
 
 /****************About Us Section*************/
 #about{
-  margin: 10%;
+  margin: 20%;
+  padding: 50%
 }
 .hr1 {
 
@@ -144,7 +145,8 @@ body {
 
 /****************Team Section****************/
 #team{
-  background-color: #64707b;
+background-color: #64707b;
+padding: 1%;
 }
 
 .cl{
@@ -196,7 +198,7 @@ p2{
 /* Swiper */
   .swiper-container {
     width: 100%;
-    padding-top: 100px;
+    padding-top: 1px;
     padding-bottom: 50px;
   }
   .swiper-slide {
@@ -248,11 +250,14 @@ color:#34c6d3;
 #testimonials
  {
    background-color: #64707b;
+   padding: 5%;
  }
 /* Disponible dans css/testimonial-style.css */
 
 /****************Pricing Section*************/
-
+#pricing{
+  padding: 3%;
+}
 #clients{
   margin: 10%;
 }
@@ -292,6 +297,9 @@ color:#34c6d3;
 }
 
 /****************Learning Section*************/
+#learning{
+  padding: 5%;
+}
 .counter {
   background-color: #64707b;
   padding: 20px 0;
@@ -325,6 +333,7 @@ color:#34c6d3;
 
 /****************Contact Footer Section*************/
 #contact1{
+  padding: 5%;
   background-color: #64707b;
 }
 #envoyer{
