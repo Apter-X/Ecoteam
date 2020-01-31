@@ -37,6 +37,7 @@ body {
 }
 
 /****************Services section*************/
+#services 
 
 
 /****************About Us Section*************/
@@ -59,7 +60,9 @@ body {
 #btn:hover {
   background-color: #41464b;
 }
-
+#about {
+  background-color: #64707b;
+}
 .slider {
   background-image: url(../img/1.jpg);
   background-size: cover;
@@ -136,6 +139,19 @@ body {
 }
 
 /****************Team Section****************/
+#team{
+  background-color: #64707b;
+}
+
+.cl{
+  color:white;
+}
+#cl{
+  color: #fff;
+}
+#cl2{
+  color: #fff;
+}
 .intro
 {
   
@@ -225,6 +241,10 @@ color:#34c6d3;
 /****************Clients Section*************/
 
 /****************Testimonials Section*********/
+#testimonials
+ {
+   background-color: #64707b;
+ }
 /* Disponible dans css/testimonial-style.css */
 
 /****************Pricing Section*************/
@@ -269,7 +289,7 @@ color:#34c6d3;
 
 /****************Learning Section*************/
 .counter {
-  background-color: #f5f5f5;
+  background-color: #64707b;
   padding: 20px 0;
   border-radius: 5px;
   
@@ -301,7 +321,7 @@ color:#34c6d3;
 
 /****************Contact Footer Section*************/
 #contact1{
-  background-color: #b7bec4;
+  background-color: #64707b;
 }
 #envoyer{
   background-color: #34c6d3;
