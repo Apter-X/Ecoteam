@@ -37,7 +37,11 @@ body {
 }
 
 /****************Services section*************/
-
+#font-service{
+  margin-left: 30%;
+  margin-bottom: 10%;
+  width: 5em;
+}
 
 /****************About Us Section*************/
 #about{
