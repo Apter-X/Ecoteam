@@ -257,8 +257,7 @@ p2 {
 
 /****************Clients Section*************/
 #client-carousel img{
-  
-  height: 13em;
+  height: 6rem;
 }
 
 /****************Testimonials Section*********/
@@ -274,7 +273,7 @@ p2 {
 /****************Pricing Section*************/
 
 #clients {
-  margin: 10%;
+  /* margin: 10%; */
 }
 
 #btn1 {
