@@ -257,6 +257,10 @@ p2 {
 }
 
 /****************Clients Section*************/
+#client-carousel img{
+  
+  height: 13em;
+}
 
 /****************Testimonials Section*********/
 #testimonials {
