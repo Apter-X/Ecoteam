@@ -250,6 +250,10 @@ color:#34c6d3;
   }
 
 /****************Clients Section*************/
+#client-carousel img{
+  
+  height: 13em;
+}
 
 /****************Testimonials Section*********/
 #testimonials
@@ -337,7 +341,7 @@ color:#34c6d3;
 
 /****************Contact Footer Section*************/
 #contact1{
-  padding: 5%;
+  /* padding: 5%; */
   background-color: #64707b;
 }
 #envoyer{
