@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Required meta tag-->
+    <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <!--Titre-->
+    <title>Document</title>
+    <!--style CSS-->
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+ <!--font awesome-->
+ <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+ ">
+    <!--animate css-->
+<link rel="stylesheet" href="css/animate.css">
+<!--google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+       <!--Service Section-->
+      </section>
+
+      <div id="scrol"></div>
+      
+      <section id="service"> 
+      
+        <div class="box-content">
+      
+          <div class="title-content"></div>
+            <h1>SERVICES</h1>
+      
+            <div class="underline"></div>
+            <hr size="9" noshade>
+    
+    
+            <div class="container">
+    
+               <!--First Row-->
+               <div class="row">
+    
+                <div class="col-md-4"> 
+                  <img class="img-icon" alt="icon" src="https://img.icons8.com/color/50/000000/laptop--v1.png">
+                  <h4>FORMATION WEB</h4>
+                  
+                  <p>Référencement - CMS – Photoshop - Dreamweaver – Marketing et Communication.</p>
+                   </div>
+                <div class="col-md-4">
+                  <img class="img-icon" alt="icon" src="https://img.icons8.com/color/50/000000/android.png"> <h4>APPLICATION MOBILE</h3>
+                  
+                  <p>Soyez toujours connecté avec  une application mobile synchronisé à votre site web.</p>
+                   </div>
+                <div class="col-md-4"> 
+                  <img class="img-icon" alt="icon" src="https://img.icons8.com/dusk/50/000000/e-commerce.png">
+                  <h4>CRÉATION E-COMMERCE</h4>
+                  
+                  <p>L’Agence vous accompagne dans la création de votre site E-Commerce.</p>
+    
+    
+                </div>
+             
+                 <!--First columns-->
+                <div class="col-md-4"><img class="img-icon" alt="icon" src="https://img.icons8.com/clouds/50/000000/medal-window.png">
+                   <h4>RÉFÉRENCEMENT DE SITE</h4>
+                  
+                  <p>Optimisation de votre visibilité sur Google <br> et les autres moteurs de recherche.</p>
+                   </div>
+
+                <div class="col-md-4">  <img class="img-icon" alt="icon" src="https://img.icons8.com/nolan/50/facebook-f.png">
+                  <h4>COMMUNICATION GLOBALE</h4>
+                 
+                  <p>Insufflez une cohérence entre la communication Online et Offline et développez votre crédibilité.</p>
+                   
+                   </div>
+
+                <div class="col-md-4"> 
+                  <img class="img-icon" alt="icon" src="https://img.icons8.com/ultraviolet/50/000000/maintenance.png">
+                  <h4>MAINTENANCE DE SITE</h4>
+                  
+                  <p>Mises à jour, sauvegardes, et protection de votre site internet.</p>
+                   </div>
+    
+               
+            </div>
+          </div> 
+            </div>
+              
+                   
+      </section>
+
+      <section>
+        <div class="intro">
+            <h1>Equipes</h1>
+            <div class="underline">
+              <hr size="9" noshade>
+          </div>
+            <p2>Notre équipe couvre différents domaines de compétences.</p2>
+            <h5>Laissez-vous porter par nos conseils et notre expertise !</h5>
+          </div>
+        <!-- Team Swiper -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+          <div class="img">
+              <img src="/assets/img/ilias.jfif">
+              </div>
+              <div class="details">
+                  <h3> RAIHANI ILIAS <br><span> 
+                    DIRECTOR</span></h3>
+              </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="img">
+                    <img src="/assets/img/fati.jpg">
+                    </div>
+                    <div class="details">
+                        <h3> ZAHID FATIMA <br><span>PROGRAMER </span></h3>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img">
+                        <img src="/assets/img/mehdi.jpg">
+                        </div>
+                        <div class="details">
+                            <h3>QUARNOUF MEHDI <br><span> MARKETING</span></h3>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="img">
+                            <img src="/assets/img/abdel.jpg">
+                            </div>
+                            <div class="details">
+                                <h3> MARZOUK ABDELLAH<br><span> DESIGNER</span></h3>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="img">
+                                <img src="/assets/img/douae.jpg">
+                                </div>
+                                <div class="details">
+                                    <h3> LASRI DOUAE<br><span> PHOTOGRAPHER</span></h3>
+                                </div>
+                              </div>
+        
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+        
+  
+
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+      <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper('.swiper-container', {
+          effect: 'coverflow',
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: 'auto',
+          coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 200,
+            <modifier: 5,
+            slideShadows : true,
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+        });
+      </script>
+      </section>
+        
+    </body>
+    </html>

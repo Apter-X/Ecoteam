@@ -1,0 +1,385 @@
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/****************Bootstrap Padding Fix*************/
+
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/****************Home Slider*************/
+
+.carousel-inner img {
+  width: 100%;
+  height: 25rem;
+}
+
+.carousel-caption {
+  top: 40%;
+}
+
+#my-jumbotron {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding: 0.8rem;
+}
+
+.navbar-nav li {
+  padding-right: 1rem;
+}
+
+/****************Services section*************/
+#font-service {
+  margin-bottom: 10%;
+  margin-bottom: 10%;
+  width: 5em;
+  width: 4em;
+}
+
+/****************About Us Section*************/
+#about {
+ margin-top: 5%;
+ background-color: #64707b;;
+
+}
+
+
+
+#btn {
+  background-color: #34c6d3;
+  border: none;
+
+}
+
+#btn:hover {
+  background-color: #41464b;
+}
+
+#img1{
+  width: 100%;
+  height: auto;
+  clip-path: polygon(0 0, 87% 0, 100% 100%, 30% 100%);
+  box-shadow: 1px 2px 10px 5px #64707b;
+}
+.white{
+  color: white;
+}
+/*
+.slider {
+  background-image: url(../img/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  animation: slide 30S infinite linear;
+  box-shadow: 1px 2px 10px 5px #64707b;
+}
+
+@keyframes slide {
+  0% {
+    background: url(../img/7.jpg);
+
+  }
+
+  25% {
+    background: url(../img/2.jpg);
+
+  }
+
+  50% {
+    background: url(../img/4.jpg);
+  }
+
+  75% {
+    background: url(../img/5.jpg);
+
+  }
+
+  100% {
+    background: url(../img/6.jpg);
+  }
+}*/
+
+/****************Releases Section*************/
+/* Release Gallery */
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+
+.gallery .pics {
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.gallery .animation {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+
+/****************Team Section****************/
+#team {
+  background-color: #64707b;
+}
+
+.cl {
+  color: white;
+}
+
+#cl {
+  color: #fff;
+}
+
+#cl2 {
+  color: #fff;
+}
+
+.intro {
+
+  text-align: center;
+  color: #fff;
+}
+
+.intro h1 {
+  font-size: 25px;
+  color: #41464B;
+  text-transform: uppercase;
+}
+
+.intro .underline {
+
+  float: center;
+}
+
+.intro hr {
+  padding: 0 2 0px 9px;
+  width: 100px;
+}
+
+
+
+p2 {
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+}
+
+.intro h5 {
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
+  color: #41464B;
+
+}
+
+/* Swiper */
+.swiper-container {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 380px;
+  background: lightgray;
+
+}
+
+.swiper-slide .img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+
+}
+
+.swiper-slide .img img {
+  width: 100%;
+
+}
+
+.swiper-slide .details {
+  box-sizing: border-box;
+  padding: 20px;
+
+}
+
+.swiper-slide .details h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+  line-height: 20px;
+
+}
+
+.swiper-slide .details h3 span {
+  font-size: 16px;
+  color: #34c6d3;
+}
+
+/****************Clients Section*************/
+#client-carousel img{
+  height: 6rem;
+}
+
+/****************Testimonials Section*********/
+#testimonials {
+  background-color: #64707b;
+}
+
+/* Disponible dans css/testimonial-style.css */
+#clh{
+  color: white;
+}
+
+/****************Pricing Section*************/
+
+#clients {
+  /* margin: 10%; */
+}
+
+#btn1 {
+  background-color: #34c6d3;
+  color: white;
+  border: none;
+
+}
+
+#btn1:hover {
+  background-color: #41464b;
+}
+
+#btn2 {
+  background-color: #34c6d3;
+  border: none;
+  margin-top: 10%;
+}
+
+#btn2:hover {
+  background-color: #41464b;
+}
+
+#btn3 {
+  background-color: #34c6d3;
+  border: none;
+  margin-top: 10%;
+}
+
+#btn3:hover {
+  background-color: #41464b;
+}
+
+#btn1 {
+  background-color: #34c6d3;
+}
+
+/****************Learning Section*************/
+.counter {
+  background-color: #64707b;
+  padding: 20px 0;
+  border-radius: 5px;
+
+}
+
+#cl {
+  margin: 3%;
+}
+
+.count-title {
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.count-text {
+
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+/****************Contact Footer Section*************/
+#contact1 {
+  background-color: #64707b;
+}
+
+#envoyer {
+  background-color: #34c6d3;
+  border: none;
+}
+
+#envoyer:hover {
+  background-color: #41464b;
+}
+
+.fab:hover {
+  animation: zoomIn 1s;
+
+}
+
+#nvf {
+  position: absolute;
+  
+  top: 20%;
+  color: white;
+}
+#white{
+  color: white;
+}
+#white:hover{
+  background-color: #34c6d3;
+}
+#white1{
+  color: white;
+}
+#white2{
+  color: white;
+}
