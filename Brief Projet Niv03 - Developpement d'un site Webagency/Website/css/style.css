@@ -42,7 +42,7 @@ body {
 
 /****************Services section*************/
 #services{
-  padding: 5%;
+  padding: 2%;
 }
 #font-service {
   margin-bottom: 10%;
@@ -162,7 +162,7 @@ body {
 
 /****************Team Section****************/
 #team {
-  padding: 5%;
+  padding: 2%;
   background-color: #64707b;
 }
 
@@ -327,10 +327,6 @@ p2 {
 }
 
 /****************Learning Section*************/
-#learning{
-  padding: 5%;
- 
-}
 .counter {
   background-color: #64707b;
   padding: 20px 0;
@@ -367,7 +363,7 @@ p2 {
 
 /****************Contact Footer Section*************/
 #contact1 {
-  padding: 5%;
+  padding: 3%;
   background-color: #64707b;
 }
 
