@@ -20,7 +20,7 @@ body {
 
 .carousel-inner img {
   width: 100%;
-  height: 25rem;
+  height: auto;
 }
 
 .carousel-caption {
@@ -41,6 +41,9 @@ body {
 }
 
 /****************Services section*************/
+#services{
+  padding: 2%;
+}
 #font-service {
   margin-bottom: 10%;
   margin-bottom: 10%;
@@ -50,8 +53,10 @@ body {
 
 /****************About Us Section*************/
 #about {
+  padding: 5%;
  margin-top: 5%;
- background-color: #64707b;;
+ background-color: #64707b;
+
 
 }
 
@@ -68,10 +73,13 @@ body {
 }
 
 #img1{
-  width: 100%;
+  background-image: url(../img/6.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   height: auto;
+  width: 100%;
   clip-path: polygon(0 0, 87% 0, 100% 100%, 30% 100%);
-  box-shadow: 1px 2px 10px 5px #64707b;
 }
 .white{
   color: white;
@@ -154,6 +162,7 @@ body {
 
 /****************Team Section****************/
 #team {
+  padding: .5%;
   background-color: #64707b;
 }
 
@@ -210,7 +219,7 @@ p2 {
 /* Swiper */
 .swiper-container {
   width: 100%;
-  padding-top: 100px;
+  padding-top: 10px;
   padding-bottom: 50px;
 }
 
@@ -256,12 +265,16 @@ p2 {
 }
 
 /****************Clients Section*************/
+#clients{
+  padding: 5%;
+}
 #client-carousel img{
-  height: 6rem;
+  height: auto;
 }
 
 /****************Testimonials Section*********/
 #testimonials {
+  padding: 5%;
   background-color: #64707b;
 }
 
@@ -271,7 +284,9 @@ p2 {
 }
 
 /****************Pricing Section*************/
-
+#pricing{
+  padding: 5%;
+}
 #clients {
   /* margin: 10%; */
 }
@@ -348,6 +363,7 @@ p2 {
 
 /****************Contact Footer Section*************/
 #contact1 {
+  /* padding: 3%;     */
   background-color: #64707b;
 }
 
