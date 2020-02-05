@@ -39,6 +39,13 @@ body {
 .navbar-nav li {
   padding-right: 1rem;
 }
+ 
+span.navbar-toggler-icon
+{
+      z-index: 1;
+      background-color:#34c6d3;
+}
+
 
 /****************Services section*************/
 #services{
@@ -74,7 +81,7 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: auto;
+  height: 80vh;
   width: 100%;
   clip-path: polygon(0 0, 87% 0, 100% 100%, 30% 100%);
 }

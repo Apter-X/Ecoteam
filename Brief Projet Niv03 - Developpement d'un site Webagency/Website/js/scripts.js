@@ -15,3 +15,10 @@ var swiper = new Swiper('.swiper-container', {
       el: '.swiper-pagination',
     },
   });
+
+  $(function()
+{
+    $(".navbar-collapse ul li a").on("click touch",function(){
+     $(".navbar-toggler").click();
+    });
+});
