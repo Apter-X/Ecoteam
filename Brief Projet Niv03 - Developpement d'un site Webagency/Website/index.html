@@ -20,7 +20,7 @@
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Testimonials -->
-  <link rel="stylesheet" href="css/testimonial-style.css">
+  <link rel="stylesheet" href="css/vendors/testimonial-style.css">
   <!--font awesome-->
   <script src="https://kit.fontawesome.com/21508b4b05.js" crossorigin="anonymous"></script>
 
@@ -704,40 +704,23 @@
   <div title="Scripts">
     <script src="js/vendors/popper.js"></script>
     <script src="js/vendors/jquery_3.4.1.js"></script>
-    <script src="js/vendors/bootstrap_4.4.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/vendors/bootstrap_4.4.1.min.js"></script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Testimonials -->
-    <script src="js/testimonial-script.js"></script>
+    <script src="js/vendors/testimonial.js"></script>
     <!-- Link -->
-    <script src="js/link.js"></script>
+    <script src="js/vendors/link.js"></script>
     <!-- Paralax -->
-    <script src="js/paralax.js"></script>
+    <script src="js/vendors/paralax.js"></script>
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-          rotate: 60,
-          stretch: 0,
-          depth: 100,
-          modifier: 5,
-          slideShadows: true,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      });
-    </script>
+    <!-- AOS -->
+    <script>AOS.init();</script>
+    <!-- Our Scripts -->
+    <script src="js/scripts.js"></script>
+    <!-- Never Stop Learning Counter -->
+    <script src="js/vendors/counter.js"></script>
   </div>
 
 </body>

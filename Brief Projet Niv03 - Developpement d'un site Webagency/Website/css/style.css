@@ -60,12 +60,9 @@ body {
 
 }
 
-
-
 #btn {
   background-color: #34c6d3;
   border: none;
-
 }
 
 #btn:hover {
@@ -82,46 +79,9 @@ body {
   clip-path: polygon(0 0, 87% 0, 100% 100%, 30% 100%);
 }
 
-
-
 .white{
   color: white;
 }
-/*
-.slider {
-  background-image: url(../img/1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 60vh;
-  animation: slide 30S infinite linear;
-  box-shadow: 1px 2px 10px 5px #64707b;
-}
-
-@keyframes slide {
-  0% {
-    background: url(../img/7.jpg);
-
-  }
-
-  25% {
-    background: url(../img/2.jpg);
-
-  }
-
-  50% {
-    background: url(../img/4.jpg);
-  }
-
-  75% {
-    background: url(../img/5.jpg);
-
-  }
-
-  100% {
-    background: url(../img/6.jpg);
-  }
-}*/
 
 /****************Releases Section*************/
 /* Release Gallery */
