@@ -39,6 +39,13 @@ body {
 .navbar-nav li {
   padding-right: 1rem;
 }
+ 
+span.navbar-toggler-icon
+{
+      z-index: 1;
+      background-color:#34c6d3;
+}
+
 
 /****************Services section*************/
 #services{
