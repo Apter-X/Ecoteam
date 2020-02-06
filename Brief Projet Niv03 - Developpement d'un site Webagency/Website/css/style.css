@@ -83,7 +83,7 @@ span.navbar-toggler-icon
   background-size: cover;
   height: 80vh;
   width: 100%;
-  clip-path: polygon(0 0, 87% 0, 100% 100%, 30% 100%);
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 45% 100%);
 }
 @media (max-width: 760px) { 
 
