@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  
 
   <!-- Swiper -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <!-- Links -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
@@ -16,11 +15,12 @@
   <link rel="stylesheet" href="css/animation/animate.css" type="text/css" />
   <link href="css/vendors/bootstrap.css" rel="stylesheet" type="text/css" />
   <link href="css/vendors/font-awesome.min.css" rel="stylesheet" type="text/css" />
-
+  <!-- Gallery -->
+  <link rel="stylesheet" href="css/vendors/gallery.min.css">
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Testimonials -->
-  <link rel="stylesheet" href="css/testimonial-style.css">
+  <link rel="stylesheet" href="css/vendors/testimonial.min.css">
   <!--font awesome-->
   <script src="https://kit.fontawesome.com/21508b4b05.js" crossorigin="anonymous"></script>
 
@@ -31,9 +31,9 @@
   <!--------------------- Section Home --------------------->
   <section id="home">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/ecowebLOGO.png" alt="Ecoweb"
+        <a class="navbar-brand" href="#"><img src="img/ecowebLOGO.png"  alt="Ecoweb"
             style="width: 10rem; height: auto;"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
           <span class="navbar-toggler-icon"></span>
@@ -113,11 +113,12 @@
           <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Souscrire</button></a>
         </div>
       </div>
+    </div>
   </section>
 
   <!--------------------- Services Section --------------------->
   <section id="services">
-    <div class="box-content" id="my-services">
+    <div class="box-content" id="services">
       <div class="header pt-md-4 mx-auto text-center">
         <div class="intro">
           <h1 data-aos="fade-down">Nos Services</h1>
@@ -131,7 +132,6 @@
         <div class="row text-center">
 
           <div class="col-md-4" data-aos="fade-right"
-          data-aos-offset="200"
           data-aos-easing="ease-in-sine">
             <img class="img-icon" alt="icon" id="font-service"
               src="https://img.icons8.com/color/50/000000/laptop--v1.png">
@@ -140,7 +140,6 @@
             <p>Référencement - CMS – Photoshop - Dreamweaver – Marketing et Communication.</p>
           </div>
           <div class="col-md-4" data-aos="fade-right"
-          data-aos-offset="300"
           data-aos-easing="ease-in-sine">
             <img class="img-icon" alt="icon" id="font-service" src="https://img.icons8.com/color/50/000000/android.png">
             <h4>APPLICATION MOBILE</h3>
@@ -148,20 +147,16 @@
               <p>Soyez toujours connecté avec une application mobile synchronisé à votre site web.</p>
           </div>
           <div class="col-md-4" data-aos="fade-right"
-          data-aos-offset="400"
           data-aos-easing="ease-in-sine">
             <img class="img-icon" alt="icon" id="font-service"
               src="https://img.icons8.com/dusk/50/000000/e-commerce.png">
             <h4>CRÉATION E-COMMERCE</h4>
 
             <p>L’Agence vous accompagne dans la création de votre site E-Commerce.</p>
-
-
           </div>
 
           <!--Second Row-->
           <div class="col-md-4" data-aos="fade-right"
-          data-aos-offset="200"
           data-aos-easing="ease-in-sine"><img class="img-icon" alt="icon" id="font-service"
               src="https://img.icons8.com/clouds/50/000000/medal-window.png">
             <h4>RÉFÉRENCEMENT DE SITE</h4>
@@ -170,7 +165,6 @@
           </div>
 
           <div class="col-md-4" data-aos="fade-right"
-          data-aos-offset="200"
           data-aos-easing="ease-in-sine"> <img class="img-icon" alt="icon" id="font-service"
               src="https://img.icons8.com/nolan/50/facebook-f.png">
             <h4>COMMUNICATION GLOBALE</h4>
@@ -180,16 +174,12 @@
           </div>
 
           <div class="col-md-4" data-aos="fade-right"
-          data-aos-offset="200"
           data-aos-easing="ease-in-sine">
             <img class="img-icon" alt="icon" id="font-service"
               src="https://img.icons8.com/ultraviolet/50/000000/maintenance.png">
             <h4>MAINTENANCE DE SITE</h4>
-
             <p>Mises à jour, sauvegardes, et protection de votre site internet.</p>
           </div>
-
-
         </div>
       </div>
     </div>
@@ -230,9 +220,9 @@
       </div>
       <div class="row">
         <div class="col-md-12 d-flex justify-content-center mb-5">
-          <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="all">All</button>
-          <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="1">Part1</button>
-          <button type="button" class="btn btn-outline-black waves-effect filter" data-rel="2">Part2</button>
+          <button type="button" class="btn filter" data-rel="all">All</button>
+          <button type="button" class="btn filter" data-rel="1">Part1</button>
+          <button type="button" class="btn filter" data-rel="2">Part2</button>
         </div>
       </div>
 
@@ -333,8 +323,7 @@
                         </div>
   
   </div>
-  <!-- Add Pagination -->
-  <div class="swiper-pagination"></div>
+
 </div>
 </div>
   </section>
@@ -355,16 +344,16 @@
          <div class="carousel-item active">
            <div class="row">
              <div class="col-3">
-               <img src="img/11.jpg" class="d-block w-100" alt="...">
+               <img src="img/11.jpg">
              </div>
              <div class="col-3">
-               <img src="img/12.gif" class="d-block w-100" alt="...">
+               <img src="img/12.gif">
              </div>
              <div class="col-3">
-               <img src="img/14.jpg" class="d-block w-100" alt="...">
+               <img src="img/14.jpg">
              </div>
              <div class="col-3">
-               <img src="img/13.png" class="d-block w-100" alt="...">
+               <img src="img/13.png">
              </div>
            </div>
            
@@ -372,16 +361,16 @@
          <div class="carousel-item">
            <div class="row">
              <div class="col-3">
-               <img src="img/15.jpg" class="d-block w-100" alt="...">
+               <img src="img/15.jpg">
              </div>
              <div class="col-3">
-               <img src="img/16.jpg" class="d-block w-100" alt="...">
+               <img src="img/16.jpg">
              </div>
              <div class="col-3">
-               <img src="img/17.png" class="d-block w-100" alt="...">
+               <img src="img/17.png">
              </div>
              <div class="col-3">
-               <img src="img/18.png" class="d-block w-100" alt="...">
+               <img src="img/18.png">
              </div>
            </div>
        </div>
@@ -433,12 +422,11 @@
               <p>Un travail exemplaire. Une équipe accueillante. L'efficacité était au RDV. J'ai très de pouvoir
                 retravailler avec vous!</p>
             </div>
-
             <div>
               <div class="img"><img src="img/morad.jpg" alt=""></div>
               <h2>Mourad Jaouhari</h2>
-              <p>Hna kan 3rfoukm kamlin. Wahd b Wahd. Ou kan 3tarfou bhad l'equipe ecoteam ka ahssn equipe flpromotion
-                nta3houm.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nobis atque fugiat non repellat debitis, amet recusandae optio a aliquid fugit est 
+                provident explicabo quod iusto. Nemo voluptate aperiam molestias?.</p>
             </div>
 
             <div>
@@ -703,40 +691,25 @@
   <div title="Scripts">
     <script src="js/vendors/popper.js"></script>
     <script src="js/vendors/jquery_3.4.1.js"></script>
-    <script src="js/vendors/bootstrap_4.4.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/vendors/bootstrap_4.4.1.min.js"></script>
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Testimonials -->
-    <script src="js/testimonial-script.js"></script>
+    <script src="js/vendors/testimonial.min.js"></script>
     <!-- Link -->
-    <script src="js/link.js"></script>
+    <script src="js/vendors/link.min.js"></script>
     <!-- Paralax -->
-    <script src="js/paralax.js"></script>
+    <script src="js/vendors/paralax.min.js"></script>
+     <!-- gallery -->
+     <script src="js/vendors/gallery.min.js"></script>
     <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>
-      AOS.init();
-    </script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        effect: 'coverflow',
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        coverflowEffect: {
-          rotate: 60,
-          stretch: 0,
-          depth: 100,
-          modifier: 5,
-          slideShadows: true,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-        },
-      });
-    </script>
+    <!-- AOS -->
+    <script>AOS.init();</script>
+    <!-- Our Scripts -->
+    <script src="js/scripts.js"></script>
+    <!-- Never Stop Learning Counter -->
+    <script src="js/vendors/counter.min.js"></script>
   </div>
 
 </body>

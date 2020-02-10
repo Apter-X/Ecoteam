@@ -39,6 +39,13 @@ body {
 .navbar-nav li {
   padding-right: 1rem;
 }
+ 
+span.navbar-toggler-icon
+{
+      z-index: 1;
+      background-color:#34c6d3;
+}
+
 
 /****************Services section*************/
 #services{
@@ -60,12 +67,9 @@ body {
 
 }
 
-
-
 #btn {
   background-color: #34c6d3;
   border: none;
-
 }
 
 #btn:hover {
@@ -77,92 +81,32 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
-  height: auto;
-  width: 100%;
-  clip-path: polygon(0 0, 87% 0, 100% 100%, 30% 100%);
+  height: 80vh;
+  width: 100%;      
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 45% 100%);
 }
+@media (max-width: 760px) { 
+
+  #img1{
+      background-image: url(../img/6.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      height: 80vh;
+      width: 100%; 
+      clip-path: none;
+    }
+  }
 .white{
   color: white;
 }
-/*
-.slider {
-  background-image: url(../img/1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 60vh;
-  animation: slide 30S infinite linear;
-  box-shadow: 1px 2px 10px 5px #64707b;
-}
-
-@keyframes slide {
-  0% {
-    background: url(../img/7.jpg);
-
-  }
-
-  25% {
-    background: url(../img/2.jpg);
-
-  }
-
-  50% {
-    background: url(../img/4.jpg);
-  }
-
-  75% {
-    background: url(../img/5.jpg);
-
-  }
-
-  100% {
-    background: url(../img/6.jpg);
-  }
-}*/
 
 /****************Releases Section*************/
-/* Release Gallery */
-.gallery {
-  -webkit-column-count: 3;
-  -moz-column-count: 3;
-  column-count: 3;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%;
-}
 
-.gallery .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease;
-}
-
-.gallery .animation {
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-}
-
-@media (max-width: 450px) {
-  .gallery {
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
-    column-count: 1;
-    -webkit-column-width: 100%;
-    -moz-column-width: 100%;
-    column-width: 100%;
-  }
-}
-
-@media (max-width: 400px) {
-  .btn.filter {
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-  }
-}
 
 /****************Team Section****************/
 #team {
-  padding: .5%;
+  /* padding: 5%; */
   background-color: #64707b;
 }
 
@@ -330,6 +274,7 @@ p2 {
 .counter {
   background-color: #64707b;
   padding: 20px 0;
+  margin:5%;
   border-radius: 5px;
 
 }
