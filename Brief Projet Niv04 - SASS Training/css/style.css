@@ -13,6 +13,15 @@ body {
   font-family: "Libre Franklin", sans-serif;
 }
 
+h4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  font-weight: 20;
+  font-size: x-small;
+  color: silver;
+}
+
 .logo {
   display: flex;
   justify-content: center;
