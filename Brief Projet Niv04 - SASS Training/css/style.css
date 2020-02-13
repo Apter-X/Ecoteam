@@ -1,9 +1,8 @@
 .form__buttonElement--submit {
   padding: 1rem;
-  width: 90px;
   background-color: #4f7df3;
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-left: 4em;
+  padding-right: 4em;
   border-radius: 20px;
   border: none;
   color: white;

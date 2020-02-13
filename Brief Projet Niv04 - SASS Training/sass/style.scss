@@ -16,10 +16,9 @@ $width-responsive: 600px;
 
 @mixin styleButton {
     padding: 1rem;
-    width: 90px;
     background-color: $color-blue;
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 4em;
+    padding-right: 4em;
 }
 
 %btn{
@@ -81,7 +80,7 @@ h4 {
     
         &__inputElement {
             margin-right: 2%;
-            
+    
             &--email {
                 @include placeholder;
             }
