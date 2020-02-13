@@ -127,11 +127,12 @@ h4 {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 10%;
+        
 
-        &__input-div {
+        &__inputElement {
             margin-bottom: 2%;
             width: 85%;
+            margin-right: 0;
 
             &--email {
                 padding-right: 0rem;

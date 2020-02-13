@@ -97,13 +97,13 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 10%;
   }
-  .form__input-div {
+  .form__inputElement {
     margin-bottom: 2%;
     width: 85%;
+    margin-right: 0;
   }
-  .form__input-div--email {
+  .form__inputElement--email {
     padding-right: 0rem;
   }
   .form__buttonElement {
