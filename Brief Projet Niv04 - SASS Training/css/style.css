@@ -106,8 +106,17 @@ h4 {
   .form__input-div--email {
     padding-right: 0rem;
   }
-  .form__button-div {
+  .form__buttonElement {
+    text-align: center;
+    margin-top: 1em;
     width: 86%;
+  }
+
+  .dash {
+    margin-top: 15%;
+  }
+  .dash__dashboard--imageCover {
+    width: 80%;
   }
 }
 

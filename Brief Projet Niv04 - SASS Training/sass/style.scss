@@ -139,8 +139,18 @@ h4 {
             }
         }
 
-        &__button-div {
+        &__buttonElement {
+            text-align: center;
+            margin-top: 1em;
             width: 86%;
+        }
+    }
+
+    .dash {
+        margin-top: 15%;
+    
+        &__dashboard--imageCover {
+            width: 80%;
         }
     }
 }
