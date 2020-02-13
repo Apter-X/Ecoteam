@@ -2,6 +2,8 @@
   padding: 1rem;
   width: 90px;
   background-color: #4f7df3;
+  padding-left: 50%;
+  padding-right: 83%;
   border-radius: 20px;
   border: none;
   color: white;
@@ -11,6 +13,11 @@ body {
   margin: 0 auto;
   font-size: 20px;
   font-family: "Libre Franklin", sans-serif;
+}
+
+h1 {
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 h4 {
@@ -29,6 +36,23 @@ h4 {
   width: 90px;
   padding-top: 4rem;
   padding-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__soon {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container__soon--title {
+  color: #969696;
+  font-weight: 20;
+}
+.container__subtitle--subscribe {
+  font-weight: 40;
 }
 
 .form {
@@ -54,7 +78,7 @@ h4 {
   justify-content: center;
   margin-top: 5%;
 }
-.dash__dashboard--img {
+.dash__dashboard--imageCover {
   width: 50%;
 }
 
