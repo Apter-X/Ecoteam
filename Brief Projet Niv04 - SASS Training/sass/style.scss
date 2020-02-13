@@ -83,6 +83,25 @@ h4 {
     }
 }
 
+#social {
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+
+    .fab {
+        margin-right: 2%;
+        color: $color-blue;
+        padding: 0.5em;
+        border-radius: 50%;
+        border: 1px solid $pale-blue;
+    }
+
+    .fab:hover {
+
+        background-color: $pale-blue;
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
 

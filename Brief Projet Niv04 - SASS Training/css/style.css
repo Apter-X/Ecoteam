@@ -58,4 +58,20 @@ h4 {
   width: 50%;
 }
 
+#social {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
+#social .fab {
+  margin-right: 2%;
+  color: #4f7df3;
+  padding: 0.5em;
+  border-radius: 50%;
+  border: 1px solid #c2d3ff;
+}
+#social .fab:hover {
+  background-color: #c2d3ff;
+}
+
 /*# sourceMappingURL=style.css.map */
