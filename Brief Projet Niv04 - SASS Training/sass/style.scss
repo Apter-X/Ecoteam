@@ -6,6 +6,19 @@ $dark-blue: hsl(209, 33%, 12%);
 $color-silver: silver;
 $width-responsive: 600px;
 
+@mixin stylebtn {
+    padding: 1rem;
+    width: 90px;
+    background-color: $color-blue;
+}
+
+%btn {
+    @include stylebtn;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
 body {
     margin: 0 auto;
     font-size: 20px;
@@ -22,6 +35,15 @@ body {
 
 }
 
+.form {
+    &__button-div--submit {
+        @extend %btn;
+
+        &--submit:hover {
+            background-color: $pale-blue;
+        }
+    }
+}
 
 
 

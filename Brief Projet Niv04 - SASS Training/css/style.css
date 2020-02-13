@@ -1,3 +1,12 @@
+.form__button-div--submit {
+  padding: 1rem;
+  width: 90px;
+  background-color: #4f7df3;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
 body {
   margin: 0 auto;
   font-size: 20px;
@@ -11,6 +20,10 @@ body {
   width: 90px;
   padding-top: 4rem;
   padding-bottom: 2rem;
+}
+
+.form__button-div--submit--submit:hover {
+  background-color: #c2d3ff;
 }
 
 /*# sourceMappingURL=style.css.map */
