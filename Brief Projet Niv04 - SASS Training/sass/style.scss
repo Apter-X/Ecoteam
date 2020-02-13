@@ -14,16 +14,16 @@ $width-responsive: 600px;
     border-radius: 20px;
 }
 
-@mixin stylebtn {
+@mixin styleButton {
     padding: 1rem;
     width: 90px;
     background-color: $color-blue;
-    padding-left: 50%;
-    padding-right: 83%;
+    padding-left: 10em;
+    padding-right: 10em;
 }
 
 %btn{
-    @include stylebtn;
+    @include styleButton;
     border-radius: 20px;
     border: none;
     color: white;
@@ -33,11 +33,6 @@ body{
     margin: 0 auto;
     font-size: 20px;
     font-family: 'Libre Franklin', sans-serif;
-}
-
-h1 {
-    margin-bottom: 0px;
-    margin-top: 0px;
 }
 
 h4 {
@@ -84,15 +79,15 @@ h4 {
         display: flex;
         justify-content: center;
     
-        &__input-div {
+        &__inputElement {
             margin-right: 2%;
-    
+            
             &--email {
                 @include placeholder;
             }
         }
     
-    &__button-div--submit {
+    &__buttonElement--submit {
         @extend %btn;
 
         &--submit:hover {
@@ -130,8 +125,23 @@ h4 {
 }
 
 @media only screen and (max-width: 600px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10%;
 
+        &__input-div {
+            margin-bottom: 2%;
+            width: 85%;
 
-   
-    
-    } 
+            &--email {
+                padding-right: 0rem;
+            }
+        }
+
+        &__button-div {
+            width: 86%;
+        }
+    }
+}

@@ -1,9 +1,9 @@
-.form__button-div--submit {
+.form__buttonElement--submit {
   padding: 1rem;
   width: 90px;
   background-color: #4f7df3;
-  padding-left: 50%;
-  padding-right: 83%;
+  padding-left: 10em;
+  padding-right: 10em;
   border-radius: 20px;
   border: none;
   color: white;
@@ -13,11 +13,6 @@ body {
   margin: 0 auto;
   font-size: 20px;
   font-family: "Libre Franklin", sans-serif;
-}
-
-h1 {
-  margin-bottom: 0px;
-  margin-top: 0px;
 }
 
 h4 {
@@ -59,17 +54,17 @@ h4 {
   display: flex;
   justify-content: center;
 }
-.form__input-div {
+.form__inputElement {
   margin-right: 2%;
 }
-.form__input-div--email {
+.form__inputElement--email {
   font-size: 1rem;
   padding: 1rem;
   padding-right: 12rem;
   border: 1px solid silver;
   border-radius: 20px;
 }
-.form__button-div--submit--submit:hover {
+.form__buttonElement--submit--submit:hover {
   background-color: #c2d3ff;
 }
 
@@ -96,6 +91,25 @@ h4 {
 }
 #social .fab:hover {
   background-color: #c2d3ff;
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 10%;
+  }
+  .form__input-div {
+    margin-bottom: 2%;
+    width: 85%;
+  }
+  .form__input-div--email {
+    padding-right: 0rem;
+  }
+  .form__button-div {
+    width: 86%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
