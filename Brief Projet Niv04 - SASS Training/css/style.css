@@ -40,4 +40,13 @@ body {
   background-color: #c2d3ff;
 }
 
+.dash {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.dash__dashboard--img {
+  width: 50%;
+}
+
 /*# sourceMappingURL=style.css.map */

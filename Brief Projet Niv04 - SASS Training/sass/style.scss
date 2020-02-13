@@ -64,7 +64,15 @@ body {
     }
 }
 
+.dash {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
 
+    &__dashboard--img {
+        width: 50%;
+    }
+}
 
 @media only screen and (max-width: 600px) {
 
