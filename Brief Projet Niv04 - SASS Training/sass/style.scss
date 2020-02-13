@@ -6,6 +6,14 @@ $dark-blue: hsl(209, 33%, 12%);
 $color-silver: silver;
 $width-responsive: 600px;
 
+@mixin placeholder {
+    font-size: 1rem;
+    padding: 1rem;
+    padding-right: 12rem;
+    border: 1px solid $color-silver;
+    border-radius: 20px;
+}
+
 @mixin stylebtn {
     padding: 1rem;
     width: 90px;
@@ -36,6 +44,17 @@ body {
 }
 
 .form {
+        display: flex;
+        justify-content: center;
+    
+        &__input-div {
+            margin-right: 2%;
+    
+            &--email {
+                @include placeholder;
+            }
+        }
+    
     &__button-div--submit {
         @extend %btn;
 

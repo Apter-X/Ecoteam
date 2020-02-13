@@ -22,6 +22,20 @@ body {
   padding-bottom: 2rem;
 }
 
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form__input-div {
+  margin-right: 2%;
+}
+.form__input-div--email {
+  font-size: 1rem;
+  padding: 1rem;
+  padding-right: 12rem;
+  border: 1px solid silver;
+  border-radius: 20px;
+}
 .form__button-div--submit--submit:hover {
   background-color: #c2d3ff;
 }
