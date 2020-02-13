@@ -1,0 +1,123 @@
+.form__buttonElement--submit {
+  padding: 1rem;
+  background-color: #4f7df3;
+  padding-left: 4em;
+  padding-right: 4em;
+  border-radius: 20px;
+  border: none;
+  color: white;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  font-weight: 20;
+  font-size: x-small;
+  color: silver;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90px;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__soon {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.container__soon--title {
+  color: #969696;
+  font-weight: 20;
+}
+.container__subtitle--subscribe {
+  font-weight: 40;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+.form__inputElement {
+  margin-right: 2%;
+}
+.form__inputElement--email {
+  font-size: 1rem;
+  padding: 1rem;
+  padding-right: 12rem;
+  border: 1px solid silver;
+  border-radius: 20px;
+}
+.form__buttonElement--submit--submit:hover {
+  background-color: #c2d3ff;
+}
+
+.dash {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.dash__dashboard--imageCover {
+  width: 50%;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+  margin-top: 6%;
+}
+#social .fab {
+  margin-right: 2%;
+  color: #4f7df3;
+  padding: 0.5em;
+  border-radius: 50%;
+  border: 1px solid #c2d3ff;
+}
+#social .fab:hover {
+  background-color: #c2d3ff;
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .form__inputElement {
+    margin-bottom: 2%;
+    width: 85%;
+    margin-right: 0;
+  }
+  .form__inputElement--email {
+    padding-right: 0rem;
+  }
+  .form__buttonElement {
+    text-align: center;
+    margin-top: 1em;
+    width: 86%;
+  }
+
+  .dash {
+    margin-top: 15%;
+  }
+  .dash__dashboard--imageCover {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

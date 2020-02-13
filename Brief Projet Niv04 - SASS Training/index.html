@@ -11,8 +11,8 @@
 
  
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution { font-size: 11px; text-align: center; color: blue;}
+    .attribution a { color: hsl(228, 45%, 44%); color: blue;text-decoration: none;}
   </style>
 </head>
 <body>
@@ -22,30 +22,30 @@
   <img src="images/logo.svg" alt="logo" class="logo">
    
   <div class="container">
-  <h1 class="soon">
-    <span class="">
+  <h1 class="container__soon">
+    <span class="container__soon container__soon--title">
       Restez Branché
     </span> soon!
   </h1>
   
-  <div class="subscribe">
-   <h3 class="">Souscrire & reste connecté </h3>
+  <div class="container__subtitle">
+   <h3 class="container__subtitle container__subtitle--subscribe">Souscrire & reste connecté </h3>
   </div>
   </div>
   
   <form class="form" action="">
-    <div class="input-div">
-    <input class="email" type="text" placeholder="Your email address..." aria-label="undefined">
+    <div class="form__inputElement">
+    <input class="form__inputElement form__inputElement--email" type="text" placeholder="Your email address..." aria-label="undefined">
   </div>
     
-    <div class="button-div">
-    <button class="submit" type="submit">Notif</button>
+    <div class="form__buttonElement">
+    <button class="form__buttonElement form__buttonElement--submit" type="submit">Notif</button>
   </div>
 </form>
 
 <div class="dash">
-  <img src="images/illustration-dashboard.png" alt="dashboard" class="dashboard">
-</div>
+  <img src="images/illustration-dashboard.png" alt="dashboard" class="dash__dashboard dash__dashboard--imageCover">
+</div>  
   
 
 <!--Cette partie ne concerne pas l'annotation BEM donc ne la changez pas-->

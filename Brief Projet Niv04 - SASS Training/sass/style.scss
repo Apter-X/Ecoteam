@@ -6,10 +6,41 @@ $dark-blue: hsl(209, 33%, 12%);
 $color-silver: silver;
 $width-responsive: 600px;
 
-body {
+@mixin placeholder {
+    font-size: 1rem;
+    padding: 1rem;
+    padding-right: 12rem;
+    border: 1px solid $color-silver;
+    border-radius: 20px;
+}
+
+@mixin styleButton {
+    padding: 1rem;
+    background-color: $color-blue;
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+%btn{
+    @include styleButton;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+body{
     margin: 0 auto;
     font-size: 20px;
     font-family: 'Libre Franklin', sans-serif;
+}
+
+h4 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-weight: 20;
+    font-size: x-small;
+    color: $color-silver;
 }
 
 .logo {
@@ -22,12 +53,104 @@ body {
 
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+    &__soon {
+        margin-top: 0;
+        margin-bottom: 0;
 
+        &--title {
+            color: $gray;
+            font-weight: 20;
+        }
+    }
+
+    &__subtitle--subscribe {
+        font-weight: 40;
+    }
+}
+
+.form {
+        display: flex;
+        justify-content: center;
+    
+        &__inputElement {
+            margin-right: 2%;
+    
+            &--email {
+                @include placeholder;
+            }
+        }
+    
+    &__buttonElement--submit {
+        @extend %btn;
+
+        &--submit:hover {
+            background-color: $pale-blue;
+        }
+    }
+}
+
+.dash {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+
+    &__dashboard--imageCover {
+        width: 50%;
+    }
+}
+
+#social {
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+
+    .fab {
+        margin-right: 2%;
+        color: $color-blue;
+        padding: 0.5em;
+        border-radius: 50%;
+        border: 1px solid $pale-blue;
+    }
+
+    .fab:hover {
+        background-color: $pale-blue;
+    }
+}
 
 @media only screen and (max-width: 600px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
 
+        &__inputElement {
+            margin-bottom: 2%;
+            width: 85%;
+            margin-right: 0;
 
-   
+            &--email {
+                padding-right: 0rem;
+            }
+        }
+
+        &__buttonElement {
+            text-align: center;
+            margin-top: 1em;
+            width: 86%;
+        }
+    }
+
+    .dash {
+        margin-top: 15%;
     
-    } 
+        &__dashboard--imageCover {
+            width: 80%;
+        }
+    }
+}
