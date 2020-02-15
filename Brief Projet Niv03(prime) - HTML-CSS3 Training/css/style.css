@@ -1,0 +1,91 @@
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.intro-div {
+  position: fixed;
+  height: 100%;
+  margin-left: 2%;
+  background-color: aquamarine;
+}
+
+#logo {
+    top: 0;
+    left: 0;
+}
+
+.paragraph-section {
+    background-color: chartreuse;
+}
+
+.paragraph-section h1 {
+}
+
+.paragraph-section span {
+}
+
+.paragraph-section #first-paragraph {
+}
+
+.paragraph-section #last-paragraph {
+  width: 40%;
+  margin-left: 25%;
+}
+
+.button-section {
+}
+
+.button-section button {
+}
+
+/* The first section art divs */
+
+.art-div {
+  position: absolute;
+  width: 38em;
+  height: 18em;
+  top: 0;
+  right: 0;
+  margin-right: 2%;
+  padding-right: 2%;
+  
+  border-bottom-left-radius: 4em;
+}
+
+.art-div img {
+  width: 80%;
+  height: auto;
+  padding-top: 7em;
+}
+
+.art-div ul {
+}
+
+.art-div ul li {
+  display: inline;
+}
+
+.art-div ul li a {
+}
+
+.art-div ul li a:hover {
+}
+
+.art-div .dotted-circle {
+}
+
+.art-div .login-grey {
+}
+
+/* the second section background gris*/
+.art-background {
+    position: fixed;
+    background-color: #eef3f6;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 300px;
+}
