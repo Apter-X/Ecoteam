@@ -1,1 +1,79 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");*,*::after,*::before{margin:0;padding:0;box-sizing:border-box}html{font-size:10px}body{font-family:"Open Sans", sans-serif;font-size:1.8rem;color:#00252e;background-color:#fafafa}img{display:block;max-width:100%}.container{max-width:1270px;width:100%;margin:0 auto;padding:0 2rem}.main__features{display:grid;grid-template-columns:1fr 1fr;grid-template-areas:"feature-text feature-img-cont";box-shadow:-1px 2px 37px -6px rgba(0,0,0,0.75);margin:4em 0;border-radius:15px}.main__features-img-cont img{padding:2em 3em}
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem;
+  color: #00252e;
+  background-color: #fafafa; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+.container {
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem; }
+
+.main__features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "feature-text feature-img-cont";
+  box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
+  margin: 4em 0;
+  border-radius: 15px; }
+  .main__features-img-cont img {
+    padding: 2em 3em; }
+
+.hero {
+  background-color: #c5ebf9; }
+  .hero__btn--light {
+    padding: 10px;
+    text-align: center;
+    border-radius: 100px;
+    width: 300px;
+    border: 1px solid white;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20%; }
+  .hero__btn--accent {
+    padding: 10px;
+    text-align: center;
+    border-radius: 100px;
+    width: 300px;
+    border: 1px solid #ff52bf;
+    background-color: #ff52bf;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20%; }
+  .hero__heading {
+    font-size: xx-large;
+    padding: 5em 1em 0em .3em; }
+  .hero__subheading {
+    padding: 2em em .1em .3em; }
+  .hero__main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "feature-text feature-img-cont"; }
+  .hero__right img {
+    width: 100%; }
+
+@media screen and (max-width: 600) {
+  .hero__right {
+    width: 100%; } }

@@ -2,13 +2,23 @@
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 
+
 $text-color-primary: hsl(192, 100%, 9%);
 $text-color-secondary: hsl(208, 11%, 55%);
 $color-accent: hsl(322, 100%, 66%);
 $main-box-shadoww: 0px 0px 20px rgba($color: #000000, $alpha: 0.1);
 $footer-color: hsl(192, 100%, 96%);
 $trans-cubic: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); //des transitions sur les boutons
+$color-hero:#c5ebf9;
+$colobutton:white;
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 //mixin pour l'alignement flexbox 
 @mixin flex {
@@ -43,17 +53,12 @@ $trans-cubic: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); //des transitions sur l
 
 
 //la suppression des espacement et utilisation de la technique du box-sizing(les elements reste sur le meme container)
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 html {
   font-size: 10px;
 }
+
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -87,3 +92,16 @@ img {
     }
 }
 }
+@import "header";
+@import "responsive"
+
+
+
+
+
+
+
+
+
+
+
