@@ -1,0 +1,53 @@
+.hero {
+  background-color: $color-hero;
+
+  &__btn {
+    &--light {
+      padding: 10px;
+      text-align: center;
+      border-radius: 100px;
+      width: 300px;
+      border: 1px solid $colobutton;
+      background-color: $colobutton;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      box-shadow: $main-box-shadoww;
+      margin-top: 20%;
+
+
+    }
+
+    &--accent {
+      padding: 10px;
+      text-align: center;
+      border-radius: 100px;
+      width: 300px;
+      border: 1px solid $color-accent;
+      background-color: $color-accent;
+      text-decoration: none;
+      color: $colobutton;
+      font-weight: bold;
+      box-shadow: $main-box-shadoww;
+      margin-top: 20%;
+    }
+  }
+
+  &__heading {
+    font-size: xx-large;
+    padding: 5em 1em 0em .3em;
+  }
+ &__subheading{
+  padding: 2em em .1em .3em;
+ }
+  &__main-content {
+    @include grid;
+  
+
+  }
+
+  &__right img {
+    width: 100%;
+  }
+
+}
