@@ -134,5 +134,26 @@ img {
   box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
   margin: 4em 0;
   border-radius: 15px; }
+  .main__features-title {
+    color: #808d99; }
+  .main__features-desc {
+    color: #808d99; }
   .main__features-img-cont img {
     padding: 2em 3em; }
+
+.banner {
+  box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
+  margin: 4em 0;
+  border-radius: 15px; }
+  .banner__btn {
+    padding: 10px;
+    text-align: center;
+    border-radius: 100px;
+    width: 300px;
+    border: 1px solid #ff52bf;
+    background-color: #ff52bf;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 20%; }

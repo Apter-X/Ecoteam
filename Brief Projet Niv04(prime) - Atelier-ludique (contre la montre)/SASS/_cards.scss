@@ -1,11 +1,26 @@
 .main__features{
     @include grid;
     @include style;
+
+    &-title{
+        @include font;
+    }
     
+    &-desc{
+        @include font;        
+    }
+
     &-img-cont{
-      
       img{
         padding:2em 3em;
       }
+    }
   }
+
+  .banner{
+      @include style;
+
+      &__btn{
+          @include btn-primary;
+      }
   }
