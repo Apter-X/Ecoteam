@@ -1,0 +1,27 @@
+//mixin pour l'alignement flexbox
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//mixin grid ajustement
+@mixin grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "feature-text feature-img-cont"; //nom des classes
+}
+
+//mixin pour le responsive  @content = ce que vous allez ecrire en CSS
+@mixin responsive($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}
+
+// mixin style card
+@mixin style {
+  box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
+  margin: 4em 0;
+  border-radius: 15px;
+}

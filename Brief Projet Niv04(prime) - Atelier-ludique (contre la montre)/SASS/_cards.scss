@@ -1,0 +1,11 @@
+.main__features{
+    @include grid;
+    @include style;
+    
+    &-img-cont{
+      
+      img{
+        padding:2em 3em;
+      }
+  }
+  }
