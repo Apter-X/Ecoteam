@@ -117,12 +117,11 @@ a {
       background-color: #c5ebf9; }
   .footer__copyright {
     font-size: 12px;
-    padding-top: 6em;
-    width: 23%;
+    width: 20%;
     float: right; }
 
 .attribution {
-  padding-top: 6em; }
+  padding-top: 3em; }
 
 .main__features {
   display: grid;
