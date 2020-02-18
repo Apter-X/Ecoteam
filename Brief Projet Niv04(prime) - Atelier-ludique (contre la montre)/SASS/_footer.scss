@@ -1,37 +1,48 @@
-a{
-    text-decoration: none;
-    color: white;
-}
+
 .footer{
     
-    padding-top: 15em;
+    padding-top: 8em;
+    padding-bottom: 1em;
     background-color:$text-color-primary;
     color:$footer-color;
     &__main{
+        
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
 
     }
     &__col-1{
+    
         flex-direction: row;
         max-width: 400px;
         div{
+           
+            a{
+                text-decoration: none;
+            color: $footer-color;
+            }
+            
+           
            &:first-child {margin-bottom: 2rem;
            }
            &:nth-child(2) {margin-bottom: 3rem;
            }
         img{
+           
             display: inline;
             margin-right: 2rem;
         }
     }
     }
     &__col-2{
+    
         display: flex;
         flex-direction: column;
         max-width: 120px;
         a{
+            text-decoration: none;
+            color: $footer-color;
                 &:first-child {margin-bottom: 3.9rem;
                 }
                 &:nth-child(2) {margin-bottom: 3.9rem;
@@ -43,6 +54,8 @@ a{
         flex-direction: column;
         max-width: 150px;
         a{
+            text-decoration: none;
+            color: $footer-color;
             &:first-child {margin-bottom: 3.9rem;
             }
             &:nth-child(2) {margin-bottom: 3.9rem;
@@ -50,6 +63,8 @@ a{
         }
     }
          &__social-link{
+            text-decoration: none;
+            color: $footer-color;
             border: 2px solid;
             padding: 10px;
             margin: 10px;
@@ -61,15 +76,17 @@ a{
          }
     &__copyright{
         font-size: 12px;
+        padding-top: 1em;
         width:20%;
-      float: right;
+        float: right;
     }
+   .attribution{
+        margin-top: 6%;
+       padding-left: 30%;
+           
+       }
+}
 
-}
-.attribution{
-    padding-top: 3em;
-    
-}
 
 
 
