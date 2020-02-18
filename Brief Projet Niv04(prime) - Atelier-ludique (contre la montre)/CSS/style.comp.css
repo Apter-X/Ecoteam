@@ -139,12 +139,11 @@ a {
       background-color: #c5ebf9; }
   .footer__copyright {
     font-size: 12px;
-    padding-top: 6em;
-    width: 23%;
+    width: 20%;
     float: right; }
 
 .attribution {
-  padding-top: 6em; }
+  padding-top: 3em; }
 
 .main__features {
   display: grid;
@@ -158,7 +157,9 @@ a {
   .main__features-desc {
     color: #808d99; }
   .main__features-img-cont img {
-    padding: 2em 3em; }
+    padding: 2em 3em;
+    width: 100px;
+    height: 100px; }
 
 .banner {
   box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
