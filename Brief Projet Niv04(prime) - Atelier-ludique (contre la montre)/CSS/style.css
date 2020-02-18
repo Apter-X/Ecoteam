@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+@media screen and (max-width: 600px) {
+  .hero__right {
+    grid-column: span 2;
+    padding: 2em 0; }
+  .hero__left {
+    grid-column: span 2;
+    text-align: center;
+    padding: 0; }
+  .hero__btn--accent {
+    position: relative; }
+  .hero__subheading {
+    padding-bottom: 10%; }
+  .hero__right img {
+    margin-top: 20%; } }
+
 *,
 *::after,
 *::before {
@@ -19,6 +34,13 @@ body {
 img {
   display: block;
   max-width: 100%; }
+
+h2 {
+  margin: 0 auto 40px auto; }
+
+p {
+  margin: 0px auto 80px auto;
+  opacity: 0.5; }
 
 .container {
   max-width: 1270px;
