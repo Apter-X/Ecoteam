@@ -147,27 +147,21 @@ h2 {
     padding-left: 30%; }
 
 .main p {
-  margin: 0px auto 80px auto;
+  margin: 20px auto 80px auto;
   opacity: 0.5; }
 
 .main img {
-  width: 100px;
-  height: 100px; }
+  float: right;
+  width: 20em;
+  height: auto; }
 
 .main__features {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "feature-text feature-img-cont";
-  box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
-  margin: 4em 0;
-  border-radius: 15px; }
-  .main__features-title {
-    color: #808d99; }
-  .main__features-desc {
-    color: #808d99; }
+  grid-template-areas: "feature-text feature-img-cont"; }
 
 .banner {
-  box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 2px 37px -6px #b3bfcb;
   margin: 4em 0;
   border-radius: 15px;
   max-width: 600px;

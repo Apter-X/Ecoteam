@@ -1,29 +1,25 @@
 .main{
     & p{
-        margin:0px auto 80px auto;
-        opacity: 0.5;
+        @include font-desc;
+        margin:20px auto 80px auto;
+        
+    }
+
+    & img{
+        float: right;
+        // margin:0px auto auto auto;
+        width: 20em;
+        height: auto;
     }
 }
 
 .main__features{
     @include grid;
-    @include style;
-
-    &-title{
-        @include font;
-    }
-    
-    &-desc{
-        @include font;        
-    }
-
-    &-img-cont img{
-        
-    }
+    @include card;
   }
 
   .banner{
-    @include style;
+    @include card;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;

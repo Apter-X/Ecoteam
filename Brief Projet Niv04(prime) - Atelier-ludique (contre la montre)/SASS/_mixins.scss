@@ -27,16 +27,20 @@ grid-row-gap: 0px;
   }
 }
 
-// mixin style card
-@mixin style {
-  box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
+@mixin card {
+  box-shadow: -1px 2px 37px -6px $shadow-color;
   margin: 4em 0;
   border-radius: 15px;
 }
 
-@mixin font {
+@mixin font-title {
   color: $text-color-secondary;
 }
+
+@mixin font-desc {
+    color: $text-color-secondary;
+    opacity: 0,5;
+  }
 
 @mixin btn-primary {
   padding: 10px;

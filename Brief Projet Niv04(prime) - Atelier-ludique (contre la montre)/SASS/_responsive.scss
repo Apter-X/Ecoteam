@@ -1,4 +1,4 @@
-@include responsive(600px){
+@include responsive($mobile){
     .hero{
         .hero__main-content{
             display: grid;
