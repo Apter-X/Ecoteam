@@ -1,3 +1,10 @@
+.main{
+    & p{
+        margin:0px auto 80px auto;
+        opacity: 0.5;
+    }
+}
+
 .main__features{
     @include grid;
     @include style;
