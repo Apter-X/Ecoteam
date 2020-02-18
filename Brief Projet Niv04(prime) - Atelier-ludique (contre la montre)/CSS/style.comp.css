@@ -35,10 +35,6 @@ img {
 h2 {
   margin: 0 auto 40px auto; }
 
-p {
-  margin: 0px auto 80px auto;
-  opacity: 0.5; }
-
 .container {
   max-width: 1270px;
   width: 100%;
@@ -71,8 +67,7 @@ p {
     color: white;
     font-weight: bold;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    position: absolute;
-    margin-top: 2%; }
+    position: absolute; }
   .hero__heading {
     font-size: xx-large;
     padding-top: 15%;
@@ -150,6 +145,14 @@ p {
   .footer .attribution {
     margin-top: 6%;
     padding-left: 30%; }
+
+.main p {
+  margin: 0px auto 80px auto;
+  opacity: 0.5; }
+
+.main img {
+  width: 100px;
+  height: 100px; }
 
 .main__features {
   display: grid;
