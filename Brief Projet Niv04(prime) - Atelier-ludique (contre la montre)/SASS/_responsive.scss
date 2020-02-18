@@ -1,21 +1,23 @@
 @include responsive(600px){
-    .hero__right{
-        grid-column: span 2;
-        padding: 2em 0;
+    .hero{
+        .hero__main-content{
+            display: grid;
+      grid-template-columns: auto ;
+      grid-template-areas: "feature-text", 
+                           
+        }
+       .hero__right{
+           padding-top: 20%;
+       }
+       .hero__left{
+           text-align: center;
+       }
+       .hero__btn--accent{
+           position: relative;
+       }
     }
-    .hero__left{
-        grid-column: span 2;
-        text-align: center;
-        padding: 0;
-    }
-    .hero__btn--accent{
-        position: relative;
-       
-    }
-    .hero__subheading{
-        padding-bottom: 10%;
-    }
-    .hero__right img{
-        margin-top: 20%;
-    }
+
+    
+    
+    
 }
