@@ -1,3 +1,21 @@
-@include responsive(375px){
-  
+@include responsive(600px){
+    .hero__right{
+        grid-column: span 2;
+        padding: 2em 0;
+    }
+    .hero__left{
+        grid-column: span 2;
+        text-align: center;
+        padding: 0;
+    }
+    .hero__btn--accent{
+        position: relative;
+       
+    }
+    .hero__subheading{
+        padding-bottom: 10%;
+    }
+    .hero__right img{
+        margin-top: 20%;
+    }
 }

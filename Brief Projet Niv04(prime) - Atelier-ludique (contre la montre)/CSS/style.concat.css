@@ -83,7 +83,8 @@ p {
   .footer__main {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    background-color: 0; }
   .footer__col-1 {
     padding: 8em;
     width: 42%; }
