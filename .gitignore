@@ -1,4 +1,5 @@
 _workspace*
 .*
-~$* 
+~$*
 .vscode
+node_modules
