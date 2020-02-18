@@ -18,9 +18,19 @@
   }
 
   .banner{
-      @include style;
+    @include style;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 3em;
 
-      &__btn{
-          @include btn-primary;
-      }
+    &__title{
+        margin-top: 2em;
+        padding-top: 2em;
+        padding-bottom: 1em;
+    }
+
+    &__btn{
+        @include btn-primary;
+    }
   }

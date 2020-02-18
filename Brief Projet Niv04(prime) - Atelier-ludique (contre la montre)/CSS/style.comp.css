@@ -133,18 +133,31 @@ img {
   grid-template-areas: "feature-text feature-img-cont";
   box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
   margin: 4em 0;
-  border-radius: 15px; }
+  border-radius: 15px;
+  max-width: 1000px;
+  max-height: 300px;
+  margin: 2em auto; }
   .main__features-title {
     color: #808d99; }
   .main__features-desc {
     color: #808d99; }
-  .main__features-img-cont img {
-    padding: 2em 3em; }
+  .main__features-img-cont {
+    padding: 2em 3em;
+    width: auto;
+    height: 300; }
 
 .banner {
   box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
   margin: 4em 0;
-  border-radius: 15px; }
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3em; }
+  .banner__title {
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 1em; }
   .banner__btn {
     padding: 10px;
     text-align: center;
