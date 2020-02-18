@@ -35,33 +35,31 @@ grid-row-gap: 0px;
 }
 
 @mixin font {
-    color: $text-color-secondary;
+  color: $text-color-secondary;
 }
 
-@mixin btn-primary{
-    padding: 10px;
-    text-align: center;
-    border-radius: 100px;
-    width: 300px;
-    border: 1px solid $color-accent;
-    background-color: $color-accent;
-    text-decoration: none;
-    color: $color-button;
-    font-weight: bold;
-    box-shadow: $main-box-shadow;
-    margin-top: 20%;
+@mixin btn-primary {
+  padding: 10px;
+  text-align: center;
+  border-radius: 100px;
+  width: 250px;
+  border: 1px solid $color-accent;
+  background-color: $color-accent;
+  text-decoration: none;
+  color: $color-button;
+  font-weight: bold;
+  box-shadow: $main-box-shadow;
 }
 
-@mixin btn-secondary{
-    padding: 10px;
-    text-align: center;
-    border-radius: 100px;
-    width: 300px;
-    border: 1px solid $color-button;
-    background-color: $color-button;
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    box-shadow: $main-box-shadow;
-    margin-top: 20%;
+@mixin btn-secondary {
+  padding: 10px;
+  text-align: center;
+  border-radius: 100px;
+  width: 200px;
+  border: 1px solid $color-button;
+  background-color: $color-button;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  box-shadow: $main-box-shadow;
 }
