@@ -150,10 +150,9 @@ p {
     padding-top: 1em;
     width: 20%;
     float: right; }
-
-.attribution {
-  margin-top: 6%;
-  padding-left: 30%; }
+  .footer .attribution {
+    margin-top: 6%;
+    padding-left: 30%; }
 
 .main__features {
   display: grid;
