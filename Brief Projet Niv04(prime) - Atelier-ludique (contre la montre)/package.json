@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "server": "live-server --port=8181 --browser=chrome",
+    "dev": "node-sass sass/main.scss css/style.css",
     "watch": "node-sass sass/main.scss css/style.css --watch",
     "compile": "node-sass sass/main.scss css/style.comp.css",
     "concat": "concat -o css/style.concat.css css/additional.css css/style.comp.css",
     "compress": "node-sass css/style.concat.css css/style.css --output-style compressed",
+    "see": "npm-run-all dev server",
     "build": "npm-run-all compile concat compress server"
   },
   "author": "ecoteam",
