@@ -84,64 +84,60 @@ img {
   .hero__right img {
     margin-top: 20%; } }
 
+a {
+  text-decoration: none;
+  color: white; }
+
 .footer {
+  padding-top: 15em;
   background-color: #00252e;
   color: #ebfbff; }
   .footer__main {
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    justify-content: space-between;
+    flex-wrap: wrap; }
   .footer__col-1 {
-    padding: 8em;
-    width: 42%; }
-    .footer__col-1 img {
+    flex-direction: row;
+    max-width: 400px; }
+    .footer__col-1 div:first-child {
+      margin-bottom: 2rem; }
+    .footer__col-1 div:nth-child(2) {
+      margin-bottom: 3rem; }
+    .footer__col-1 div img {
       display: inline;
-      padding-top: 2em;
-      padding-right: 1em; }
-  .footer__col-1-link {
-    color: #ebfbff;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none; }
-  .footer__col-2 a {
-    display: block;
-    padding-top: 5em;
-    margin: 0.5em;
-    padding-right: 10em; }
-  .footer__col-2-link {
-    color: #ebfbff;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none; }
-  .footer__col-3 a {
-    display: block;
-    padding-top: 3.5em;
-    margin: 0.5em; }
-  .footer__col-3-link {
-    color: #ebfbff;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none; }
-  .footer__col-4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "feature-text feature-img-cont";
-    color: #ebfbff; }
+      margin-right: 2rem; }
+  .footer__col-2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 120px; }
+    .footer__col-2 a:first-child {
+      margin-bottom: 3.9rem; }
+    .footer__col-2 a:nth-child(2) {
+      margin-bottom: 3.9rem; }
+  .footer__col-3 {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px; }
+    .footer__col-3 a:first-child {
+      margin-bottom: 3.9rem; }
+    .footer__col-3 a:nth-child(2) {
+      margin-bottom: 3.9rem; }
   .footer__social-link {
-    text-align: left;
+    border: 2px solid;
     padding: 10px;
     margin: 10px;
-    color: #ebfbff;
-    border: 1px solid #808d99;
-    border-radius: 50%; }
+    border-radius: 50%;
+    text-align: center; }
     .footer__social-link:hover {
-      background-color: #ff52bf; }
+      background-color: #c5ebf9; }
   .footer__copyright {
     font-size: 12px;
-    font-weight: bold; }
+    padding-top: 6em;
+    width: 23%;
+    float: right; }
 
 .attribution {
-  font-weight: bold; }
+  padding-top: 6em; }
 
 .main__features {
   display: grid;
