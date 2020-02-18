@@ -75,7 +75,8 @@ img {
   .footer__main {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    background-color: 0; }
   .footer__col-1 {
     padding: 8em;
     width: 42%; }
@@ -134,18 +135,13 @@ img {
   grid-template-areas: "feature-text feature-img-cont";
   box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);
   margin: 4em 0;
-  border-radius: 15px;
-  max-width: 1000px;
-  max-height: 300px;
-  margin: 2em auto; }
+  border-radius: 15px; }
   .main__features-title {
     color: #808d99; }
   .main__features-desc {
     color: #808d99; }
-  .main__features-img-cont {
-    padding: 2em 3em;
-    width: auto;
-    height: 300; }
+  .main__features-img-cont img {
+    padding: 2em 3em; }
 
 .banner {
   box-shadow: -1px 2px 37px -6px rgba(0, 0, 0, 0.75);

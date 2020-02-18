@@ -1,7 +1,7 @@
 //mixin pour l'alignement flexbox
 @mixin flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -10,6 +10,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "feature-text feature-img-cont"; //nom des classes
+}
+
+@mixin grid-footer {
+  display: grid;
+grid-template-columns: 40% repeat(3, 1fr);
+grid-template-rows: 1fr 10% 10% ;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
 }
 
 //mixin pour le responsive  @content = ce que vous allez ecrire en CSS
