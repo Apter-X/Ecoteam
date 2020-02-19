@@ -8,9 +8,6 @@
 
 @media screen and (max-width: 693px) {
   .footer [class*="col-"] {
-    width: 100%;
-    background-color: red; }
-  __col-4 a {
     width: 100%; } }
 
 @media screen and (max-width: 600px) {
