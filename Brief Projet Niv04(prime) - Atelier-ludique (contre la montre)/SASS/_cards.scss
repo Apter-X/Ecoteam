@@ -1,8 +1,11 @@
 .main{
+    & h2{
+        @include font-title;
+    }
+
     & p{
         @include font-desc;
         margin:20px auto 80px auto;
-        
     }
 
     & img{

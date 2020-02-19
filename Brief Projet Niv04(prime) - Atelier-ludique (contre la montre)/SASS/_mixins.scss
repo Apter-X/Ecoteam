@@ -34,12 +34,15 @@ grid-row-gap: 0px;
 }
 
 @mixin font-title {
-  color: $text-color-secondary;
+  font-family: "Poppins", sans-serif;
+  color: $text-color-primary;
+  font-weight: $weight-poppins;
 }
 
 @mixin font-desc {
     color: $text-color-secondary;
-    opacity: 0,5;
+    font-weight: $weight-open-sans;
+    // opacity: 0.5;
   }
 
 @mixin btn-primary {
