@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .hero .hero__main-content {
     display: grid;
     grid-template-columns: auto;
@@ -23,7 +23,7 @@ html {
   font-size: 10px; }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1.8rem;
   color: #00252e;
   background-color: #fafafa; }
@@ -31,9 +31,6 @@ body {
 img {
   display: block;
   max-width: 100%; }
-
-h2 {
-  margin: 0 auto 40px auto; }
 
 .container {
   max-width: 1270px;
@@ -146,9 +143,14 @@ h2 {
     margin-top: 6%;
     padding-left: 30%; }
 
+.main h2 {
+  font-family: "Poppins", sans-serif;
+  color: #00252e;
+  font-weight: 600; }
+
 .main p {
   color: #808d99;
-  opacity: 0,5;
+  font-weight: 400;
   margin: 20px auto 80px auto; }
 
 .main img {
