@@ -13,6 +13,7 @@
     flex-direction: column; }
   .footer [class*="col-1"] {
     width: 100%;
+    margin-top: 20%;
     margin-bottom: 50px;
     padding: 0 10px; }
   .footer [class*="col-2"] {
@@ -235,6 +236,8 @@ img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transform: translate(0%, 39%);
+  background-color: white;
   width: 55%;
   flex-wrap: wrap;
   margin-left: auto;
@@ -243,7 +246,8 @@ img {
     font-family: "Poppins", sans-serif;
     color: #00252e;
     font-weight: 600;
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 5%; }
   .banner__btn {
     padding: 10px;
     text-align: center;
