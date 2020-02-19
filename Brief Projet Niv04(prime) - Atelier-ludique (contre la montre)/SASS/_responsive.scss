@@ -18,6 +18,10 @@
     }
 
     .main__features{
+        flex-wrap: wrap-reverse;
+    }
+
+    .banner{
         flex-wrap: wrap;
     }
     
