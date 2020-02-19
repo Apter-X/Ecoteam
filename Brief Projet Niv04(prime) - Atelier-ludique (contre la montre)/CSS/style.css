@@ -150,21 +150,21 @@ img {
 
 .main p {
   color: #808d99;
-  font-weight: 400;
-  margin: 20px auto 80px auto; }
-
-.main img {
-  float: right;
-  width: 20em;
-  height: auto; }
+  font-weight: 400; }
 
 .main__features {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "feature-text feature-img-cont";
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   box-shadow: -1px 2px 37px -6px #d2d9e0;
   margin: 4em 0;
-  border-radius: 15px; }
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+  align-content: space-between; }
+  .main__features-reverse {
+    display: flex;
+    flex-direction: row-reverse; }
 
 .banner {
   box-shadow: -1px 2px 37px -6px #d2d9e0;
