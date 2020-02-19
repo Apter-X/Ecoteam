@@ -26,10 +26,9 @@
 
 .banner{
     @include card;
-    @include flex; 
+    @include flex;
   
     width: 55%;
-    height: 13em;
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
@@ -41,5 +40,7 @@
   
     &__btn{
       @include btn-primary;
+      white-space: nowrap !important;
+      width: 300px;
     }
-  }
+}
