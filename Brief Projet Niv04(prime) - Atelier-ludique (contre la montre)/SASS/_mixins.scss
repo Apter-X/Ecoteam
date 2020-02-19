@@ -31,18 +31,21 @@
   border: 1px $text-color-primary;
   border-radius: 15px;
   box-shadow: 0px 0px 15px 0px $shadow-color;
+  padding: 50px 100px 50px 100px;
 }
 
 @mixin font-title {
   font-family: "Poppins", sans-serif;
   color: $text-color-primary;
   font-weight: $weight-poppins;
+  font-size: 85%;
 }
 
 @mixin font-desc {
     color: $text-color-secondary;
     font-weight: $weight-open-sans;
-  }
+    font-size: 85%;
+}
 
 @mixin btn-primary {
   padding: 10px;
