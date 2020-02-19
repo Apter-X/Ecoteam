@@ -39,3 +39,15 @@
     @include btn-primary;
   }
 }
+
+.main__feature{
+  
+
+  &-title{
+    @include font-title;
+  }
+  
+  &-desc{
+    @include font-desc;
+  }
+}
