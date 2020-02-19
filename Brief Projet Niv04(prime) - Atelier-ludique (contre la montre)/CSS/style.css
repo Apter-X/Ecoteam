@@ -42,8 +42,6 @@
     padding-top: 20%; }
   .hero .hero__left {
     text-align: center; }
-  .hero .hero__btn--accent {
-    position: relative; }
   .main__features {
     flex-wrap: wrap-reverse;
     text-align: center;
@@ -52,6 +50,15 @@
     flex-wrap: wrap;
     width: 80% !important;
     height: 13em; } }
+
+@media screen and (max-width: 986px) {
+  .hero .hero__btn--accent {
+    position: relative;
+    padding-right: 15%;
+    padding-left: 15%; }
+  .hero .hero__subheading {
+    padding-left: 8%;
+    padding-bottom: 15%; } }
 
 *,
 *::after,
@@ -105,7 +112,8 @@ img {
     color: white;
     font-weight: bold;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    position: absolute; }
+    position: absolute;
+    margin-top: 5%; }
   .hero__heading {
     font-size: xx-large;
     padding-top: 15%;
