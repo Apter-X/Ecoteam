@@ -2,8 +2,13 @@
   @include card;
   @include flex;
   
+  margin: 1.8em 0;
+  width: 85%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
   &-reverse{
-    display: flex;
     flex-direction: row-reverse;
   }
 }
