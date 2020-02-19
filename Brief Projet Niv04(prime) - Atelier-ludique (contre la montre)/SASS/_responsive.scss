@@ -4,6 +4,10 @@
   text-align: center;
   padding: 50px 100px 50px 100px !important;
   }
+
+  .banner{
+    
+  }
 }
 
 @include responsive(693px){
@@ -42,8 +46,8 @@
 
     .banner{
         flex-wrap: wrap;
-        width: 80% !important;
-        height: 13em;
+        height: 20em !important;
+        width: 20em !important;
     }
 }
 
