@@ -1,4 +1,21 @@
-@include responsive($mobile){
+@include responsive(875px){
+  .main__features{
+  flex-wrap: wrap-reverse;
+  text-align: center;
+  padding: 50px 100px 50px 100px !important;
+  }
+}
+
+@include responsive(693px){
+    .footer{
+        [class*="col-"] {
+            width: 100%;
+          }
+    }
+}
+
+
+@include responsive(600px){
     .hero{
         .hero__main-content{
             display: grid;
@@ -19,12 +36,14 @@
 
     .main__features{
         flex-wrap: wrap-reverse;
+        text-align: center;
+        padding: 15px 30px 15px 30px !important;
     }
 
     .banner{
         flex-wrap: wrap;
+        width: 80% !important;
+        height: 13em;
     }
-    
-    
-    
 }
+
