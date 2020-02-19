@@ -1,40 +1,41 @@
 .main{
-    & h2{
-        @include font-title;
-    }
+  & h2{
+    @include font-title;
+  }
 
-    & p{
-        @include font-desc;
-        margin:20px auto 80px auto;
-    }
-
-    & img{
-        float: right;
-        // margin:0px auto auto auto;
-        width: 20em;
-        height: auto;
-    }
+  & p{
+    @include font-desc;
+  }
 }
 
 .main__features{
-    @include grid;
-    @include card;
+  @include flex;
+  @include card;
+
+  width: 100%;
+  height: auto;
+  align-content: space-between;
+  
+  &-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.banner{
+  @include card;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 3em;
+
+  &__title{
+    margin-top: 2em;
+    padding-top: 2em;
+    padding-bottom: 1em;
   }
 
-  .banner{
-    @include card;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    padding-bottom: 3em;
-
-    &__title{
-        margin-top: 2em;
-        padding-top: 2em;
-        padding-bottom: 1em;
-    }
-
-    &__btn{
-        @include btn-primary;
-    }
+  &__btn{
+    @include btn-primary;
   }
+}
