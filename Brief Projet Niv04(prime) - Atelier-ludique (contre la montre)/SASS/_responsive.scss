@@ -1,53 +1,109 @@
-@include responsive(875px){
-  .main__features{
-  flex-wrap: wrap-reverse;
-  text-align: center;
-  padding: 50px 100px 50px 100px !important;
-  }
-
-  .banner{
-    
-  }
+@include responsive(875px) {
+    .main__features {
+        flex-wrap: wrap-reverse;
+        text-align: center;
+        padding: 50px 100px 50px 100px !important;
+    }
 }
 
 @include responsive(693px){
     .footer{
-        [class*="col-"] {
+        
+        &__main{
+            display:flex;
+            flex-direction: column;
+        }
+    
+        [class*="col-1"] {
+         width: 100%;
+         margin-bottom: 50px;
+         padding: 0 10px;
+         
+          }
+          [class*="col-2"] {
+            width: 150%;
+            margin-bottom: 10px;
+           
+            padding: 0 10px
+
+            
+             }
+          [class*="col-3"] {
+            width: 200%;
+            
+            padding: 0 10px
+            
+             }
+
+
+        [class*="col-4"] {
             width: 100%;
+            text-align: center;
+            margin-bottom: 10px;
+            padding: 0 10px
+          }
+
+          [class*="copyright"] {
+            width: 100%; 
+            text-align: center;
+            padding-top: 2em;
+
+          }
+
+          [class*="attribution"] {
+          
+            width: 100%; 
+           
+           
           }
     }
 }
 
 
-@include responsive(600px){
-    .hero{
-        .hero__main-content{
+@include responsive(600px) {
+    .hero {
+        .hero__main-content {
             display: grid;
-      grid-template-columns: auto ;
-      grid-template-areas: "feature-text", 
-                           
+            grid-template-columns: auto;
+            grid-template-areas: "feature-text",
+
         }
-       .hero__right{
-           padding-top: 20%;
-       }
-       .hero__left{
-           text-align: center;
-       }
-       .hero__btn--accent{
-           position: relative;
-       }
+
+        .hero__right {
+            padding-top: 20%;
+        }
+
+        .hero__left {
+            text-align: center;
+        }
     }
 
-    .main__features{
+    .main__features {
         flex-wrap: wrap-reverse;
         text-align: center;
         padding: 15px 30px 15px 30px !important;
     }
 
-    .banner{
+    .banner {
         flex-wrap: wrap;
         height: 20em !important;
         width: 20em !important;
     }
 }
 
+@include responsive(986px) {
+    .hero {
+
+        .hero__btn--accent {
+            position: relative;
+            padding-right: 15%;
+            padding-left: 15%
+        }
+
+        .hero__subheading {
+            padding-left: 8%;
+            padding-bottom: 15%;
+        }
+    }
+
+}
