@@ -14,10 +14,10 @@
 
 @mixin grid-footer {
   display: grid;
-grid-template-columns: 40% repeat(3, 1fr);
-grid-template-rows: 1fr 10% 10% ;
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+  grid-template-columns: 40% repeat(3, 1fr);
+  grid-template-rows: 1fr 10% 10% ;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
 //mixin pour le responsive  @content = ce que vous allez ecrire en CSS
@@ -42,7 +42,6 @@ grid-row-gap: 0px;
 @mixin font-desc {
     color: $text-color-secondary;
     font-weight: $weight-open-sans;
-    // opacity: 0.5;
   }
 
 @mixin btn-primary {
