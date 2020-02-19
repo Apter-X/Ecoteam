@@ -10,15 +10,17 @@
 
 .banner{
   @include card;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: center;
-  padding-bottom: 3em;
+  @include flex; 
+
+  width: 55%;
+  height: auto;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 
   &__title{
-    margin-top: 2em;
-    padding-top: 2em;
-    padding-bottom: 1em;
+    @include font-title;
+    text-align: center;
   }
 
   &__btn{
