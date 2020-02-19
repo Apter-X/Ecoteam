@@ -1,13 +1,3 @@
-.main{
-  & h2{
-    @include font-title;
-  }
-
-  & p{
-    @include font-desc;
-  }
-}
-
 .main__features{
   @include flex;
   @include card;
