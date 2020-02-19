@@ -1,0 +1,74 @@
+//mixin pour l'alignement flexbox
+@mixin flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+//mixin grid ajustement
+@mixin grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "feature-text feature-img-cont"; //nom des classes
+}
+
+@mixin grid-footer {
+  display: grid;
+  grid-template-columns: 40% repeat(3, 1fr);
+  grid-template-rows: 1fr 10% 10% ;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+//mixin pour le responsive  @content = ce que vous allez ecrire en CSS
+@mixin responsive($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}
+
+@mixin card {
+  border: 1px $text-color-primary;
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px 0px $shadow-color;
+  padding: 50px 100px 50px 100px;
+}
+
+@mixin font-title {
+  font-family: "Poppins", sans-serif;
+  color: $text-color-primary;
+  font-weight: $weight-poppins;
+//   font-size: 85%;
+}
+
+@mixin font-desc {
+    color: $text-color-secondary;
+    font-weight: $weight-open-sans;
+    // font-size: 85%;
+}
+
+@mixin btn-primary {
+  padding: 10px;
+  text-align: center;
+  border-radius: 100px;
+  width: 250px;
+  border: 1px solid $color-accent;
+  background-color: $color-accent;
+  text-decoration: none;
+  color: $color-button;
+  font-weight: bold;
+  box-shadow: $main-box-shadow;
+}
+
+@mixin btn-secondary {
+  padding: 10px;
+  text-align: center;
+  border-radius: 100px;
+  width: 200px;
+  border: 1px solid $color-button;
+  background-color: $color-button;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  box-shadow: $main-box-shadow;
+}

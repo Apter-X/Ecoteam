@@ -1,0 +1,122 @@
+
+.footer{
+    
+    padding-top: 8em;
+    background-color:$text-color-primary;
+    color:$footer-color;
+    &__main{
+        
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    &__col-1{
+        padding-left: 5em;
+       flex-direction: row;
+        max-width: 400px;
+        div{
+           
+            a{
+                
+                font-size: 13px;
+                text-decoration: none;
+            color: $footer-color;
+            }
+            
+           
+           &:first-child {margin-bottom: 2rem;
+           }
+           &:nth-child(2) {margin-bottom: 3rem;
+           }
+        img{
+           
+            display: inline;
+            margin-right: 2rem;
+        }
+    }
+    }
+    &__col-2{
+    
+        display: flex;
+        flex-direction: column;
+        max-width: 100px;
+        a{
+            font-size: 13px;
+            text-decoration: none;
+            color: $footer-color;
+                &:first-child {margin-bottom: 3.9rem;
+                }
+                &:nth-child(2) {margin-bottom: 3.9rem;
+                }
+        }
+    }
+    &__col-3{
+        display: flex;
+        flex-direction: column;
+        max-width: 100px;
+        a{
+            font-size: 13px;
+            text-decoration: none;
+            color: $footer-color;
+            &:first-child {margin-bottom: 3.9rem;
+            }
+            &:nth-child(2) {margin-bottom: 3.9rem;
+            }
+        }
+    }
+    
+        &__col-4{
+            padding-right: 5em;
+        }
+       
+         &__social-link{
+            font-size: 12px;
+            text-decoration: none;
+         color: $footer-color;
+            border: 1px solid ;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 50%;
+            text-align: center;
+            &:hover{
+            background-color: $color-hero;
+        }
+         }
+        
+    &__copyright{
+        font-size: 12px;
+        padding-top: 6em;
+        width:  20%;
+        float: right;
+    }
+   .attribution{
+       padding-top: 5em;
+       font-size: 10px;
+        margin-top: 4%;
+       padding-left: 5%;
+           
+       }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

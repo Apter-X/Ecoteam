@@ -1,4 +1,6 @@
-_*
+_workspace*
 .*
-~$* 
-.vscode 
+~$*
+.vscode
+node_modules
+package-lock.json

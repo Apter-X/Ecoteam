@@ -1,0 +1,48 @@
+.main__features{
+  @include card;
+  @include flex;
+  
+  margin: 1.8em 0;
+  width: 85%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50 100 50 100;
+
+  &-reverse{
+    flex-direction: row-reverse;
+  }
+}
+
+.main__feature{
+  &-title{
+    @include font-title;
+  }
+  
+  &-desc{
+    @include font-desc;
+  }
+}
+
+.banner{
+    @include card;
+    @include flex;
+    transform: translate(0%, 39%);
+    background-color: white;
+    width: 55%;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  
+    &__title{
+      @include font-title;
+      text-align: center;
+      padding-bottom: 5%;
+    }
+  
+    &__btn{
+      @include btn-primary;
+      white-space: nowrap !important;
+      width: 300px;
+    }
+}

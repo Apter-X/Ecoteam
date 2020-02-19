@@ -1,0 +1,37 @@
+.hero {
+  background-color: $color-hero;
+
+  &__btn {
+    &--light {
+      @include btn-secondary;
+      position: absolute;
+      margin-top: 5%;
+    }
+
+    &--accent {
+      @include btn-primary;
+      position: absolute;
+       margin-top: 5%;
+      
+    }
+  }
+
+  &__heading {
+    font-size: xx-large;
+    padding-top:15%;
+    margin-bottom: 5%;
+  }
+ &__subheading{
+  padding: 2em em .1em .3em;
+ }
+  &__main-content {
+    padding-top: 10%;
+    padding-bottom: 5%;
+    @include grid;
+  }
+
+  &__right img {
+    width: 100%;
+  }
+
+}
