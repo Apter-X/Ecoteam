@@ -27,7 +27,8 @@
 .banner{
     @include card;
     @include flex;
-  
+    transform: translate(0%, 39%);
+    background-color: white;
     width: 55%;
     flex-wrap: wrap;
     margin-left: auto;
@@ -36,6 +37,7 @@
     &__title{
       @include font-title;
       text-align: center;
+      padding-bottom: 5%;
     }
   
     &__btn{
