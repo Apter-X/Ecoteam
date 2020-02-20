@@ -4,7 +4,9 @@
   .main__features {
     flex-wrap: wrap-reverse;
     text-align: center;
-    padding: 50px 100px 50px 100px !important; } }
+    padding: 50px 100px 50px 100px !important; }
+  .main__feature-img {
+    padding-right: 0 !important; } }
 
 @media screen and (max-width: 693px) {
   .footer__main {
@@ -48,8 +50,8 @@
     padding: 15px 30px 15px 30px !important; }
   .banner {
     flex-wrap: wrap;
-    height: 20em !important;
-    width: 20em !important; } }
+    height: 13em !important;
+    width: 15em !important; } }
 
 @media screen and (max-width: 986px) {
   .hero .hero__btn--accent {
@@ -225,6 +227,9 @@ img {
 .main__feature-desc {
   color: #808d99;
   font-weight: 400; }
+
+.main__feature-img {
+  padding-right: 30px; }
 
 .banner {
   border: 1px #00252e;
