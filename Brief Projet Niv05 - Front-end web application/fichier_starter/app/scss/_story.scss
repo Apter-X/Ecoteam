@@ -1,0 +1,15 @@
+.story{
+  @include grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+
+  &_image{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: darkcyan; 
+  }
+
+  &_desc{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: darksalmon;
+  }
+}

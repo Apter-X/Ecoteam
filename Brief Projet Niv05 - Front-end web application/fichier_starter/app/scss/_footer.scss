@@ -1,0 +1,26 @@
+.footer {
+  @include grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-bottom: 0;
+
+  &_menu{
+    grid-area: 1 / 1 / 2 / 7;
+    background-color: teal;
+  }
+
+  &_logo{
+    grid-area: 2 / 1 / 3 / 7;
+    background-color: tomato;
+  }
+
+  &_sub{
+    grid-area: 3 / 4 / 4 / 7;
+    background-color: violet;
+  }
+
+  &_copy{
+    grid-area: 3 / 1 / 4 / 4;
+    background-color: yellowgreen;
+  }
+}
