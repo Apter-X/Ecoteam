@@ -8,6 +8,7 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
+var runSequence = require('run-sequence');
 
 // Live Server
 gulp.task('browserSync', function() {
@@ -51,3 +52,9 @@ gulp.task('images', function(){
     })))
   .pipe(gulp.dest('dist/images'))
 });
+
+gulp.task('default', function(callback) {
+  runSequence(['sass', 'browserSync'], 'watch',
+    callback
+  )
+})

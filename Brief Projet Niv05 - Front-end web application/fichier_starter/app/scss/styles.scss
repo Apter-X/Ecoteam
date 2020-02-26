@@ -1,4 +1,13 @@
 // styles.scss
-.testing {
-  width: percentage(5/7);
-}
+@import "variables";
+@import "mixins";
+@import "responsive";
+@import "home";
+@import "header";
+@import "footer";
+@import "story";
+@import "features";
+@import "buttons";
+@import "grid";
+@import "galerie";
+@import "sidebar"
