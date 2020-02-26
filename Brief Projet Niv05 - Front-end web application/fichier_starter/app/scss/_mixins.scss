@@ -1,0 +1,19 @@
+//mixin pour l'alignement flexbox
+@mixin flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  //mixin grid ajustement
+  @mixin grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "feature-text feature-img-cont"; //nom des classes
+  }
+
+  @mixin responsive($arg) {
+    @media screen and (max-width: $arg) {
+      @content;
+    }
+  }
