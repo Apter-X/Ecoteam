@@ -1,8 +1,17 @@
 @mixin grid {
   display: grid;
-  width: 1024;
-  height: 500px;
   padding-bottom: 100px;
+}
+
+@mixin font-title {
+  font-family: "Poppins", sans-serif;
+  color: $text-color-primary;
+  font-weight: $weight-poppins;
+}
+  
+@mixin font-desc {
+  color: $text-color-secondary;
+  font-weight: $weight-open-sans;
 }
 
 @mixin responsive($arg) {
