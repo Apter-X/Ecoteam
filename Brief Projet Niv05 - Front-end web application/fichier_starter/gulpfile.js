@@ -9,6 +9,16 @@ var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 var runSequence = require('run-sequence');
+const autoprefixer = require('gulp-autoprefixer');
+
+gulp.task('prefix', () =>
+    gulp.src('app/css/styles.css')
+        .pipe(autoprefixer({
+            browsers: ['last 99 versions'],
+            cascade: false
+    }))
+    .pipe(gulp.dest('app/css'))
+);
 
 // Live Server
 gulp.task('browserSync', function() {
