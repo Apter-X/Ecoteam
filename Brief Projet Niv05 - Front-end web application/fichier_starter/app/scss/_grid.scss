@@ -211,7 +211,7 @@
 
 //footer//
 .footer {
-  display: grid;
+  @include grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
   padding-bottom: 0;
