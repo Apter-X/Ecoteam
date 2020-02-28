@@ -33,6 +33,16 @@ Utilisez les unités : em et Rem. n'utilisez plus les pixels.
 
 - H4 :  font-size: 1.6rem;
 
+### Headings
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 600
+
+### Body, Call-to-actions
+
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+
 ## Icons
 
 les liens des icons utilisés :

@@ -1,28 +1,31 @@
 //Header//
 .header {
   @include grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px; 
+  width: 100%;
+  height: 500px;
+
+  grid-template-columns: 75% 1fr;
+  grid-template-rows: 20% 1fr 30%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   
   &_logo{
-    grid-area: 1 / 3 / 2 / 4;
+    grid-area: 1 / 1 / 2 / 3;
     background-color: red;
   }
   
   &_slider{
-    grid-area: 2 / 1 / 5 / 6;
+    grid-area: 2 / 1 / 4 / 2;
     background-color: blue; 
   }
   
   &_client{
-    grid-area: 5 / 1 / 6 / 6;
+    grid-area: 3 / 1 / 4 / 2;
     background-color: green;
   }
   
   &_agent{
-    grid-area: 1 / 6 / 6 / 7;
+    grid-area: 2 / 2 / 4 / 3;
     background-color: yellow;
   }
 }
@@ -66,13 +69,32 @@
   }
 }
 
+.story{
+  @include grid;
+  width: 100%;
+  height: 500px;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+
+  &_image{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: darkcyan; 
+  }
+
+  &_desc{
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: darksalmon;
+  }
+}
+
 //maison//
 .maison{
   @include grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 200px;
-  grid-row-gap: 20px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
 
   &_card1 { 
     grid-area: 1 / 1 / 2 / 2; 
@@ -107,7 +129,7 @@
 
 //gallerie//
 .gallerie {
-  @include grid;
+  display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 20px;
@@ -192,7 +214,7 @@
 
 //footer//
 .footer {
-  @include grid;
+  display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr);
   padding-bottom: 0;
