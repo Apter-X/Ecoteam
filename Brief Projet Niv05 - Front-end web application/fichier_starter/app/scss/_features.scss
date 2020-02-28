@@ -1,5 +1,30 @@
 .feature{
     text-align: center;
- 
+
+   &_item1 i{
+       
+       margin-left: -3em;
+       font-size: 4em;
+   }
+   &_item2 i{
+    margin-left: -3em;
+    font-size: 4em;
+}
+&_item3 i{
+    margin-left: -3em;
+    font-size: 4em;
+}
+&_item4 i{
+    margin-left: -3em;
+    font-size: 4em;
+}
+&_item5 i{
+    margin-left: -3em;
+    font-size: 4em;
+}
+&_item6 i{
+    margin-left: -3em;
+    font-size: 4em;
+}
     
 }
