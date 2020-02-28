@@ -1,12 +1,9 @@
 .feature{
   text-align: center;
+  color: white;
 
   &_item i{
     margin-left: -3em;
     font-size: 4em;
-  }
-
-  &_item P{ 
-    @include font-desc;
   }
 }
