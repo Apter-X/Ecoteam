@@ -1,0 +1,36 @@
+.maison{
+    // @include card;
+    width: 1000PX;
+    margin: auto;
+    margin-top: 100px;
+}
+.card1{box-shadow:0 4px 8px 0 rgba(0,0,0,0.6);
+transition:0.4s;
+width:300px;
+text-align:center;
+font-size:16px;
+font-family: sans-serif;
+float: left;
+margin: 10px;
+}
+.maison{
+    .maison_card1 img{
+        width: 100%;
+    }
+    .maison_card2 img{
+        width: 100%;
+    }
+    
+    .maison_card3 img{
+        width: 100%;
+    }
+    .maison_card4 img{
+        width: 100%;
+    }
+    .maison_card5 img{
+        width: 100%;
+    }
+    .maison_card6 img{
+        width: 100%;
+    }
+}

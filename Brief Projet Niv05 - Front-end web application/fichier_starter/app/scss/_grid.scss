@@ -1,229 +1,219 @@
 //Header//
 .header {
-    @include grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; 
+  @include grid;
+  grid-template-columns: 75% 1fr;
+  grid-template-rows: 20% 1fr 30%;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   
-    &_logo{
-      grid-area: 1 / 3 / 2 / 4;
-      background-color: red;
-    }
-  
-    &_slider{
-      grid-area: 2 / 1 / 5 / 6;
-      background-color: blue; 
-    }
-  
-    &_client{
-      grid-area: 5 / 1 / 6 / 6;
-      background-color: green;
-    }
-  
-    &_agent{
-        grid-area: 1 / 6 / 6 / 7;
-      background-color: yellow;
-    }
+  &_logo{
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: red;
   }
-
-  //features//
-  .feature{
-    @include grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
-
-    &_item1 { 
-        grid-area: 1 / 1 / 2 / 2; 
-        background-color: yellowgreen;
-    }
-    &_item2 { 
-        grid-area: 1 / 2 / 2 / 3;
-        background-color: slateblue;
-    }
-    &_item3 { 
-        grid-area: 1 / 3 / 2 / 4; 
-        background-color: tomato;
-    }
-    &_item4 { 
-        grid-area: 2 / 1 / 3 / 2; 
-        background-color: violet;
-    }
-    &_item5 { 
-        grid-area: 2 / 2 / 3 / 3; 
-        background-color: yellow;
-    }
-    &_item6 { 
-        grid-area: 2 / 3 / 3 / 4;
-        background-color: sienna;
-    }
+  
+  &_slider{
+    grid-area: 2 / 1 / 4 / 2;
+    background-color: blue; 
+  }
+  
+  &_client{
+    grid-area: 3 / 1 / 4 / 2;
+    background-color: green;
+  }
+  
+  &_agent{
+    grid-area: 2 / 2 / 4 / 3;
+    background-color: yellow;
+  }
 }
+
+//features//
+.feature{
+  @include grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+
+  &_item1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-color: yellowgreen;
+  }
+    
+  &_item2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: slateblue;
+  }
+    
+  &_item3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-color: tomato;
+  }
+    
+  &_item4 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-color: violet;
+  }
+    
+  &_item5 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-color: yellow;
+  }
+    
+  &_item6 { 
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: sienna;
+  }
+}
+
+//maison//
+.maison{
+  @include grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 200px;
+  grid-row-gap: 20px;
+
+  &_card1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-color: yellowgreen;
+  }
+  
+  &_card2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: slateblue;
+  }
+  
+  &_card3 {
+    grid-area: 1 / 3 / 2 / 4; 
+    background-color: tomato;
+  }
+    
+  &_card4 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-color: violet;
+  }
+    
+  &_card5 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-color: yellow;
+  }
+  
+  &_card6 { 
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: sienna;
+  }
+}
+
+//gallerie//
+.gallerie {
+  @include grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  
+  &_cadre1{
+    grid-area: 1 / 1 / 2 / 2;   
+  }
+  
+  &_cadre2{
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  
+  &_cadre3{
+    grid-area: 1 / 3 / 2 / 6;    
+  }
+  
+  &_cadre4{
+    grid-area: 1 / 6 / 2 / 8; 
+  }
+  
+  &_cadre5{
+    grid-area: 2 / 1 / 3 / 3; 
+  }
+  
+  &_cadre6{
+    grid-area: 2 / 3 / 5 / 6;
+  }
+  
+  &_cadre7{
+    grid-area: 2 / 6 / 3 / 7;
+  }
+  
+  &_cadre8{
+    grid-area: 2 / 7 / 3 / 8;
+  }
+  
+  &_cadre9{
+    grid-area: 3 / 1 / 4 / 3; 
+  }
+  
+  &_cadre10{
+    grid-area: 3 / 6 / 4 / 7; 
+  }
+  
+  &_cadre11{
+    grid-area: 3 / 7 / 4 / 8;  
+  }
+  
+  &_cadre12{
+    grid-area: 4 / 1 / 5 / 2;    
+  }
+  
+  &_cadre13{
+    grid-area: 4 / 2 / 5 / 3;  
+  }
+  
+  &_cadre14{
+    grid-area: 4 / 6 / 5 / 7;  
+  }
+  
+  &_cadre15{
+    grid-area: 4 / 7 / 5 / 8;  
+  }
+  
+  &_cadre16{
+    grid-area: 5 / 1 / 6 / 4;   
+  }
+  
+  &_cadre17{
+    grid-area: 5 / 4 / 6 / 5;    
+  }
+  
+  &_cadre18{
+    grid-area: 5 / 5 / 6 / 6;  
+  }
+  
+  &_cadre19{
+    grid-area: 5 / 6 / 6 / 8;
+  }
+}
+
 //footer//
 .footer {
-    @include grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    padding-bottom: 0;
-  
-    &_menu{
-      grid-area: 1 / 1 / 2 / 7;
-      background-color: teal;
-    }
-  
-    &_logo{
-      grid-area: 2 / 1 / 3 / 7;
-      background-color: tomato;
-    }
-  
-    &_sub{
-      grid-area: 3 / 4 / 4 / 7;
-      background-color: violet;
-    }
-  
-    &_copy{
-      grid-area: 3 / 1 / 4 / 4;
-      background-color: yellowgreen;
-    }
-  }
-  //gallerie//
-  .gallerie {
-    @include grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-  
-    &_cadre1{
-      grid-area: 1 / 1 / 2 / 2;
-      background-color: darkslateblue;
-    }
-  
-    &_cadre2{
-      grid-area: 1 / 2 / 2 / 3;
-      background-color: darkslategray;
-  
-    }
-  
-    &_cadre3{
-      grid-area: 1 / 3 / 2 / 6;
-      background-color: darkviolet;
-    }
-  
-    &_cadre4{
-      grid-area: 1 / 6 / 2 / 8;
-      background-color: dodgerblue;
-    }
-  
-    &_cadre5{
-      grid-area: 2 / 1 / 3 / 3;
-      background-color: fuchsia;
-    }
-  
-    &_cadre6{
-      grid-area: 2 / 3 / 5 / 6;
-      background-color: gold;
-    }
-  
-    &_cadre7{
-      grid-area: 2 / 6 / 3 / 7;
-      background-color: greenyellow;
-    }
-  
-    &_cadre8{
-      grid-area: 2 / 7 / 3 / 8;
-      background-color: indianred;
-    }
-  
-    &_cadre9{
-      grid-area: 3 / 1 / 4 / 3;
-      background-color: indigo;
-    }
-  
-    &_cadre10{
-      grid-area: 3 / 6 / 4 / 7;
-      background-color: ivory;
-    }
-  
-    &_cadre11{
-      grid-area: 3 / 7 / 4 / 8; 
-      background-color: lightcoral;
-    }
-  
-    &_cadre12{
-      grid-area: 4 / 1 / 5 / 2;
-      background-color: maroon;
-    }
-  
-    &_cadre13{
-      grid-area: 4 / 2 / 5 / 3;
-      background-color: mediumpurple;
-    }
-  
-    &_cadre14{
-      grid-area: 4 / 6 / 5 / 7;
-      background-color: midnightblue;
-    }
-  
-    &_cadre15{
-      grid-area: 4 / 7 / 5 / 8;
-      background-color: orangered;
-    }
-  
-    &_cadre16{
-      grid-area: 5 / 1 / 6 / 4;
-      background-color: peru;
-    }
-  
-    &_cadre17{
-      grid-area: 5 / 4 / 6 / 5;
-      background-color: rebeccapurple;
-    }
-  
-    &_cadre18{
-      grid-area: 5 / 5 / 6 / 6;
-      background-color: sandybrown;
-    }
-  
-    &_cadre19{
-      grid-area: 5 / 6 / 6 / 8;
-      background-color: steelblue;
-    }
+  @include grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-bottom: 0;
+
+  &_menu{
+    grid-area: 1 / 1 / 2 / 7;
+    background-color: teal;
   }
 
-  //maison//
+  &_logo{
+    grid-area: 2 / 1 / 3 / 7;
+    background-color: tomato;
+  }
 
-  .maison{
-    @include grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 200px;
-    grid-row-gap: 20px;
+  &_sub{
+    grid-area: 3 / 4 / 4 / 7;
+    background-color: violet;
+  }
 
-    &_card1 { 
-        grid-area: 1 / 1 / 2 / 2; 
-        background-color: yellowgreen;
-    }
-    &_card2 { 
-        grid-area: 1 / 2 / 2 / 3;
-        background-color: slateblue;
-    }
-    &_card3 {
-        grid-area: 1 / 3 / 2 / 4; 
-        background-color: tomato;
-    }
-    &_card4 { 
-        grid-area: 2 / 1 / 3 / 2; 
-        background-color: violet;
-    }
-    &_card5 { 
-        grid-area: 2 / 2 / 3 / 3; 
-        background-color: yellow;
-    }
-    &_card6 { 
-        grid-area: 2 / 3 / 3 / 4;
-        background-color: sienna;
-    }
+  &_copy{
+    grid-area: 3 / 1 / 4 / 4;
+    background-color: yellowgreen;
+  }
 }
-
