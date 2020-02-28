@@ -9,6 +9,7 @@
     }
 
     &_card{
+    
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.6);
     transition:0.4s;
     width:300px;
@@ -17,5 +18,12 @@
     font-family: sans-serif;
     float: left;
     margin: 10px;
+    .test{
+        display: flex; 
+        justify-content: space-around; 
+        background-color: white; 
+        
+    }
     }
 }
+//margin-top: 1em;
