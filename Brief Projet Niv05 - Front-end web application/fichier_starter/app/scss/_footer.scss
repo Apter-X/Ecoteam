@@ -17,12 +17,21 @@
     }          
 }
 .footer_sub input{
-    margin-top: 150px;
+    margin-top: 12em;
     height: 2em;
 }
 input[type=text]{
     text-align: center;
 }
 .footer_copy{
-    padding:15em;
+    margin-top: 10em;
+}
+input[type=button]{
+    @include button-primary;
+    width: 9em;
+    height: 2.4em;
+    
+
+
+    
 }
