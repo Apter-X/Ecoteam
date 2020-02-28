@@ -1,0 +1,28 @@
+
+.footer{
+
+    &_menu{
+        box-shadow:2em 1em #4d4b4b;
+        display: flex;
+    justify-content: space-around;
+    color:rgb(109, 43, 43);
+
+    }
+    &_logo{
+        &--img img{
+            width: 20%;
+            margin-left: 40%;
+
+        }
+    }          
+}
+.footer_sub input{
+    margin-top: 150px;
+    height: 2em;
+}
+input[type=text]{
+    text-align: center;
+}
+.footer_copy{
+    margin-top:10em;
+}
