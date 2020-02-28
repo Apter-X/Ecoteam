@@ -5,6 +5,17 @@
   padding-bottom: 100px;
 }
 
+@mixin font-title {
+  font-family: "Poppins", sans-serif;
+  color: $text-color-primary;
+  font-weight: $weight-poppins;
+}
+  
+@mixin font-desc {
+  color: $text-color-secondary;
+  font-weight: $weight-open-sans;
+}
+
 @mixin responsive($arg) {
   @media screen and (max-width: $arg) {
     @content;
