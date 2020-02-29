@@ -28,14 +28,14 @@
        
     }
   button{
-    @include button-maison
+    @include button-maison;
     width: 18.8em;
     margin-top: 3em;
   }
    
     }
-}
 
+  }
 
 input[type=button]{
     @include button-primary;
