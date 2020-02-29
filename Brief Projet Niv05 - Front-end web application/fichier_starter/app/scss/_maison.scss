@@ -9,15 +9,13 @@
     }
 
     &_card{
-    background-color: white;
-    box-shadow:0 4px 8px 0 rgba(0,0,0,0.6);
-    transition:0.4s;
-    width:300px;
-    text-align:center;
-    font-size:16px;
-    font-family: sans-serif;
-    float: left;
-    margin: 10px;
+      background-color: white;
+      box-shadow:$main-box-shadow;
+      width:20em;
+      text-align:center;
+      font-size:1em;
+      font-family: sans-serif;
+      float: left;
     h3{
        margin-top: 1em;
     }
@@ -29,7 +27,7 @@
     }
   button{
     @include button-maison;
-    width: 18.8em;
+    width: 20em;
     margin-top: 3em;
   }
    
@@ -37,7 +35,7 @@
     input[type=button]{
       @include button-primary;
       margin-top: -3em;
-      margin-left: 2em;
+      margin-left: 1em;
       width: 10em;
       height: 2.4em;   
   }
