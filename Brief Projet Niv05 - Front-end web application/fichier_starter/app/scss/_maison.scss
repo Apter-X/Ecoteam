@@ -34,13 +34,14 @@
   }
    
     }
+    input[type=button]{
+      @include button-primary;
+      margin-top: -3em;
+      margin-left: 2em;
+      width: 10em;
+      height: 2.4em;   
+  }
 
   }
 
-input[type=button]{
-    @include button-primary;
-    margin-top: -3em;
-    margin-left: 2em;
-    width: 10em;
-    height: 2.4em;   
-}
+
