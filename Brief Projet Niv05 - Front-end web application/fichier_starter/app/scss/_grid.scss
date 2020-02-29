@@ -225,14 +225,9 @@
     grid-area: 2 / 1 / 3 / 7;
     
   }
-
-  &_sub{
-    grid-area: 3 / 4 / 4 / 7;
-    
+  &_copybtn
+  {
+    grid-area: 3 / 1 / 4 / 7;
   }
-
-  &_copy{
-    grid-area: 3 / 1 / 4 / 4;
-    
-  }
+  
 }
