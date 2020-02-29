@@ -9,7 +9,7 @@
     }
 
     &_card{
-    
+    background-color: white;
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.6);
     transition:0.4s;
     width:300px;
@@ -18,12 +18,29 @@
     font-family: sans-serif;
     float: left;
     margin: 10px;
+    h3{
+       margin-top: 1em;
+    }
     .test{
         display: flex; 
         justify-content: space-around; 
-        background-color: white; 
-        
+        margin-top: 1em; 
+       
     }
+  button{
+    @include button-maison
+    width: 18.8em;
+    margin-top: 3em;
+  }
+   
     }
 }
-//margin-top: 1em;
+
+
+input[type=button]{
+    @include button-primary;
+    margin-top: -3em;
+    margin-left: 2em;
+    width: 10em;
+    height: 2.4em;   
+}

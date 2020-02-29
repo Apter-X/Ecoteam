@@ -1,2 +1,33 @@
 
-   
+.story{
+    &_image img{
+        width: 38em;
+        height: 27em;
+        
+    }
+    &_desc{
+        
+        background-color:white;
+        font-size: $font-size;
+        color: $text-color-secondary;
+    }
+    &_desc h1{
+        font-size: $font-size;
+        margin-left: 1em;
+        margin-top: 1em;
+        color: #9d9b9b;
+        
+       
+    }
+    &_desc p{
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    input[type=button]{
+        @include button-primary;
+        margin-left: 2em;
+        margin-top: 2em;
+        width: 12em;
+        height: 3em;   
+    }
+   }
