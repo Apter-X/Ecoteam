@@ -22,6 +22,7 @@
 
 @mixin button-primary {
     border-radius: 12px;
+    transition: $trans-cubic;
     background-color: $color-primary; 
     border: none;
     color: white;
@@ -37,6 +38,7 @@
 
 @mixin button-maison {
   background-color: $color-secondary; 
+  transition: $trans-cubic;
     border: none;
     color: white;
     font-weight: bold;

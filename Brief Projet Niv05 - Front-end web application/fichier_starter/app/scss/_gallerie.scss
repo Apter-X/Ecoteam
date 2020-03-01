@@ -1,4 +1,18 @@
 .gallerie{
+    img {
+
+
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+    :hover img {
+        
+        -webkit-transform: scale(1.5);
+        transform: scale(1.1);
+    }
+
    &_cadre1 img{
     margin-left: 1em;
        width: 10em;
@@ -27,8 +41,7 @@
    }
 
    &_cadre6 img{
-    
-    width: 31em;
+    width: 30em;
     height: 24em;
    }
    
@@ -82,7 +95,7 @@
 }
 &_cadre16 img{
     margin-left: 1em;
-    width: 31em;
+    width: 30em;
     height: 7em;
 }
 &_cadre17 img{
