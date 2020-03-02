@@ -86,41 +86,13 @@
 
 //maison//
 .maison{
-  @include grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
-
-  &_card1 { 
-    grid-area: 1 / 1 / 2 / 2; 
-    
+  &__cards
+  {
+    @include grid;
+    grid-template-columns: repeat(3, 33.33%);
   }
+ 
   
-  &_card2 { 
-    grid-area: 1 / 2 / 2 / 3;
-    
-  }
-  
-  &_card3 {
-    grid-area: 1 / 3 / 2 / 4; 
-   
-  }
-    
-  &_card4 { 
-    grid-area: 2 / 1 / 3 / 2; 
-    
-  }
-    
-  &_card5 { 
-    grid-area: 2 / 2 / 3 / 3; 
-    
-  }
-  
-  &_card6 { 
-    grid-area: 2 / 3 / 3 / 4;
-  
-  }
 }
 
 //gallerie//
