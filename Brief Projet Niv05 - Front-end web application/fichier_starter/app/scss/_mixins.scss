@@ -21,7 +21,6 @@
 }
 
 @mixin button-primary {
-    border-radius: 12px;
     transition: $trans-cubic;
     background-color: $color-primary; 
     border: none;
@@ -33,7 +32,6 @@
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    border-radius: 12px;
 }
 
 @mixin button-maison {
@@ -41,11 +39,10 @@
   transition: $trans-cubic;
     border: none;
     color: white;
+    border: none;
+    width: 100%;
+    padding: 1em 0em;
     font-weight: bold;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    cursor: pointer;
+    
 }
+
