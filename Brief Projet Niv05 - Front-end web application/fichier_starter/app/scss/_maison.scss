@@ -1,45 +1,37 @@
-.maison{
-    // @include card;
-    width: 1000PX;
-    margin: 5em;
-    margin-top: 100px;
+.maison {
+ 
+  &__cards {
     
-    &_card img{
+    text-align: center;
+    &--card{
+      background-color:$color-button;
+      width: 60%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      margin-top: 1em;
+      img {
         width: 100%;
+      }
+      ul {
+        li {
+          display: grid;
+          grid-template-columns: repeat(2, 50%);
+          padding: 1em 0;
+          color:black;
+        }
+      }
+      input 
+      {
+        transform: translate(4%,-50%);
+        @include button-primary
+      }
+      button {
+        @include button-maison;
+        
+      }
     }
-
-    &_card{
-      background-color: white;
-      box-shadow:$main-box-shadow;
-      width:20em;
-      text-align:center;
-      font-size:1em;
-      font-family: sans-serif;
-      float: left;
-    h3{
-       margin-top: 1em;
-    }
-    .test{
-        display: flex; 
-        justify-content: space-around; 
-        margin-top: 1em; 
-       
-    }
-  button{
-    @include button-maison;
-    width: 20em;
-    margin-top: 3em;
   }
-   
-    }
-    input[type=button]{
-      @include button-primary;
-      margin-top: -3em;
-      margin-left: 1em;
-      width: 10em;
-      height: 2.4em;   
-  }
-
-  }
-
+}
 
