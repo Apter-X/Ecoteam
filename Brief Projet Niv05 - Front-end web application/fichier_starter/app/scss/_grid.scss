@@ -69,19 +69,12 @@
 .story{
   @include grid;
   width: 100%;
-  height: 500px;
+  
 
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 50%);
+  
 
-  &_image{
-    grid-area: 1 / 1 / 2 / 2;
-    
-  }
-
-  &_desc{
-    grid-area: 1 / 2 / 2 / 3;
-  }
+  
 }
 
 //maison//
