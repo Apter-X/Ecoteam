@@ -1,6 +1,6 @@
 .footer{
   margin-top: 5%;
-  background-image: url("../images/house-4.jpeg");
+  background:rgba(black, 0.5);
   background-size: 100%;
   background-repeat: no-repeat;
   &_menu{  
@@ -47,6 +47,12 @@
     
 
   }          
+}
+
+.back
+{
+  background-image: url(../images/house-4.jpeg);
+  background-size: 100%;
 }
 
 
