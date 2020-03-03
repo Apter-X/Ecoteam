@@ -32,3 +32,9 @@
         height: 3em;   
     }
    }
+   @include responsive(700px) {
+    .story {
+        grid-template-columns: repeat(1, 100%);    
+  }
+}
+  
