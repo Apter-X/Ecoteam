@@ -8,9 +8,8 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
-var runSequence = require('run-sequence');
 const autoprefixer = require('gulp-autoprefixer');
-const { series, parallel } = require('gulp');
+const { series } = require('gulp');
 
 gulp.task('prefix', () =>
     gulp.src('app/css/styles.css')
@@ -64,4 +63,5 @@ gulp.task('images', function(){
   .pipe(gulp.dest('dist/images'))
 });
 
-exports.build = series(parallel('sass', 'browserSync'), 'watch');
+//Build Prod
+exports.build = series('sass', 'images', 'prefix', 'useref');
