@@ -1,8 +1,8 @@
 
 .story{
     &_image img{
-        width: 38em;
-        height: 27em;
+        width: 100%;
+        height: 100%;
         
     }
     &_desc{
@@ -27,7 +27,14 @@
         @include button-primary;
         margin-left: 2em;
         margin-top: 2em;
+        margin-bottom: 2%;
         width: 12em;
         height: 3em;   
     }
    }
+   @include responsive(700px) {
+    .story {
+        grid-template-columns: repeat(1, 100%);    
+  }
+}
+  
