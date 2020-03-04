@@ -1,0 +1,45 @@
+.cont
+{
+    .header
+    {
+        background-color: $color-background;
+    }
+}
+.contact
+{
+    background-color: $color-background;
+    background-position: center;
+    h1
+        {
+            padding-bottom: 2%;
+            text-align: center;
+            color:$color-button ;
+        }
+    &__frm
+    {
+        margin-left: 41%;
+       input[type="text"]
+       {
+           width: 250px;
+           height: 30px;
+
+       }
+       label
+       {
+           margin-left: 1%;
+           color:$color-button ;
+       }
+       button
+       {
+           @include button-primary;
+           width: 110px;
+           border-radius: 12px;
+           margin-bottom: 10%;
+
+           i
+           {
+               margin-right: 30%;
+           }
+       }
+    }
+}
