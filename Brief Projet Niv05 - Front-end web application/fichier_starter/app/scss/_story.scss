@@ -1,19 +1,28 @@
 
 .story{
-    &_image img{
-        width: 100%;
-        height: 100%;
-        
-    }
+    &_image--img1 {
+     width: 18em;
+    padding-left: 1em;
+    margin-left: 3em;
+    margin-bottom: -2em;
+      }
+      &_image--img2 {
+        margin-left: 15em;
+        margin-top: -2em;
+        width: 19em;
+         }
+    
+   
+    
     &_desc{
-        
+      margin-left: -2em;
         background-color:white;
         font-size: $font-size;
         color: $text-color-secondary;
     }
     &_desc h1{
         font-size: $font-size;
-        margin-left: 0;
+        margin-left: 1em;
         margin-top: 1em;
         color: #9d9b9b;
         
@@ -21,7 +30,7 @@
     }
     &_desc p{
       float: left;
-      margin-left: 0em;
+      margin-left: 1em;
       margin-top: 1em;
     }
     
@@ -81,7 +90,7 @@
     background: #fff;
     border-radius: 5px;
     padding: 0em 2em;
-    height: 47%;
+    height: 37%;
   }
  
   
@@ -127,22 +136,35 @@
   }
   
   
+
+  
   .btn {
     
-   @include button-primary
+   @include button-primary;
+   margin-left: 10em;
+   margin-top: 1em;
+ 
   }
   
   .btn:hover,
   .btn:focus {
     background: #2ecc71;
   }
-  
+  .btn-2{
+    @include button-primary;
+    margin-left: 25em;
+    margin-top: 2em;
+  }
+  .btn-2:hover,
+  .btn-2:focus {
+    background: #2ecc71;
+  }
   
   
   .modal__titles{
    float: left;
-   margin-left: 15em;
-    margin-top: -20em;
+   margin-left: 16em;
+   margin-top: -18em;
     
   }
 
@@ -166,7 +188,7 @@
 	 flex-direction: row;
 	 flex-wrap: nowrap;
     justify-content: flex-end;
-    margin: -15em -2em 0em 14em;
+    margin: -13em -2em 0em 14em;
     text-align: left;
    
   }
