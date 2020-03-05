@@ -8,7 +8,7 @@
   color: $text-color-primary;
   font-weight: $weight-poppins;
 }
-  
+
 @mixin font-desc {
   color: $text-color-secondary;
   font-weight: $weight-open-sans;
@@ -35,7 +35,7 @@
 }
 
 @mixin button-maison {
-  background-color: $color-secondary; 
+  background-color: $color-secondary;
   transition: $trans-cubic;
     border: none;
     color: white;
