@@ -2,7 +2,7 @@ function open_close(){
   var bar = document.getElementById("ext");
 
   if (bar.style.display === "none") {
-    bar.style.display = "block";
+    bar.style.display = "flex";
     
     document.getElementById("mySidebar").style.width = "200px";
     document.getElementById("main").style.marginLeft = "200px";
@@ -13,6 +13,5 @@ function open_close(){
     document.getElementById("mySidebar").style.width = "50px";
     document.getElementById("main").style.marginLeft = "50px";
     document.getElementById("openNav").style.width = "50px";
-    // document.getElementById("ext").style.display = "inline-block";
   }
 }

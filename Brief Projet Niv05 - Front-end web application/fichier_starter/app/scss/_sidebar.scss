@@ -16,7 +16,15 @@
   }
 
   &_nav{
-    display: none;
+    display: none; //flex toggle
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+
+    & a{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 }
 
