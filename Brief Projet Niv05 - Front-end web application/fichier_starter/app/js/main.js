@@ -1,19 +1,18 @@
-function open_close() {
+function open_close(){
+  var bar = document.getElementById("ext");
+
+  if (bar.style.display === "none") {
+    bar.style.display = "block";
+    
     document.getElementById("mySidebar").style.width = "200px";
     document.getElementById("main").style.marginLeft = "200px";
     document.getElementById("openNav").style.width = "200px";
-    // document.getElementById("mySidebar").style.display = "block";
-    // document.getElementById("openNav").style.display = 'none';
-  }
-  function _close() {
-    document.getElementById("main").style.marginLeft = "0";
-//     document.getElementById("mySidebar").style.display = "none";
-    // document.getElementById("openNav").style.display = "inline-block";
-  }
+  } else {
+    bar.style.display = "none";
 
-//   var x = document.getElementById("mySidebar");
-//   if (x.style.width === "none") {
-//     x.style.display = "block";
-//   } else {
-//     x.style.display = "none";
-//   }
+    document.getElementById("mySidebar").style.width = "50px";
+    document.getElementById("main").style.marginLeft = "50px";
+    document.getElementById("openNav").style.width = "50px";
+    // document.getElementById("ext").style.display = "inline-block";
+  }
+}
