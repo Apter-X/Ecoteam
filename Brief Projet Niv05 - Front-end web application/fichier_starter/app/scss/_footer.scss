@@ -10,7 +10,10 @@
     color:rgb(255, 255, 255);
     margin-top:   3%;
   }
-    
+  .footer_menu :hover{
+    color:#56ccc8;
+  }
+ 
   &_logo{
     &--img img{
       width: 20%;
@@ -20,7 +23,7 @@
   &_copybtn
   {
     
-    margin-bottom:  2%;
+    // margin-bottom:  2%;
     
      &--sub{
       padding-top: 4%;
@@ -53,6 +56,35 @@
 {
   background-image: url(../images/house-4.jpeg);
   background-size: 100%;
+}
+@include responsive(700px) {
+  .footer{
+    &_menu{
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+    }
+    &_copybtn
+    {
+      &--copy
+      {
+         position: relative;
+         top: 53%;
+      }
+    }
+    &_copybtn{
+      &--sub{
+        margin-right: 15%
+        position: relative;
+        top: 53%;
+      }
+      
+  }
+    }
+    .footer_logo{
+      position: relative;
+      top: 68%;
+    }
 }
 
 
