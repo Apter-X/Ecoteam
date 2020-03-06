@@ -90,7 +90,7 @@
     background: #fff;
     border-radius: 5px;
     padding: 0em 2em;
-    height: 37%;
+    height: 50%;
   }
  
   
@@ -152,8 +152,8 @@
   }
   .btn-2{
     @include button-primary;
-    margin-left: 25em;
-    margin-top: 2em;
+    margin-left: 28em;
+    margin-top: 3em;
   }
   .btn-2:hover,
   .btn-2:focus {
@@ -164,7 +164,7 @@
   .modal__titles{
    float: left;
    margin-left: 16em;
-   margin-top: -18em;
+   margin-top: -17em;
     
   }
 
@@ -178,9 +178,9 @@
 	justify-content: flex-start;
 	align-items: stretch;
 	align-content: flex-start;
-    height: 10em;
+  height: 9em;
+}
 
-  }
   .modal__paraghraph{
     font-size: 1em;
     display: flex;
@@ -188,7 +188,7 @@
 	 flex-direction: row;
 	 flex-wrap: nowrap;
     justify-content: flex-end;
-    margin: -13em -2em 0em 14em;
+    margin: -12em -2em 0em 14em;
     text-align: left;
    
   }
