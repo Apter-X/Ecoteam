@@ -1,15 +1,28 @@
 
 .story{
+  img {
+
+
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+:hover img {
+    
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+}
     &_image--img1 {
      width: 18em;
     padding-left: 1em;
-    // margin-left: 3em;
     margin-bottom: -2em;
       }
       &_image--img2 {
         margin-left: 15em;
         margin-top: -2em;
-        width: 19em;
+        width: 18em;
+        
          }
     
    
