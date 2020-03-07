@@ -162,13 +162,8 @@
      margin-top: 3em;
    
    }
-   
-  }
- 
- 
- 
   
- 
+
   .modal__image img{
     margin-left: -2em;
     display: flex;
@@ -192,6 +187,8 @@
    
   }
   
+
+  }
   .btn {
     
     @include button-primary;
@@ -199,4 +196,3 @@
     margin-top: 1em;
     
    }
-  
