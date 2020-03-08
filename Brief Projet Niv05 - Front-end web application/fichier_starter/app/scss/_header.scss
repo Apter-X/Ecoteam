@@ -1,5 +1,4 @@
 .header {
-
     &_agent {
         background-color: $color-header;
         height: 100%;
@@ -31,13 +30,14 @@
 
         @import url('./node_modules/bourbon/core/_bourbon.scss');
         $num-of-slide: 5;
-
-
+        
+        
 
         .wrapper {
             max-width: 60em;
             // margin: 1em auto;
             position: relative;
+            
         }
 
         input {
@@ -53,9 +53,11 @@
             width: percentage(1/$num-of-slide);
             float: left;
             position: relative;
+            
 
             img {
                 width: 100%;
+                
             }
         }
 
@@ -112,7 +114,7 @@
             color: $color-black;
             text-align: left;
 
-
+            background-color:rgba($color: #000000, $alpha: .2);
 
             h3 {
                 color: $color-header;
@@ -141,15 +143,10 @@
                     margin-left: 50%;
                     margin-top: 2%;
                     margin-bottom: 2%;
-                    background-color:rgba($color: #000000, $alpha: .2);
+                    
                    
         
                 }
-            }
-
-            &.top-right {
-                top: 30px;
-                right: 30px;
             }
 
             &.bottom-left {
@@ -163,11 +160,6 @@
                 margin-top: 4%;
                 margin-right: 2%;
 
-            }
-
-            &.bottom-right {
-                bottom: 30px;
-                right: 30px;
             }
 
             &.titre {
