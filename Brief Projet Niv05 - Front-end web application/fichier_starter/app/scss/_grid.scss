@@ -1,25 +1,25 @@
 //Header//
 .header {
   @include grid;
-  grid-template-columns: 75% 1fr;
-  grid-template-rows: 20% 1fr 30%;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+  grid-template-columns: 75% 25%;
+  // grid-template-rows: ;
+  // grid-column-gap: 0px;
+  // grid-row-gap: 0px;
   
-  &_logo{
-    grid-area: 1 / 1 / 2 / 3;
-  }
+  // &_logo{
+  //   grid-area: 1 / 1 / 2 / 3;
+  // }
   
-  &_slider{
-    grid-area: 2 / 1 / 4 / 2;
+  // &_slider{
+  //   grid-area: 2 / 1 / 4 / 2;
    
-  }
+  // }
   
   
-  &_agent{
-    grid-area: 2 / 2 / 4 / 3;
+  // &_agent{
+  //   grid-area: 2 / 2 / 4 / 3;
    
-  }
+  // }
 }
 
 //features//
