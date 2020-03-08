@@ -139,5 +139,16 @@
       }
   }
   }
+   //les titres
+  
+   @include responsive(700px)
+   {
+    h2
+    { 
+      margin-left: 25%;
+      font: 25px sans-serif;
+    }
+   }
   
   
+   
