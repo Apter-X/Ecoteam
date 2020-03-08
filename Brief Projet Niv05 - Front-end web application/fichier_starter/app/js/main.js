@@ -4,9 +4,9 @@ function open_close(){
   if (bar.style.display === "none") {
     bar.style.display = "flex";
     
-    document.getElementById("mySidebar").style.width = "200px";
-    document.getElementById("main").style.marginLeft = "200px";
-    document.getElementById("openNav").style.width = "200px";
+    document.getElementById("mySidebar").style.width = "100px";
+    document.getElementById("main").style.marginLeft = "100px";
+    document.getElementById("openNav").style.width = "100px";
   } else {
     bar.style.display = "none";
 
