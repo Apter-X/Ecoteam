@@ -1,33 +1,34 @@
 .cont
 {
-    .header
-    {
-        background-color: $color-background;
-    }
+    background-color: $color-background;
 }
 .contact
 {
-    background-color: $color-background;
     background-position: center;
+   
     h1
         {
             padding-bottom: 2%;
             text-align: center;
             color:$color-button ;
+            margin-top: 10%;
+            margin-bottom: 2%;
+            text-transform: uppercase;
         }
     &__frm
     {
-        margin-left: 41%;
+        margin-left: 38%;
        input[type="text"]
        {
-           width: 250px;
-           height: 30px;
+           width: 300px;
+           height: 35px;
 
        }
        label
        {
            margin-left: 1%;
            color:$color-button ;
+           font-size: 15px;
        }
        button
        {
