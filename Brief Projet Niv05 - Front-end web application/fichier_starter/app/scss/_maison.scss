@@ -14,6 +14,9 @@
       img {
         width: 100%;
       }
+      h3 {
+        font-size: 0.8em;
+      }
       ul {
         li {
           display: grid;
@@ -34,7 +37,9 @@
     }
   }
 }
-
+  .fas{
+    margin-right: 1em;
+  }
 @include responsive(700px) {
   .maison {
       &__cards{

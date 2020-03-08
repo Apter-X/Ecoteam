@@ -10,7 +10,10 @@
     color:rgb(255, 255, 255);
     margin-top:   3%;
   }
-    
+  .footer_menu :hover{
+    color:#56ccc8;
+  }
+ 
   &_logo{
     &--img img{
       width: 20%;
@@ -20,7 +23,7 @@
   &_copybtn
   {
     
-    margin-bottom:  2%;
+    // margin-bottom:  2%;
     
      &--sub{
       padding-top: 4%;
@@ -54,5 +57,4 @@
   background-image: url(../images/house-4.jpeg);
   background-size: 100%;
 }
-
 
