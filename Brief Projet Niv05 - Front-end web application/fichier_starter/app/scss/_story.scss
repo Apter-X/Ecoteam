@@ -35,6 +35,7 @@
         color: $text-color-secondary;
     }
     &_desc h1{
+      @include font-desc;
         font-size: $font-size;
         margin-left: 1em;
         margin-top: 1em;
@@ -43,6 +44,7 @@
        
     }
     &_desc p{
+      @include font-desc;
       float: left;
       margin-left: 1em;
       margin-top: 1em;
@@ -98,10 +100,13 @@
     padding: 0em 2em;
     height: 50%;
   }
+
+
   &__titles{
     float: left;
-    margin-left: 16em;
-    margin-top: -17em;
+    margin-left: 14em;
+    margin-top: -16em;
+   
      
    }
  
@@ -170,33 +175,7 @@
      margin-top: 3em;
    
    }
-  
-
-  .modal__image img{
-    margin-left: -2em;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: stretch;
-	align-content: flex-start;
-  height: 9em;
-}
-
-  .modal__paraghraph{
-    font-size: 1em;
-    display: flex;
-    align-items: stretch;
-	 flex-direction: row;
-	 flex-wrap: nowrap;
-    justify-content: flex-end;
-    margin: -12em -2em 0em 14em;
-    text-align: left;
-   
-  }
-  
-
-  }
+  } 
   .btn {
     
     @include button-primary;
