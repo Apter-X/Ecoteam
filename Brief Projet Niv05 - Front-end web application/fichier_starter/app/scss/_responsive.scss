@@ -102,10 +102,11 @@
 
   //header
   @include responsive(700px) {
-    .info
+    .header
     {
-       display: none;
+      grid-template-columns: 100%;
     }
+    
     
 }
 
