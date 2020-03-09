@@ -1,0 +1,30 @@
+.feature{
+  text-align: center;
+  color: white;
+
+  &_item i{
+    margin-left: -3em;
+    font-size: 4em;
+  
+  }
+}
+.text{
+
+  &__line-left{
+    float: left;
+    width: 200px;
+    height: 2px;
+    background: #000;
+  }
+  &__line-right{
+    float: right;
+    width: 200px;
+    height: 2px;
+    background: #000;
+    
+  }
+  &__title{
+    text-align: center;
+  }
+  
+}

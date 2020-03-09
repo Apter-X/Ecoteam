@@ -1,0 +1,192 @@
+//Header//
+.header {
+  @include grid;
+  grid-template-columns: 75% 25%;
+  // grid-template-rows: ;
+  // grid-column-gap: 0px;
+  // grid-row-gap: 0px;
+  
+  // &_logo{
+  //   grid-area: 1 / 1 / 2 / 3;
+  // }
+  
+  // &_slider{
+  //   grid-area: 2 / 1 / 4 / 2;
+   
+  // }
+  
+  
+  // &_agent{
+  //   grid-area: 2 / 2 / 4 / 3;
+   
+  // }
+}
+
+//features//
+.feature{
+  @include grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+
+  &_item1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+    background-color: yellowgreen;
+  }
+    
+  &_item2 { 
+    grid-area: 1 / 2 / 2 / 3;
+    background-color: slateblue;
+  }
+    
+  &_item3 { 
+    grid-area: 1 / 3 / 2 / 4; 
+    background-color: tomato;
+  }
+    
+  &_item4 { 
+    grid-area: 2 / 1 / 3 / 2; 
+    background-color: violet;
+  }
+    
+  &_item5 { 
+    grid-area: 2 / 2 / 3 / 3; 
+    background-color: yellow;
+  }
+    
+  &_item6 { 
+    grid-area: 2 / 3 / 3 / 4;
+    background-color: sienna;
+  }
+}
+
+.story{
+  @include grid;
+  width: 100%;
+  
+
+  grid-template-columns: repeat(2, 50%);
+  
+
+  
+}
+
+//maison//
+.maison{
+  &__cards
+  {
+    @include grid;
+    grid-template-columns: repeat(3, 33.33%);
+  }
+ 
+  
+}
+
+//gallerie//
+.gallerie {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  
+  &_cadre1{
+    grid-area: 1 / 1 / 2 / 2;   
+  }
+  
+  &_cadre2{
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  
+  &_cadre3{
+    grid-area: 1 / 3 / 2 / 6;    
+  }
+  
+  &_cadre4{
+    grid-area: 1 / 6 / 2 / 8; 
+  }
+  
+  &_cadre5{
+    grid-area: 2 / 1 / 3 / 3; 
+  }
+  
+  &_cadre6{
+    grid-area: 2 / 3 / 5 / 6;
+  }
+  
+  &_cadre7{
+    grid-area: 2 / 6 / 3 / 7;
+  }
+  
+  &_cadre8{
+    grid-area: 2 / 7 / 3 / 8;
+  }
+  
+  &_cadre9{
+    grid-area: 3 / 1 / 4 / 3; 
+  }
+  
+  &_cadre10{
+    grid-area: 3 / 6 / 4 / 7; 
+  }
+  
+  &_cadre11{
+    grid-area: 3 / 7 / 4 / 8;  
+  }
+  
+  &_cadre12{
+    grid-area: 4 / 1 / 5 / 2;    
+  }
+  
+  &_cadre13{
+    grid-area: 4 / 2 / 5 / 3;  
+  }
+  
+  &_cadre14{
+    grid-area: 4 / 6 / 5 / 7;  
+  }
+  
+  &_cadre15{
+    grid-area: 4 / 7 / 5 / 8;  
+  }
+  
+  &_cadre16{
+    grid-area: 5 / 1 / 6 / 4;   
+  }
+  
+  &_cadre17{
+    grid-area: 5 / 4 / 6 / 5;    
+  }
+  
+  &_cadre18{
+    grid-area: 5 / 5 / 6 / 6;  
+  }
+  
+  &_cadre19{
+    grid-area: 5 / 6 / 6 / 8;
+  }
+}
+
+//footer//
+.footer {
+  @include grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding-bottom: 0;
+
+  &_menu{
+    grid-area: 1 / 1 / 2 / 7;
+    
+  }
+
+  &_logo{
+    grid-area: 2 / 1 / 3 / 7;
+    
+  }
+  &_copybtn
+  {
+    grid-area: 3 / 1 / 4 / 7;
+  }
+  
+}

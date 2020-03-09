@@ -1,0 +1,55 @@
+.maison {
+ 
+  &__cards {
+    
+    text-align: center;
+    &--card{
+      background-color:$color-button;
+      width: 60%;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      margin-top: 1em;
+      img {
+        width: 100%;
+      }
+      h3 {
+        font-size: 0.8em;
+      }
+      ul {
+        li {
+          display: grid;
+          grid-template-columns: repeat(2, 50%);
+          padding: 1em 0;
+          color:black;
+        }
+      }
+      input 
+      {
+        transform: translate(4%,-50%);
+        @include button-primary
+      }
+      button {
+        @include button-maison;
+        
+      }
+    }
+  }
+}
+  .fas{
+    margin-right: 1em;
+  }
+@include responsive(700px) {
+  .maison {
+      &__cards{
+          display: grid;
+          grid-template-columns: repeat(2, 50%);
+      }
+      input 
+      {
+        transform: translate(0%,-50%);
+        font-size: 11px;
+      }
+  }
+}

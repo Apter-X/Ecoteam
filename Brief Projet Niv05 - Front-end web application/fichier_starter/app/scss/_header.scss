@@ -1,0 +1,299 @@
+.header {
+    &_agent {
+        background-color: $color-header;
+        height: 100%;
+
+        &--titre {
+            text-align: center;
+            margin-bottom: 9%;
+            margin-top: 8%;
+            text-transform: uppercase;
+        }
+
+        &--revolt img {
+            width: 30%;
+            margin-left: 7%;
+            margin-top: 6%;
+        }
+
+        &--revolt {
+            display: flex;
+        }
+
+        &--revolt p {
+            margin-top: 15%;
+            margin-left: 2%;
+        }
+    }
+
+    &_slider {
+
+        @import url('./node_modules/bourbon/core/_bourbon.scss');
+        $num-of-slide: 5;
+        
+        
+
+        .wrapper {
+            max-width: 60em;
+            // margin: 1em auto;
+            position: relative;
+            
+        }
+
+        input {
+            display: none;
+        }
+
+        .inner {
+            width: percentage($num-of-slide);
+            line-height: 0;
+        }
+
+        article {
+            width: percentage(1/$num-of-slide);
+            float: left;
+            position: relative;
+            
+
+            img {
+                width: 100%;
+                
+            }
+        }
+
+        /*---- SET UP CONTROL ----*/
+        .slider-prev-next-control {
+            height: 50px;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+
+
+            label {
+                display: none;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background: $color-button;
+                opacity: 0.7;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .slider-dot-control {
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+
+            label {
+                cursor: pointer;
+                border-radius: 5px;
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                background: $color-label;
+
+
+                &:hover {
+                    background: $color-hover-header;
+                    border-color: $color-border-hover;
+                }
+            }
+        }
+
+        /* Info Box */
+        .info {
+            position: absolute;
+            font-style: italic;
+            line-height: 20px;
+            opacity: 0;
+            color: $color-black;
+            text-align: left;
+
+            background-color:rgba($color: #000000, $alpha: .2);
+
+            h3 {
+                color: $color-header;
+                margin: 0 0 5px;
+                font-weight: normal;
+                font-size: 1.5em;
+                font-style: normal;
+                text-transform: uppercase;
+            }
+
+            p {
+                color: $color-button;
+            }
+
+            button {
+                @include button-primary;
+                width: 150px;
+                margin-top: 10%;
+            }
+
+            &.top-left {
+                top: 30px;
+                left: 30px;
+                img {
+                    width: 35%;
+                    margin-left: 50%;
+                    margin-top: 2%;
+                    margin-bottom: 2%;
+                    
+                   
+        
+                }
+            }
+
+            &.bottom-left {
+                bottom: 10%;
+                left: 20%;
+
+            }
+
+            &.bottom-left img {
+                width: 20%;
+                margin-top: 4%;
+                margin-right: 2%;
+
+            }
+
+            &.titre {
+                color: $color-header;
+                margin: 0 0 5px;
+                font-weight: normal;
+                font-size: 1.5em;
+                font-style: normal;
+                text-transform: uppercase;
+                margin-top: 45%;
+                margin-left: 40%;
+            }
+        }
+
+        /* Slider Styling */
+        .slider-wrapper {
+            width: 100%;
+            overflow: hidden;
+            border-radius: 5px;
+            box-shadow: 1px 1px 4px #666;
+            background: #fff;
+            background: #fcfff4;
+
+        }
+
+        /*---- SET POSITION FOR SLIDE ----*/
+        %bind-prev-next-button {
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            text-decoration: inherit;
+            margin: 0;
+            line-height: 38px;
+            font-size: 3em;
+            display: block;
+            color: #777;
+        }
+
+        %bind-next-button {
+            @extend %bind-prev-next-button;
+            content: "\f105";
+            padding-left: 15px;
+        }
+
+        %bind-next-label {
+            display: block;
+            float: right;
+            margin-right: 5px;
+        }
+
+        %bind-prev-label {
+            display: block;
+            float: left;
+            margin-left: 5px;
+        }
+
+        %bind-prev-button {
+            @extend %bind-prev-next-button;
+            content: "\f104";
+            padding-left: 8px;
+        }
+
+        %bind-background-active-dot {
+            background: #333;
+        }
+
+        %bind-opacity-info {
+            opacity: 1;
+        }
+
+        @for $i from 1 through $num-of-slide {
+            #slide#{$i}:checked {
+                &~.slider-wrapper .inner {
+                    margin-left: percentage(1 - $i);
+                }
+
+                &~.slider-dot-control label:nth-child(#{$i}) {
+                    @extend %bind-background-active-dot;
+                }
+
+                &~.slider-wrapper article:nth-child(#{$i}) .info {
+                    @extend %bind-opacity-info;
+                }
+            }
+        }
+
+        @for $i from 1 through ($num-of-slide - 1) {
+            #slide#{$i}:checked {
+                &~.slider-prev-next-control label:nth-child(#{$i +1}) {
+                    @extend %bind-next-label;
+
+                    &::after {
+                        @extend %bind-next-button;
+                    }
+                }
+            }
+        }
+
+        #slide#{$num-of-slide}:checked~.slider-prev-next-control label:nth-child(1) {
+            @extend %bind-next-label;
+
+            &::after {
+                @extend %bind-next-button;
+            }
+        }
+
+        @for $i from 2 through $num-of-slide {
+            #slide#{$i}:checked {
+                &~.slider-prev-next-control label:nth-child(#{$i - 1}) {
+                    @extend %bind-prev-label;
+
+                    &::after {
+                        @extend %bind-prev-button;
+                    }
+                }
+            }
+        }
+
+        #slide#{1}:checked~.slider-prev-next-control label:nth-child(#{$num-of-slide}) {
+            @extend %bind-prev-label;
+
+            &::after {
+                @extend %bind-prev-button;
+            }
+        }
+
+        /*---- TABLET ----*/
+        @media only screen and (max-width: 850px) and (min-width: 450px) {
+            .slider-wrapper {
+                border-radius: 0;
+            }
+        }
+
+    }
+
+}
+

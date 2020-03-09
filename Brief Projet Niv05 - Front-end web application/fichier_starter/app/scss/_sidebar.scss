@@ -1,0 +1,41 @@
+.sidebar{
+  z-index: 7;
+  background-color: white;
+  width:50px;
+  position:fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0px 0px 15px 0px $shadow-color;
+
+  &_menu{
+    background-color: $color-primary;
+    color: #ffff;
+    text-align: center;
+    width: 51px;
+    height: 50px;
+  }
+
+  &_nav{
+    display: none; //flex toggle
+    flex-direction: column;
+    align-content: space-around;
+    text-align: center;
+
+    & a{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      text-decoration: none;
+      color:$color-primary ;
+      &:hover{
+        background: #3a8f8b;
+        box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+        color: white;
+        }
+    }
+  }
+}
+
+.animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}

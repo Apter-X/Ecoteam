@@ -1,0 +1,58 @@
+@mixin grid {
+  display: grid;
+  padding-bottom: 100px;
+}
+
+@mixin font-title {
+  font-family: "Poppins", sans-serif;
+  color: $text-color-primary;
+  font-weight: $weight-poppins;
+}
+
+@mixin font-desc {
+  color: $text-color-secondary;
+  font-weight: $weight-open-sans;
+}
+
+@mixin responsive($arg) {
+  @media screen and (max-width: $arg) {
+    @content;
+  }
+}
+
+@mixin button-primary {
+    transition: $trans-cubic;
+    background-color: $color-primary; 
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    &:hover{
+      background: #3a8f8b;
+      box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+      }
+}
+
+@mixin button-maison {
+  background-color: $color-secondary;
+  transition: $trans-cubic;
+    border: none;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 1em 0em;
+    font-weight: bold;
+    &:hover{
+      background: orangered;
+      box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;
+      }
+    
+}
+
+
+
