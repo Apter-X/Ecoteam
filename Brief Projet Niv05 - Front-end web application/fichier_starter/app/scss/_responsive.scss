@@ -98,7 +98,7 @@
 }
 
 //header
-@include responsive(700px) {
+@include responsive(700px and 841px) {
   .header {
     grid-template-columns: 100%;
 
