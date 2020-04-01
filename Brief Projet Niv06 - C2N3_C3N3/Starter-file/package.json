@@ -1,0 +1,24 @@
+{
+    "name": "booking",
+    "version": "1.0.0",
+    "description": "brief project",
+    "main": "index.js",
+    "author": "ecoteam",
+    "license": "isc",
+    "homepage": "https://apter-x.github.io/",
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-cache": "^1.1.3",
+        "gulp-cssnano": "^2.1.3",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-sass": "^4.0.2",
+        "gulp-series": "^1.0.2",
+        "gulp-uglify": "^3.0.2",
+        "gulp-useref": "^4.0.1"
+    },
+    "dependencies": {
+        "bourbon": "^6.0.0"
+    }
+}
