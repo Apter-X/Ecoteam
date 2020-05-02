@@ -3,3 +3,18 @@
   margin-bottom: 16px;
   background-color: $background-color-primary;
 }
+
+.btn{
+  display: block;
+  text-align: center;
+
+  &_left{
+    float: left;
+    margin-left: 10rem;
+  }
+
+  &_right{
+    float: right;
+    margin-right: 10rem;
+  }
+}
