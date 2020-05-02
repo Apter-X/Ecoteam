@@ -18,3 +18,78 @@
     margin-right: 10rem;
   }
 }
+
+.bar {
+  height: 4rem;
+
+  &-init {
+    width: 50rem;
+    margin: 2rem auto;
+    position: relative;
+  }
+
+  &__line {
+    display: block;
+    width: 25rem;
+    height: .2rem;
+    background-color: $color-secondary;
+    margin: 0px auto;
+  }
+
+  &__dot-info {
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: $color-primary;
+    position: absolute;
+
+    &--start {
+      top: -.5rem;
+      left: 10.8rem;
+    }
+
+    &--yellow {
+      background-color: $background-color-secondary;
+      top: -.6rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--end {
+      top: -.5rem;
+      right: 10.8rem;
+    }
+
+    &--init {
+      width: 3rem;
+      height: 3rem;
+      background-color: $color-secondary;
+      top: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  &__text {
+    @include small-font;
+    display: block;
+    position: absolute;
+
+    &--info {
+      top: 2rem;
+      left: 9rem;
+    }
+
+    &--quiz {
+      top: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    &--results {
+      top: 2rem;
+      right: 9.6rem;
+    }
+  }
+}
