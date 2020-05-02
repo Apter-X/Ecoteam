@@ -93,3 +93,15 @@
     }
   }
 }
+
+.progress-bar {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+
+  &__label {
+      @include small-font;
+      top: -3px;
+      left: 7px;
+  }
+}
