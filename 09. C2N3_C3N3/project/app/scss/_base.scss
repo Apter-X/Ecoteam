@@ -1,0 +1,50 @@
+$background-color-primary:#d0e5f0;
+$background-color-secondary:#f4cf1b;
+$color-primary: #1078ad;
+$color-primary-darker: #136a96;
+$color-secondary: #7f7f7f;
+$shadow-color: hsl(0, 0%, 53%);
+$shadow: 0 1px 2px rgba(0, 0, 0, .2) inset;
+$font-size: 1.8rem;
+$trans-cubic: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); //des transitions sur les boutons
+
+@font-face {
+	font-family: "Animosa";
+	src: url('../css/fonts/Animosa/Animosa-Regular.otf')
+}
+
+@font-face {
+	font-family: "Animosa Bold";
+	src: url('../css/fonts/Animosa/Animosa-Bold.otf')
+}
+
+@font-face {
+  font-family: "Animosa Light";
+	src: url('../css/fonts/Animosa/Animosa-Light.otf')
+}
+
+@mixin small-font{
+  font-family: "Animosa";
+  font-size: 1rem;
+}
+
+@mixin big-font{
+  font-family: "Animosa Bold";
+  color: $color-secondary;
+  font-size: 2.3rem;
+}
+
+@mixin btn {
+  background-color: $color-primary;
+  transition: $trans-cubic;
+  border: 1px solid $color-primary;
+  border-radius: .2rem;
+  color: white;
+  padding: .5em 1em;
+  font-size: 2rem;
+    
+  &:hover{
+    background: $color-primary-darker;
+    box-shadow: $shadow
+  }
+}
