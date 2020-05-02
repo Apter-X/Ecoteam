@@ -16,7 +16,7 @@ button{
 }
 
 p{
-  @include big-font;
+  @include bold-font;
 }
 
 progress {
@@ -56,12 +56,14 @@ input[type=radio]:not(old){
 }
 
 input[type=radio]:not(old) + label{
+  @include font;
   display: inline-block;
   margin-left: -2em;
   line-height: 1.5em;
 }
 
 input[type=radio]:not(old) + label > span{
+  @include font;
   display: inline-block;
   width: 1.5rem;
   height: 1.5rem;
@@ -73,6 +75,7 @@ input[type=radio]:not(old) + label > span{
 }
 
 input[type=radio]:not(old):checked + label > span > span{
+  @include font;
   display: block;
   width: .8rem;
   height: .8rem;

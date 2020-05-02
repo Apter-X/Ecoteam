@@ -28,7 +28,13 @@ $trans-cubic: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1); //des transitions sur l
   font-size: 1rem;
 }
 
-@mixin big-font{
+@mixin font{
+  font-family: "Animosa Light";
+  color: $color-secondary;
+  font-size: 1.5rem;
+}
+
+@mixin bold-font{
   font-family: "Animosa Bold";
   color: $color-secondary;
   font-size: 2.3rem;
