@@ -9,13 +9,13 @@
   text-align: center;
 
   &_left{
+    font-size: 2em;
     float: left;
-    margin-left: 10rem;
   }
 
   &_right{
+    font-size: 2em;
     float: right;
-    margin-right: 10rem;
   }
 }
 
@@ -23,14 +23,14 @@
   height: 4rem;
 
   &-init {
-    width: 50rem;
+    width: 90%;
     margin: 2rem auto;
     position: relative;
   }
 
   &__line {
     display: block;
-    width: 25rem;
+    width: 52%;
     height: .2rem;
     background-color: $background-color-tertiary;
     margin: 0px auto;
@@ -46,7 +46,7 @@
 
     &--start {
       top: -.38rem;
-      left: 10.8rem;
+      left: 20%;
     }
 
     &--yellow {
@@ -58,7 +58,7 @@
 
     &--end {
       top: -.38rem;
-      right: 10.8rem;
+      right: 20%;
     }
 
     &--init {
@@ -78,7 +78,7 @@
 
     &--info {
       top: 2rem;
-      left: 9rem;
+      left: 17%;
     }
 
     &--quiz {
@@ -89,27 +89,17 @@
 
     &--results {
       top: 2rem;
-      right: 9.6rem;
+      right: 18%;
     }
   }
 }
 
 .progress-bar {
-  width: 60%;
   margin: 0 auto;
   text-align: center;
 
   &__label {
-      @include small-font;
-      top: -3px;
-      left: 7px;
+    top: -3px;
+    left: 7px;
   }
-}
-
-.form-choice {
-    height: 30px;
-    width: 30px;
-    color: $color-secondary;
-    background-color: rgb(238, 0, 0);
-
 }

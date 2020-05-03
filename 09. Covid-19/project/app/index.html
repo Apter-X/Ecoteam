@@ -15,7 +15,8 @@
         <img src="images/logo__sante-1.png" alt="logo-website">
       </a>
   </nav>
-  <div class="container">
+
+  <div id="form" class="container">
     <div class="bar">
       <div class="bar-init">
         <span class="bar__line"></span>
@@ -34,18 +35,19 @@
       <label for="progress-bar" class="progress-bar__label">1/23</label>
     </div>
 
-    <div id="mySlider" class="container">
+    <div class="container-vertical">
+      <p class="question">Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</p>
+    </div>
+    <div class="container">
       <div>
-        <p>Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</p>
-      </div>
-      <div>
-        <input type="radio" id="yes" class="form-choice space-left" name="q1" value="yes" >
+        <input type="radio" id="yes" name="q1" value="yes" >
         <label for="yes"><span><span></span></span>Oui</label>
       </div>
       <div>
-        <input type="radio" id="no" class="form-choice space-left" name="q1" value="no" >
+        <input type="radio" id="no" name="q1" value="no" >
         <label for="no"><span><span></span></span>Non</label><br><br>
       </div>
+    </div>
 
       <!-- <div>
         <p>Quelle est votre température corporelle ?</p>
@@ -56,11 +58,11 @@
       </div> -->
     </div>
 
-    <div class="container">
-      <div class="btn">
+    <div class="container-horizontal">
+      <div>
         <button class="btn_left" onclick="moveSlides(-1)">Precedant</button>
       </div>
-      <div class="btn">
+      <div>
         <button class="btn_right" onclick="moveSlides(1)">Suivant</button>
       </div>
     </div>
