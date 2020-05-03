@@ -99,8 +99,13 @@ input[type=radio]:not(old):checked + label > span > span{
 	position: relative
 }
 
+.slide {
+  display: none;
+}
+
 .question{
   @include bold-font;
+  text-align: center;
 }
 
 .space-bot {
@@ -111,34 +116,19 @@ input[type=radio]:not(old):checked + label > span > span{
   // margin-left: 5%;
 }
 
-.animate-left {
-	position: relative;
-	animation: animateleft 0.4s
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.2s;
+  animation-name: fade;
+  animation-duration: 0.2s;
 }
 
-@keyframes animateleft {
-	from {
-		left: -300px;
-		opacity: 0
-	}
-	to {
-		left: 0;
-		opacity: 1
-	}
+@-webkit-keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
 }
 
-.animate-right {
-	position: relative;
-	animation: animateright 0.4s
-}
-
-@keyframes animateright {
-	from {
-		right: -300px;
-		opacity: 0
-	}
-	to {
-		right: 0;
-		opacity: 1
-	}
+@keyframes fade {
+  from {opacity: 0}
+  to {opacity: 1}
 }

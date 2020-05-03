@@ -34,10 +34,15 @@
       <progress max="23" value="1" id="progress-bar"></progress>
       <label for="progress-bar" class="progress-bar__label">1/23</label>
     </div>
-
-    <div class="container-vertical">
-      <p class="question">Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</p>
+    
+    <div class="slide container-vertical">
+      <p class="question fade">Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?</p>
     </div>
+
+    <div class="slide container-vertical">
+      <p class="question fade">Quelle est votre température corporelle ?</p>
+    </div>
+
     <div class="container">
       <div>
         <input type="radio" id="yes" name="q1" value="yes" >
@@ -47,16 +52,12 @@
         <input type="radio" id="no" name="q1" value="no" >
         <label for="no"><span><span></span></span>Non</label><br><br>
       </div>
+      <div style="display: none;">
+        <input type="number" id="q2-nbr" name="q2" placeholder="34 - 42" min="34" max="42" >
+        <label for="q2-nbr">°c</label><br><br>
+      </div>
     </div>
-
-      <!-- <div>
-        <p>Quelle est votre température corporelle ?</p>
-        <div>
-          <input type="number" id="q2-nbr" name="q2" placeholder="34 - 42" min="34" max="42" >
-          <label for="q2-nbr">°c</label><br><br>
-        </div>
-      </div> -->
-    </div>
+  </div>
 
     <div class="container-horizontal">
       <div>
