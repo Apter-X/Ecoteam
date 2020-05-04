@@ -99,10 +99,6 @@ input[type=radio]:not(old):checked + label > span > span{
 	position: relative
 }
 
-.slide {
-  display: none;
-}
-
 .question{
   @include bold-font;
   text-align: center;
