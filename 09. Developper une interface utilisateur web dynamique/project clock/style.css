@@ -1,0 +1,28 @@
+svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#circle{
+  stroke: #FFF;
+  stroke-width: 12px; 
+  fill:rgb(49, 49, 49);
+}
+
+#hour{
+  stroke-width: 3px; 
+  stroke: #fffbf9;
+}
+
+#minute{
+  stroke-width: 4px; 
+  stroke: #fdfdfd;
+}
+
+#second{
+  stroke-width: 2px; 
+  stroke: #C1EFED;
+}
