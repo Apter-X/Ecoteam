@@ -17,17 +17,13 @@ showSlide(progress);
 
 
 function moveSlides( n ){
+  if ( n > 0){
+    clearInput("Option");
+  }
   showSlide( progress += n );
-  Clear();
 }
 
-function Clear()
-{    
-   clearRadioGroup("Option1");
-   clearRadioGroup("Option2");
-}
-
-function clearRadioGroup(GroupName)
+function clearInput(GroupName)
 {
   var ele = document.getElementsByName(GroupName);
 	for(var i=0;i<ele.length;i++)
@@ -35,19 +31,19 @@ function clearRadioGroup(GroupName)
 }
 
 function showSlide(n){
-  if (n === 1){
+  if ( n === 1 ){
     btnLeft.style.display = "none";
   }else{
     btnLeft.style.display = "block";
   }
-  if ( n === questions.length - 1){
+  if ( n === questions.length - 1 ){
     btnRight.innerHTML = "Terminer";
   }else{
     btnRight.innerHTML = "Suivant";
   }
 
   bar.value = n;
-  labelBar.innerHTML = `${progress}/${questions.length-1}`;
+  labelBar.innerHTML = `${n}/${questions.length-1}`;
 
   question.innerHTML = questions[n];
 }
