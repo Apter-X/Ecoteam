@@ -22,15 +22,14 @@ function moveSlides( n ){
 
 function showSlide(n){
   if (n === 1){
-    btnLeft.disabled = true;
+    btnLeft.style.display = "none";
   }else{
-    btnLeft.disabled = false;
+    btnLeft.style.display = "block";
   }
-
   if ( n === questions.length - 1){
-    btnRight.disabled = true;
+    btnRight.innerHTML = "Terminer";
   }else{
-    btnRight.disabled = false;
+    btnRight.innerHTML = "Suivant";
   }
 
   bar.value = n;
