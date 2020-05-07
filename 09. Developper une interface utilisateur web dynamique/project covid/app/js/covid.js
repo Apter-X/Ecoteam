@@ -34,15 +34,6 @@ const diagnostics = [
 ];
 
 function decision(tab){
-  let question = document.getElementById('question');
-  let btnLeft = document.getElementById('btn_left');
-  let btnRight = document.getElementById('btn_right');
-  let inputs = document.getElementById('inputs-box');
-
-  btnLeft.style.display = 'none';
-  btnRight.style.display = 'none';
-  inputs.style.display = 'none';
-
   diagnostic = "Decision!";
   question.innerHTML = diagnostic;
 }

@@ -1,3 +1,5 @@
+var barContainer = document.getElementById('sub-bar');
+var inputs = document.getElementById('inputs-box');
 var bar = document.getElementById("progress-bar");
 var labelBar = document.getElementById("label-bar");
 var btnRight = document.getElementById('btn_right');
@@ -38,6 +40,7 @@ function showSlide(n){
   if ( n === questions.length - 1 ){
     btnRight.innerHTML = "Terminer";
     btnRight.onclick = function(){
+      clearUI();
       decision();
     }
   }else{
@@ -51,4 +54,11 @@ function showSlide(n){
   labelBar.innerHTML = `${n}/${questions.length-1}`;
 
   question.innerHTML = questions[n];
+}
+
+function clearUI(){
+  btnLeft.style.display = 'none';
+  btnRight.style.display = 'none';
+  inputs.style.display = 'none';
+  barContainer.style.display = 'none';
 }
