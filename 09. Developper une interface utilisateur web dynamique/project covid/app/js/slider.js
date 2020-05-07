@@ -17,7 +17,7 @@ showSlide(progress);
 
 function moveSlides( n ){
   if ( n > 0){
-    clearInput("Option");
+    clearInput("option");
   }
   showSlide( progress += n );
 }
