@@ -1,4 +1,4 @@
-const questions = [
+const questions = [,
     "Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?",
     "Quelle est votre température corporelle ?",
     "Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?",
