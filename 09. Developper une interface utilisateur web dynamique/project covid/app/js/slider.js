@@ -35,7 +35,5 @@ function showSlide(n){
   bar.value = n;
   labelBar.innerHTML = `${progress}/${questions.length-1}`;
 
-  console.log(bar.value);
-
   question.innerHTML = questions[n];
 }
