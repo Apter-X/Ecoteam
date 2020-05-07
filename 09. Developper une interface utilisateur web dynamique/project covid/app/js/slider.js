@@ -18,6 +18,20 @@ showSlide(progress);
 
 function moveSlides( n ){
   showSlide( progress += n );
+  Clear();
+}
+
+function Clear()
+{    
+   clearRadioGroup("Option1");
+   clearRadioGroup("Option2");
+}
+
+function clearRadioGroup(GroupName)
+{
+  var ele = document.getElementsByName(GroupName);
+	for(var i=0;i<ele.length;i++)
+    ele[i].checked = false;
 }
 
 function showSlide(n){
