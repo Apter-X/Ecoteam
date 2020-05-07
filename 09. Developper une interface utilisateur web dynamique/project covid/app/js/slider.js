@@ -12,9 +12,8 @@ var progress = 1;
 //   return confirmationMessage;                            //Webkit, Safari, Chrome
 // });
 
-
+console.log()
 showSlide(progress);
-
 
 function moveSlides( n ){
   if ( n > 0){
@@ -38,8 +37,14 @@ function showSlide(n){
   }
   if ( n === questions.length - 1 ){
     btnRight.innerHTML = "Terminer";
+    btnRight.onclick = function(){
+      decision();
+    }
   }else{
     btnRight.innerHTML = "Suivant";
+    btnRight.onclick = function(){
+      moveSlides(1);
+    }
   }
 
   bar.value = n;

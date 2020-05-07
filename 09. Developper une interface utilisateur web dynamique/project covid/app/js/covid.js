@@ -36,5 +36,5 @@ const diagnostics = [
 var answers = [];
 
 function decision(tab){
-
+    console.log('Decision!');
 }
