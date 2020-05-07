@@ -3,6 +3,7 @@ var labelBar = document.getElementById("label-bar");
 var btnRight = document.getElementById('btn_right');
 var btnLeft = document.getElementById('btn_left');
 var question = document.getElementById('question');
+var answers = [];
 var progress = 1;
 
 // window.addEventListener("beforeunload", function (e) {
@@ -12,7 +13,6 @@ var progress = 1;
 //   return confirmationMessage;                            //Webkit, Safari, Chrome
 // });
 
-console.log()
 showSlide(progress);
 
 function moveSlides( n ){

@@ -33,8 +33,16 @@ const diagnostics = [
   "Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène."
 ];
 
-var answers = [];
-
 function decision(tab){
-    console.log('Decision!');
+  let question = document.getElementById('question');
+  let btnLeft = document.getElementById('btn_left');
+  let btnRight = document.getElementById('btn_right');
+  let inputs = document.getElementById('inputs-box');
+
+  btnLeft.style.display = 'none';
+  btnRight.style.display = 'none';
+  inputs.style.display = 'none';
+
+  diagnostic = "Decision!";
+  question.innerHTML = diagnostic;
 }
