@@ -26,6 +26,9 @@ function moveSlides( n ){
   if ( n > 0){
     getAnswer(answers);
     clearInput("option");
+  }else{
+    answers.pop();
+    console.log(answers);
   }
   showSlide( progress += n );
   btnRight.disabled = true;
