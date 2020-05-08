@@ -6,6 +6,7 @@ var btnRight = document.getElementById('btn_right');
 var btnLeft = document.getElementById('btn_left');
 var question = document.getElementById('question');
 var answers = [];
+var indicator = document.getElementById('indicator');
 var progress = 1;
 
 // window.addEventListener("beforeunload", function (e) {
@@ -40,6 +41,7 @@ function showSlide(n){
   if ( n === questions.length - 1 ){
     btnRight.innerHTML = "Terminer";
     btnRight.onclick = function(){
+      indicator.style.left = '79.2%';
       clearUI();
       decision();
     }
