@@ -25,11 +25,6 @@ function moveSlides( n ){
   showSlide( progress += n );
 }
 
-function clearInput(GroupName)
-{
-  var ele = document.getElementsByName(GroupName);
-	for(var i=0;i<ele.length;i++)
-    ele[i].checked = false;
 }
 
 function showSlide(n){
@@ -56,6 +51,15 @@ function showSlide(n){
   labelBar.innerHTML = `${n}/${questions.length-1}`;
 
   question.innerHTML = questions[n];
+}
+
+function clearInput(name)
+{
+  var ele = document.getElementsByName(name);
+
+	for(var i=0;i<ele.length;i++){
+    ele[i].checked = false;
+  }  
 }
 
 function clearUI(){
