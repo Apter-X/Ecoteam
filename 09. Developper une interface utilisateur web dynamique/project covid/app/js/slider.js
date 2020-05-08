@@ -6,22 +6,20 @@ var btnRight = document.getElementById('btn_right');
 var btnLeft = document.getElementById('btn_left');
 var question = document.getElementById('question');
 var indicator = document.getElementById('indicator');
-var progress = 1;
-var answers = [0];
+var answers = JSON.parse(localStorage.getItem('Answers'));
+
+if (!answers){
+  var answers = [1];
+}
+
+progress = answers[0];
+
 document.getElementById('radio1').addEventListener('click', function(){
   btnRight.disabled = false;
 });
 document.getElementById('radio2').addEventListener('click', function(){
   btnRight.disabled = false;
 });
-
-
-// window.addEventListener("beforeunload", function (e) {
-//   var confirmationMessage = "\o/";
-
-//   (e || window.event).returnValue = confirmationMessage; //Gecko + IE
-//   return confirmationMessage;                            //Webkit, Safari, Chrome
-// });
 
 showSlide(progress);
 
@@ -35,6 +33,8 @@ function moveSlides( n ){
   }
   showSlide( progress += n );
   btnRight.disabled = true;
+  answers[0] = progress;
+  localStorage.setItem('Answers', JSON.stringify(answers));
 }
 
 function getAnswer(tab){
