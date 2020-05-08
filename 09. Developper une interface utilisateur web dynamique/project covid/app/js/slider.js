@@ -11,13 +11,12 @@ var answers = JSON.parse(localStorage.getItem('Answers'));
 if (!answers){
   var answers = [1];
 }
-
 progress = answers[0];
 
-document.getElementById('radio1').addEventListener('click', function(){
+radio1 = document.getElementById('radio1').addEventListener('click', function(){
   btnRight.disabled = false;
 });
-document.getElementById('radio2').addEventListener('click', function(){
+radio2 = document.getElementById('radio2').addEventListener('click', function(){
   btnRight.disabled = false;
 });
 
@@ -28,6 +27,7 @@ function moveSlides( n ){
     getAnswer(answers);
     clearInput("option");
   }else{
+    clearInput("option");
     answers.pop();
     console.log(answers);
   }
@@ -61,6 +61,7 @@ function showSlide(n){
       indicator.style.left = '79.2%';
       clearUI();
       decision();
+      localStorage.clear();
     }
   }else{
     btnRight.innerHTML = "Suivant";
