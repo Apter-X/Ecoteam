@@ -5,9 +5,9 @@ var labelBar = document.getElementById("label-bar");
 var btnRight = document.getElementById('btn_right');
 var btnLeft = document.getElementById('btn_left');
 var question = document.getElementById('question');
-var answers = [];
 var indicator = document.getElementById('indicator');
 var progress = 1;
+var answers = [0];
 
 // window.addEventListener("beforeunload", function (e) {
 //   var confirmationMessage = "\o/";
@@ -20,11 +20,22 @@ showSlide(progress);
 
 function moveSlides( n ){
   if ( n > 0){
+    getAnswer(answers);
     clearInput("option");
   }
   showSlide( progress += n );
 }
 
+function getAnswer(tab){
+  let ele = document.getElementsByName("option");
+  console.log(ele[0].checked);
+
+  for(var i=0; i<ele.length; i++){
+    if (!ele[i].checked){
+      tab.push(ele[i].value);
+    }
+  }
+  console.log(tab);
 }
 
 function showSlide(n){
