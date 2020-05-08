@@ -8,6 +8,10 @@ var question = document.getElementById('question');
 var indicator = document.getElementById('indicator');
 var progress = 1;
 var answers = [0];
+inputs.addEventListener('click', function(){
+  btnRight.disabled = false;
+});
+
 
 // window.addEventListener("beforeunload", function (e) {
 //   var confirmationMessage = "\o/";
@@ -24,6 +28,7 @@ function moveSlides( n ){
     clearInput("option");
   }
   showSlide( progress += n );
+  btnRight.disabled = true;
 }
 
 function getAnswer(tab){
@@ -32,6 +37,7 @@ function getAnswer(tab){
   for(var i=0; i<ele.length; i++){
     if (ele[i].checked){
       tab.push(ele[i].value);
+      
     }
   }
   console.log(tab);
