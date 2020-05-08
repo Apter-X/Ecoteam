@@ -33,6 +33,10 @@ const diagnostics = [
   "Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène."
 ];
 
+var minor, major, pron = 0;
+var fever, cough, throat, stiffness, diarrhea = new Boolean(false)
+var diagnostic;
+
 function decision(tab){
   diagnostic = "Decision!";
   question.innerHTML = diagnostic;
