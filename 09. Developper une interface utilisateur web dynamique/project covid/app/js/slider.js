@@ -8,7 +8,10 @@ var question = document.getElementById('question');
 var indicator = document.getElementById('indicator');
 var progress = 1;
 var answers = [0];
-inputs.addEventListener('click', function(){
+document.getElementById('radio1').addEventListener('click', function(){
+  btnRight.disabled = false;
+});
+document.getElementById('radio2').addEventListener('click', function(){
   btnRight.disabled = false;
 });
 
