@@ -30,7 +30,7 @@ function getAnswer(tab){
   let ele = document.getElementsByName("option");
 
   for(var i=0; i<ele.length; i++){
-    if (!ele[i].checked){
+    if (ele[i].checked){
       tab.push(ele[i].value);
     }
   }
