@@ -28,7 +28,6 @@ function moveSlides( n ){
 
 function getAnswer(tab){
   let ele = document.getElementsByName("option");
-  console.log(ele[0].checked);
 
   for(var i=0; i<ele.length; i++){
     if (!ele[i].checked){
