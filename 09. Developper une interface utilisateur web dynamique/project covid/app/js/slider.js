@@ -18,18 +18,11 @@ if (!answers){
 }
 progress = answers[0];
 
-radio1 = document.getElementById('radio1').addEventListener('click', function(){
-  btnRight.disabled = false;
-  btnRight.style.cursor = 'default';
-});
-radio2 = document.getElementById('radio2').addEventListener('click', function(){
-  btnRight.disabled = false;
-  btnRight.style.cursor = 'default';
-});
 init();
 
 function init(){
   showSlide(progress);
+  inputListener();
 }
 
 function moveSlides( n ){
@@ -106,6 +99,29 @@ function switchNbr(placeholder, min, max, label){
   inputNbr.min = min;
   inputNbr.max = max;
   labelNbr.innerHTML = label;
+}
+
+function inputListener(){
+  document.getElementById('radio1').addEventListener('click', function(){
+    btnRight.disabled = false;
+    btnRight.style.cursor = 'default';
+  });
+  document.getElementById('radio2').addEventListener('click', function(){
+    btnRight.disabled = false;
+    btnRight.style.cursor = 'default';
+  });
+  document.getElementById('radio3').addEventListener('click', function(){
+    btnRight.disabled = false;
+    btnRight.style.cursor = 'default';
+  });
+  document.getElementById('radio4').addEventListener('click', function(){
+    btnRight.disabled = false;
+    btnRight.style.cursor = 'default';
+  });
+  inputNbr.addEventListener('input', function(){
+    btnRight.disabled = false;
+    btnRight.style.cursor = 'default';
+  });
 }
 
 function clearUI(){
