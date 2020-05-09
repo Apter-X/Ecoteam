@@ -23,6 +23,7 @@ init();
 function init(){
   showSlide(progress);
   inputListener();
+  // switchNbr('34 - 42', '34', '42', 'degree');
 }
 
 function moveSlides( n ){
@@ -96,9 +97,9 @@ function clearInputs(name)
   }
 }
 
-function switchNbr(placeholder, min, max, label){
-  radiosContainer.style.display = 'none';
 
+function switchNbr( placeholder, min, max, label ){
+  radiosContainer.style.display = 'none';
   nbrContainer.style.display = 'block';
   inputNbr.placeholder = placeholder;
   inputNbr.min = min;
