@@ -39,18 +39,28 @@
       <p class="question fade" id="question"></p>
     </div>
 
-    <div class="container container-horizontal" id="inputs-box">
-      <div>
-        <input id="radio1" type="radio" id="yes" name="option" value="1">
-        <label for="yes"><span><span></span></span>Oui</label>
+    <div class="container container-horizontal container-display" id="inputs-box">
+      <div id="radios-box" style="display:inline-table;">
+        <div style="float: left;">
+          <input id="radio1" type="radio" name="option" value="0">
+          <label for="radio1"><span><span></span></span>Non</label>
+        </div>
+        <div >
+          <input id="radio2" type="radio" name="option" value="1">
+          <label for="radio2"><span><span></span></span>Oui</label>
+        </div>
+        <div >
+          <input id="radio3" type="radio" name="option" value="2">
+          <label for="radio3"><span><span></span></span>Non</label>
+        </div>
+        <div >
+          <input id="radio4" type="radio" name="option" value="3">
+          <label for="radio4"><span><span></span></span>Non</label>
+        </div>
       </div>
-      <div>
-        <input id="radio2" type="radio" id="no" name="option" value="0">
-        <label for="no"><span><span></span></span>Non</label><br><br>
-      </div>
-      <div id="nbr-box" class="quantity">
-        <input type="number" id="input-nbr" name="q2" placeholder="34 - 42" min="34" max="42" >
-        <label for="input-nbr">°c</label><br><br>
+      <div id="nbr-box" class="quantity" style="display: none;">
+        <input type="number" id="input-nbr" name="option">
+        <label id="label-nbr" for="input-nbr"></label><br><br>
       </div>    
     </div>
   </div>
