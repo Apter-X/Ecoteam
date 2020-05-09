@@ -10,6 +10,7 @@ var radiosContainer = document.getElementById('radios-box');
 var nbrContainer = document.getElementById('nbr-box');
 var inputNbr = document.getElementById('input-nbr');
 var labelNbr = document.getElementById('label-nbr');
+// localStorage.clear();
 var answers = JSON.parse(localStorage.getItem('Answers'));
 
 if (!answers){
@@ -25,9 +26,11 @@ radio2 = document.getElementById('radio2').addEventListener('click', function(){
   btnRight.disabled = false;
   btnRight.style.cursor = 'default';
 });
+init();
 
-showSlide(progress);
-switchNbr('34 - 42', '34', '42', 'degree');
+function init(){
+  showSlide(progress);
+}
 
 function moveSlides( n ){
   if ( n > 0){
