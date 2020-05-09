@@ -7,6 +7,7 @@ var btnLeft = document.getElementById('btn_left');
 var question = document.getElementById('question');
 var indicator = document.getElementById('indicator');
 var answers = JSON.parse(localStorage.getItem('Answers'));
+btnRight.style.cursor = 'not-allowed';
 
 if (!answers){
   var answers = [1];
@@ -15,9 +16,11 @@ progress = answers[0];
 
 radio1 = document.getElementById('radio1').addEventListener('click', function(){
   btnRight.disabled = false;
+  btnRight.style.cursor = 'default';
 });
 radio2 = document.getElementById('radio2').addEventListener('click', function(){
   btnRight.disabled = false;
+  btnRight.style.cursor = 'default';
 });
 
 showSlide(progress);
@@ -26,7 +29,9 @@ function moveSlides( n ){
   if ( n > 0){
     getAnswer(answers);
     clearInput("option");
+    btnRight.style.cursor = 'not-allowed';
   }else{
+    btnRight.style.cursor = 'not-allowed';
     clearInput("option");
     answers.pop();
     console.log(answers);

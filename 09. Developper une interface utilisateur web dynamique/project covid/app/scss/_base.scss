@@ -60,7 +60,7 @@ $break-watch: 268px;
   padding: .5em 1em;
   font-size: 2rem;
     
-  &:hover{
+  &:active{
     background: $color-primary-darker;
     transition: $trans-cubic;
     box-shadow: $shadow;
