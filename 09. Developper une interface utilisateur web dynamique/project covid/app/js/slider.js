@@ -44,18 +44,6 @@ function moveSlides( n ){
   localStorage.setItem('Answers', JSON.stringify(answers));
 }
 
-function getAnswer(tab){
-  let ele = document.getElementsByName("option");
-
-  for(var i=0; i<ele.length; i++){
-    if (ele[i].checked){
-      tab.push(ele[i].value);
-      
-    }
-  }
-  console.log(tab);
-}
-
 function showSlide(n){
   if ( n === 1 ){
     btnLeft.style.display = "none";
@@ -83,9 +71,26 @@ function showSlide(n){
   question.innerHTML = questions[n];
 }
 
+function getAnswer(tab){
+  let ele = document.getElementsByName("option");
+
+  if ( inputNbr.value > 0 ){
+    tab.push(ele[4].value);
+    return;
+  }
+
+  for(var i=0; i<ele.length; i++){
+    if (ele[i].checked){
+      tab.push(ele[i].value);
+    }
+  }
+  console.log(tab);
+}
+
 function clearInputs(name)
 {
   var ele = document.getElementsByName(name);
+  inputNbr.value = '';
 	for(var i=0;i<ele.length;i++){
     ele[i].checked = false;
   }
