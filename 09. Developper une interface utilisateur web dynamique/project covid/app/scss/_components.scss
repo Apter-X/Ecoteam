@@ -103,3 +103,18 @@
     left: 7px;
   }
 }
+
+.quantity input {
+  color: $color-primary;
+  width: 40%;
+  height: 3em;
+  font-size: 1em;
+  padding-left: 1.5em;
+  border: 1px solid $color-primary;
+  border-radius: .2rem;
+}
+
+.quantity label {
+  font-size: 1.9em;
+  color: $color-primary;
+}
