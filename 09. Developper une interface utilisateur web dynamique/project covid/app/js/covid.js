@@ -23,7 +23,7 @@ const questions = [ ,
   "Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive)."  
 ];
 
-const diagnostics = [
+const diagnostics = [ ,
   "Nous vous conseillons de rester à votre domicile et de contacter votre médecin en cas d’apparition de nouveaux symptômes. Vous pourrez aussi utiliser à nouveau l’application pour réévaluer vos symptômes.",
   "Téléconsultation ou médecin généraliste ou visite à domicile.",
   "Appelez le 141.",
@@ -129,4 +129,60 @@ var getFactors = function (tab){
     }
   }
 }
+
+function decision(){
+  if( fever || cough && cough || throat && stiffness || fever && diarrhea ){
+    if ( minor === 0 && major === 0 && tab[11] < 50){
+      return(diagnostic = diagnostics[1]);
+    }
+    if ( minor <= 1 && major === 0 && tab[11] >= 50 ){
+      return(diagnostic = diagnostics[2]);
+    }
+  }
+
+  if( pron > 0 ){
+    if( minor === 0 && major === 0 ){
+      return(diagnostic = diagnostics[2]);
+    }
+    if( minor === 1 && major === 0){
+      return(diagnostic = diagnostics[2]);
+    }
+    if( minor >= 2 && major === 0){
+      return(diagnostic = diagnostics[3]);
+    }
+  }
+
+  if ( major >= 1){
+    return(diagnostic = diagnostics[3]);
+  }
+
+  if ( fever && cough ){
+    if ( minor <= 1 && major === 0 ){
+      return(diagnostic = diagnostics[2]);
+    }
+    if( pron >= 1 && minor === 0 && major === 0 ){
+      return(diagnostic = diagnostics[2]);
+    }
+    if( pron >= 1 && minor === 1 && major === 0 ){
+      return(diagnostic = diagnostics[2]);
+    }
+    if( pron >= 1 && minor >= 2 && major === 0 ){
+      return(diagnostic = diagnostics[3]);
+    }
+  }
+
+  if( fever || cough || throat || stiffness ){
+    if ( minor === 0 && major === 0 ){
+      return(diagnostic = diagnostics[4]);
+    }
+    if( minor >= 1 && major === 0 && pron >= 1 ){
+      return(diagnostic = diagnostics[5]);
+    }
+  }
+
+  if ( !fever && !cough && !throat && !stiffness && !diarrhea ){
+    return(diagnostic = diagnostics[6]);
+  }
+
+  return(diagnostic = diagnostics[7]);
 }
