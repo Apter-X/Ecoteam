@@ -130,7 +130,7 @@ var getFactors = function (tab){
   }
 }
 
-function decision(){
+function decision(tab){
   if( fever || cough && cough || throat && stiffness || fever && diarrhea ){
     if ( minor === 0 && major === 0 && tab[11] < 50){
       return(diagnostic = diagnostics[1]);

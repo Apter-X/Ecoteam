@@ -58,7 +58,7 @@ function showSlide(n){
       getAnswer(answers)
       clearUI();
       getFactors(answers);
-      question.innerHTML = decision();
+      question.innerHTML = decision(answers);
       localStorage.clear();
     }
   }else{
