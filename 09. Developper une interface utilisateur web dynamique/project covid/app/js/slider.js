@@ -12,7 +12,6 @@ var inputNbr = document.getElementById('input-nbr');
 var labelNbr = document.getElementById('label-nbr');
 // localStorage.clear();
 var answers = JSON.parse(localStorage.getItem('Answers'));
-
 if (!answers){
   var answers = [1];
 }
@@ -21,10 +20,9 @@ progress = answers[0];
 init();
 
 function init(){
-  switchRadio(4, 'Oui', 'Non', 'Peut-être', 'Je ne sais pas');
   showSlide(progress);
+  form(progress);
   inputListener();
-  // switchNbr('34 - 42', '34', '42', 'degree');
 }
 
 function moveSlides( n ){
@@ -32,18 +30,19 @@ function moveSlides( n ){
     btnRight.style.cursor = 'not-allowed';
     getAnswer(answers);
     clearInputs("option");
-  }else{
-    console.log(answers);
-    answers[0] = progress;
+  }
+  if (n < 0){
     btnRight.style.cursor = 'not-allowed';
     clearInputs("option");
     answers.pop();
-    console.log(answers);
+    form(progress);
   }
   showSlide( progress += n );
-  btnRight.disabled = true;
   answers[0] = progress;
+  form(progress);
+  btnRight.disabled = true;
   localStorage.setItem('Answers', JSON.stringify(answers));
+  console.log(answers);
 }
 
 function showSlide(n){
@@ -99,6 +98,8 @@ function clearInputs(name)
 }
 
 function switchRadio( key, label1, label2, label3, label4){
+  document.getElementById('nbr-box').style.display = 'none';
+  radiosContainer.style.display = 'block';
   switch (key) {
     case 2:
       document.getElementById('choice1').style.display = "block";
