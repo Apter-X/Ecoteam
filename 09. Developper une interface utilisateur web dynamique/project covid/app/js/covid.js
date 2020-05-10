@@ -37,6 +37,20 @@ var minor, major, pron = 0;
 var fever, cough, throat, stiffness, diarrhea = new Boolean(false)
 var diagnostic;
 
+var form = function (key){
+  switch (key) {
+    case 1:
+      switchRadio(2, 'Oui', 'Non');
+      break;
+    case 2:
+      switchNbr('34 - 42', '34', '42', 'degree');
+      break;
+    default:
+      break;
+  }
+
+}
+
 function decision(tab){
   diagnostic = "Decision!";
   question.innerHTML = diagnostic;
