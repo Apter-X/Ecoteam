@@ -76,11 +76,57 @@ var form = function (key){
   }
 }
 
-var minor, major, pron = 0;
-var fever, cough, throat, stiffness, diarrhea = new Boolean(false)
+var fever = Boolean(false);
+var cough = Boolean(false);
+var stiffness = Boolean(false);
+var throat = Boolean(false); 
+var diarrhea = Boolean(false);
+var minor = 0;
+var major = 0;
+var pron = 0;
 var diagnostic;
 
-function decision(tab){
-  diagnostic = "Decision!";
-  question.innerHTML = diagnostic;
+var getFactors = function (tab){
+  if(tab[1] === 1){
+    fever = true;
+  }
+  if(tab[2] >= 39){
+    minor++;
+  }
+  if(tab[2] <= 35){
+    major++;
+  }
+  if(tab[3] === 1){
+    cough = true;
+  }
+  if(tab[4] === 1){
+    stiffness = true;
+  }
+  if(tab[5] === 1){
+    throat = true;
+  }
+  if(tab[6] === 1){
+    diarrhea = true;
+  }
+  if(tab[7] === 1){
+    minor++;
+  }
+  if(tab[8] === 1){
+    major++;
+  }
+  if(tab[9] === 1){
+    major++;
+  }
+  if(tab[10] >= 3 ){
+    minor++;
+  }
+  if(tab[11] >= 70){
+    pron++;
+  }
+  for (let i = 14; i < tab.length; i++) {
+    if(tab[i] === 1){
+      pron++;
+    }
+  }
+}
 }
