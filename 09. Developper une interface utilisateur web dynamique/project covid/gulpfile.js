@@ -9,7 +9,21 @@ var cssnano = require('gulp-cssnano');
 var imagemin = require('gulp-imagemin');
 var cache = require('gulp-cache');
 const autoprefixer = require('gulp-autoprefixer');
+var gulpFont = require ('gulp-font');
 const { series } = require('gulp');
+
+// gulp.task( 'font', function() {
+//   return gulp.src('app/assets/fonts/**/*.{ttf,otf}', { read: false })
+//       .pipe(gulpFont({
+//           ext: '.css',
+//           fontface: 'app/assets/fonts',
+//           relative: '/assets/fonts',
+//           dest: 'dist/assets/fonts',
+//           embed: ['woff'],
+//           collate: false
+//       }))
+//       .pipe(gulp.dest('dist/assets/fonts'));
+// })
 
 gulp.task('prefix', () =>
     gulp.src('app/css/styles.css')
@@ -48,7 +62,7 @@ gulp.task('useref', function(){
     return gulp.src('app/*.html')
       .pipe(useref())
       // Minifies only if it's a JavaScript file
-      .pipe(gulpIf('*.js', uglify()))
+      // .pipe(gulpIf('*.js', uglify()))
       // Minifies only if it's a CSS file
       .pipe(gulpIf('*.css', cssnano()))
       .pipe(gulp.dest('dist'))

@@ -1,4 +1,4 @@
-const questions = [ ,
+var questions = [ ,
   "Pensez-vous avoir ou avoir eu de la fièvre ces 10 derniers jours (frissons, sueurs) ?",
   "Quelle est votre température corporelle ?",
   "Ces derniers jours, avez-vous une toux ou une augmentation de votre toux habituelle ?",
@@ -23,7 +23,7 @@ const questions = [ ,
   "Prenez-vous un traitement immunosuppresseur ? C’est un traitement qui diminue vos défenses contre les infections. Voici quelques exemples : corticoïdes, méthotrexate, ciclosporine, tacrolimus, azathioprine, cyclophosphamide (liste non exhaustive)."  
 ];
 
-const diagnostics = [ ,
+var diagnostics = [ ,
   "Nous vous conseillons de rester à votre domicile et de contacter votre médecin en cas d’apparition de nouveaux symptômes. Vous pourrez aussi utiliser à nouveau l’application pour réévaluer vos symptômes.",
   "Téléconsultation ou médecin généraliste ou visite à domicile.",
   "Appelez le 141.",

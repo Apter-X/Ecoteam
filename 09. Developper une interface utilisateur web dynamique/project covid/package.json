@@ -12,6 +12,7 @@
         "gulp-autoprefixer": "^7.0.1",
         "gulp-cache": "^1.1.3",
         "gulp-cssnano": "^2.1.3",
+        "gulp-font": "^1.0.4",
         "gulp-imagemin": "^7.1.0",
         "gulp-sass": "^4.0.2",
         "gulp-series": "^1.0.2",
