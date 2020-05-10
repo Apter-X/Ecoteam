@@ -104,25 +104,28 @@ function switchRadio( key, label1, label2, label3, label4){
     case 2:
       document.getElementById('choice1').style.display = "block";
       document.getElementById('label1').innerHTML = `<span><span></span></span>${label1}`;
-      document.getElementById('choice2').style.display = "block";;
+      document.getElementById('choice2').style.display = "block";
       document.getElementById('label2').innerHTML = `<span><span></span></span>${label2}`;
+      document.getElementById('choice3').style.display = "none";
+      document.getElementById('choice4').style.display = "none";
       break;
     case 3:
       document.getElementById('choice1').style.display = "block";
       document.getElementById('label1').innerHTML = `<span><span></span></span>${label1}`;
-      document.getElementById('choice2').style.display = "block";;
+      document.getElementById('choice2').style.display = "block";
       document.getElementById('label2').innerHTML = `<span><span></span></span>${label2}`;
-      document.getElementById('choice3').style.display = "block";;
+      document.getElementById('choice3').style.display = "block";
       document.getElementById('label3').innerHTML = `<span><span></span></span>${label3}`;
+      document.getElementById('choice4').style.display = "none";
       break;
     case 4:
       document.getElementById('choice1').style.display = "block";
       document.getElementById('label1').innerHTML = `<span><span></span></span>${label1}`;
-      document.getElementById('choice2').style.display = "block";;
+      document.getElementById('choice2').style.display = "block";
       document.getElementById('label2').innerHTML = `<span><span></span></span>${label2}`;
-      document.getElementById('choice3').style.display = "block";;
+      document.getElementById('choice3').style.display = "block";
       document.getElementById('label3').innerHTML = `<span><span></span></span>${label3}`;
-      document.getElementById('choice4').style.display = "block";;
+      document.getElementById('choice4').style.display = "block";
       document.getElementById('label4').innerHTML = `<span><span></span></span>${label4}`;
       break;
     default:
