@@ -33,23 +33,52 @@ const diagnostics = [
   "Restez chez vous au maximum en attendant que les symptômes disparaissent. Prenez votre température deux fois par jour. Rappel des mesures d’hygiène."
 ];
 
-var minor, major, pron = 0;
-var fever, cough, throat, stiffness, diarrhea = new Boolean(false)
-var diagnostic;
-
 var form = function (key){
   switch (key) {
     case 1:
       switchRadio(2, 'Oui', 'Non');
       break;
     case 2:
-      switchNbr('34 - 42', '34', '42', 'degree');
+      switchNbr('34 - 42', '34', '42', 'degré');
+      break;
+    case 3:
+      switchRadio(2, 'Oui', 'Non');
+      break;
+    case 9:
+      switchRadio(2, 'Oui', 'Non');
+      break;
+    case 10:
+      switchRadio(4, 'Bien', 'Assez bien', 'Fatigué(e)', 'Trés fatigué(e)');
+      break;
+    case 11:
+      switchNbr('15 - 110', '15', '110', 'age');
+      break;
+    case 12:
+      switchNbr('20 - 250', '20', '250', 'kg');
+      break;
+    case 13:
+      switchNbr('80 - 250', '80', '250', 'cm');
+      break;
+    case 14:
+      switchRadio(2, 'Oui', 'Non');
+      break;
+    case 19:
+      switchRadio(2, 'Oui', 'Non');
+      break;
+    case 20:
+      switchRadio(3, 'Oui', 'Non', 'Homme');
+      break;
+    case 21:
+      switchRadio(2, 'Oui', 'Non');
       break;
     default:
       break;
   }
-
 }
+
+var minor, major, pron = 0;
+var fever, cough, throat, stiffness, diarrhea = new Boolean(false)
+var diagnostic;
 
 function decision(tab){
   diagnostic = "Decision!";
