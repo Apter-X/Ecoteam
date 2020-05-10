@@ -55,8 +55,10 @@ function showSlide(n){
     btnRight.innerHTML = "Terminer";
     btnRight.onclick = function(){
       indicator.style.left = '79.2%';
+      getAnswer(answers)
       clearUI();
-      decision();
+      getFactors(answers);
+      question.innerHTML = decision();
       localStorage.clear();
     }
   }else{
