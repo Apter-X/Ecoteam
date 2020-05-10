@@ -76,13 +76,13 @@ function getAnswer(tab){
   let ele = document.getElementsByName("option");
 
   if ( inputNbr.value > 0 ){
-    tab.push(ele[4].value);
+    tab.push(JSON.parse(ele[4].value));
     return;
   }
 
   for(var i=0; i<ele.length; i++){
     if (ele[i].checked){
-      tab.push(ele[i].value);
+      tab.push(JSON.parse(ele[i].value));
     }
   }
   console.log(tab);
