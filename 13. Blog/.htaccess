@@ -1,0 +1,4 @@
+ DirectoryIndex index.php
+ RewriteEngine on 
+
+ RewriteRule  ^([a-zA-Z0-9_\-]*)?/?(fr|en)?/?$ index.php?page=$1&lang=$2&%{QUERY_STRING}
