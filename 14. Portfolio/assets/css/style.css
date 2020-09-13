@@ -1,0 +1,75 @@
+body {
+    font-family: 'VT323', monospace;
+	font-size: 1em;
+    margin: 0;
+    color: #ffffff;
+    background: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+pre {
+    color: #2cff6b;
+}
+
+/* Links */
+a{
+	text-decoration: none;
+	color: #2cff6b;
+	outline: none;
+}
+
+.debug{
+    position: absolute;
+    right: 0;
+    font-size: .70em;
+    max-width: 20%;
+    width: 20%;
+    height: 100%;
+    overflow-y: auto;
+    scrollbar-color: #919191 #000000;
+    scrollbar-width: thin;
+}
+
+.msg-group {
+    position: absolute;
+    max-width: 80%;
+    width: 80%;
+    height: 90%;
+    overflow-y: auto;
+    scrollbar-color: #919191 #000000;
+    scrollbar-width: thin;
+}
+
+.input-group {
+    position: absolute;
+    max-width: 80%;
+    width: 80%;
+    left: 0;
+    bottom: 0;
+}
+
+.before-input{
+    background-color: #000000;
+    /* border: 0; */
+    color: #ffffff;
+    font-size: 1em;
+}
+
+.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+    color: #2cff6b;
+}
+
+#input-box:focus,
+#input-box{
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0), 0 0 8px rgba(0, 0, 0, 0);
+	border: 0;
+	background: transparent;
+	border-radius: 0;
+    -webkit-appearance: none;
+    font-family: 'VT323', monospace;
+    font-size: 1em;
+    color: #ffffff;
+}
